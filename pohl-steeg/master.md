@@ -1,8 +1,24 @@
+Aufgaben einer Landesbibliographie:
+
+ > Zitat
+
+Dies gilt so auch für die Nordrhein-Westfälischen Bibliographie, im folgenden "NWBib" abgekürzt. Auf der Webseite des neuen Webauftritts[^1] heißt es:
+
+> Die Nordrhein-Westfälische Bibliographie (NWBib) verzeichnet die Literatur über das Land Nordrhein-Westfalen, seine Regionen, Orte und Persönlichkeiten, Literatur aus allen Lebens- und Wissensbereichen in Geschichte und Gegenwart.
+
+> Die NWBib ist eine der umfangreichsten Regionalbibliographien Deutschlands. Sie erschließt nicht nur Bücher und Zeitschriften, sondern auch Aufsätze und andere Medien wie etwa Karten, DVDs, Hörbücher und elektronische Publikationen. 
+
 ### Organisation
 
-- Redaktionen: ULBs Münster und Düsseldorf
-- Unterstützung ULB Bonn
-- Technik: hbz
+Im Unterschied zu anderen Landesbibliographien sind Erstellung, Entwicklung und Betrieb der Nordrhein-Westfälischen Bibliographie (NWBib) gesetzlich verankert. Im Gesetz zur Regelung des Pflichtexemplarrechts in Nordrhein-Westfalen heißt es in §2:
+
+> (1) Die Aufgabe der Sammlung der Pflichtexemplare nehmen die Universitäts- und Landesbibliotheken Bonn, Düsseldorf und Münster gemeinsam wahr. (...)
+
+> (2) Die Bibliotheken erstellen gemeinsam die Nordrhein-Westfälische Bibliographie. Diese verzeichnet und erschließt die Medienwerke mit inhaltlichem Bezug zu Nordrhein-Westfalen unabhängig davon, ob sie innerhalb oder außerhalb Nordrhein-Westfalens verlegt werden.
+ 
+> (3) Das Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen unterstützt die Pflichtexemplarsammlung der Universitäts- und Landesbibliotheken sowie die Herausgabe der Nordrhein-Westfälischen Bibliographie durch die Entwicklung und den Betrieb von technischen Infrastrukturleistungen.
+
+Ähnlich dem Gesetzesinhalt sieht auch die tatsächliche Arbeitsteilung aus. Die Redaktionen in den Universitäts- und Landesbibliotheken Münster und Düsseldorf arbeiten an der Erstellung und Pflege der NWBib, wobei sie von der ULB Bonn bei der Erfassung von Monographien unterstützt werden. Das Hochschulbibliothekszentrum fungiert in erster Linie als technischer Dienstleister für Betrieb und Entwicklung der Erfassungsumgebung und des Webauftritts.
 
 ### Historie
 
@@ -60,3 +76,6 @@ Free Software Java-Tooling:
 
 ### Lessons Learned
 
+
+
+[^1]: https://nwbib.de
