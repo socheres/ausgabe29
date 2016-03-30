@@ -26,23 +26,34 @@ Im Unterschied zu anderen Landesbibliographien sind Erstellung, Entwicklung und 
 
 Die NWBib ist eine der jüngeren Landesbibliographien Westdeutschlands. Ihre Vorläufer sind die Westfälische Bibliographie, die 1954 an den Start ging und den Zeitraum ab 1945 abdeckt und die Lippische Bibliographie, die ab 1957 erstellt wurde. Mit der Nordrhein-Westfälischen Bibliographie wurden diese Vorläufer fortgeführt und um die bibliographische Verzeichnung von Literatur über das Rheinland ergänzt.
 
+#### EDV-gestützte Druckproduktion
+
 Wie Schmidt, 1998 darstellt wurde von Anfang an auf eine EDV-gestützte Produktion gesetzt, auch wenn die Bibliographie zunächst allein als Druckfassung erschien. Im Vergleich zur heute gängigen Pflege einer Datenbank war der Aufwand zur Erstellung einer gedruckten Bibliographie ungleich größer. Für die ersten zehn Bände beschreibt Schmidt, 1998 das Verfahren wie folgt:
 
-> Die Titel wurden jahrgangsweise maschinenschriftlich auf Erfassungsbögen von den beiden Redaktionsstellen an der UB Düsseldorf und der UB Münster ans HBZ gesandt, dort von Datenerfassungskräften maschinenlesbar als EDT-Dateien erfaßt, von einer weiteren Redakteurin korrekturgelesen und schließlich mit dem GID-Programm verarbeitet. Das Endprodukt waren vier Magnetbänder für die jeweils vier Teile einer Druckausgabe, fertig kodiert mit Steuerzeichen für die Weiterverarbeitung auf einer Lichtsetzmaschine. Diese Bänder wurden vom HBZ einem durch Ausschreibung ermittelten Druckhaus übergeben, welches über eine bestimmte Lichtsetzanlage verfügen mußte, um die Satzsteuerzeichen der Magnetbänder richtig lesen zu können. (Schmidt, 1998)
+> Die Titel wurden jahrgangsweise maschinenschriftlich auf Erfassungsbögen von den beiden Redaktionsstellen an der UB Düsseldorf und der UB Münster ans HBZ gesandt, dort von Datenerfassungskräften maschinenlesbar als EDT-Dateien erfaßt, von einer weiteren Redakteurin korrekturgelesen und schließlich mit dem GID-Programm verarbeitet. Das Endprodukt waren vier Magnetbänder für die jeweils vier Teile einer Druckausgabe, fertig kodiert mit Steuerzeichen für die Weiterverarbeitung auf einer Lichtsetzmaschine. Diese Bänder wurden vom HBZ einem durch Ausschreibung ermittelten Druckhaus übergeben, welches über eine bestimmte Lichtsetzanlage verfügen mußte, um die Satzsteuerzeichen der Magnetbänder richtig lesen zu können. (@Schmidt1998)
 
-Ab dem elften Band wurde zur Herstellung eines Bandes der Landesbibligraphie anders verfahren. Der Hauptgrund für die Umstellung des Druckverfahrens war Anfang der 1990er Jahre stattgefundene Anschluss der ULBs Düsseldorf und Münster an den hbz-Verbund. Seitdem existiert die NWBib als eine Untermenge der hbz-Verbunddaten.
+#### Mit LaTeX ins Web
 
-- Druckfassung bis Ende 1990er
-- Online-Fassung als Nebenprodukt einer effizienteren Druckproduktion mit Latex
-- Datenbank im Deep Web (seit 2005 komplett)
-- Auftrag zur Modernisierung: 22.03.2013
+Ab dem elften Band wurde zur Herstellung eines Bandes der Landesbibligraphie anders verfahren. Der Hauptgrund für die Umstellung des Druckverfahrens war der Anschluss der ULBs Düsseldorf und Münster an den hbz-Verbund Anfang der 1990er Jahre. Seitdem wird die NWBib als eine Untermenge der hbz-Verbunddatenbank geführt. Dies ermöglichte nicht nur das Einsparen von Personalressourcen bei der Druckproduktion, sondern auch die Präsentation der NWBib im World Wide Web.
+
+Die gedruckte Version wurde nun mit der Software *LaTeX* vorbereit. Dafür wurde aus der für den hbz-Verbundkatalog genutzten Datenbanksoftware *BIS* ein mit TeX-Steuerzeichen versehener Export des jeweiligen NWBib-Jahrgangs generiert (@Schmidt1998). Als Nebenprodukt des neuen Verfahrens konnte auf Basis der LaTeX-Datei mit wenig Aufwand konnte eine HTML-Version der NWBib erstellt werden. Mit Hilfe freier Software und nach Aufbringen einer Personenwoche konnte NWBib-Jahrgang 1983 als erstes WWW-Angebot des hbz 1996 bereitgestellt werden. In @Schmidt1998 heißt es:
+
+> Um das Marketing dieses zusätzlichen Angebotes der Bibliographie auf dem Internet brauchten wir uns ... nicht zu kümmern, das haben die Gesetze des World Wide Web sozusagen über nacht [sic] erledigt. Die NWB-Seiten wurden schon bald von den Suchmaschinen entdeckt, eingelesen und indiziert. So kann ein Benutzer auch über eine Recherche in einer Suchmaschine wie z.B. Alta Vista als Treffer auf eine NWB-Seite geführt werden und dort dann mit den Navigationswerkzeugen weitersuchen.
+
+Zudem wurde 1996 auch der gesamte NWBib-Altbestand in die hbz-Verbunddatenbank eingespielt, so dass die NWBib auch über die den hbz-OPAC durchsucht werden konnte. Diese Datenbank liegt aber im "Deep Web" und kann nicht durch Suchmaschinen indexiert werden, weshalb allein das HTML-Angebot die Auffindbarkeit der NWBib über Suchmaschinenen ermöglichte. 2005 wurde die HTML-Version der NWBib eingestellt, und es nur noch die Möglichkeit einer Recherche über den Web-OPAC,der mittlerweile auf dem Aleph-Systemvon von Ex Libris basierte. Damit verschwand Bibliographie komplett im Deep Web und die verzeichnete Literatur war nur für die Leute recherchierbar, die von der Existenz der Bibliographie wussten.
+
+#### Der Auftrag zur Modernisierung des Web-Auftritts
+
+Da mit den Jahren der NWBIb-Webauftritt alles andere als zeitgemäßg war, gaben die Landesbibliotheken dem hbz Anfang 2013 den Auftrag, den Webauftritt der NWBib zu überarbeiten. Innerhalb des hbz wurde entschieden, den neuen Webauftritt auf Basis der lobid-API umzusetzen, die im Herbst 2013 in Produktion gegangen war. Dies würde u.a. garantieren, dass die NWBib wieder Teil des WWWW würde und nicht weiter ihr Dasein im Deep Web fristen müsste. Anfang 2014 begannen die Entwicklungsarbeiten für den neuen NWBib-Webauftritt.
 
 ### Voraussetzungen / Bibliothekarisches
 
-- Katalogisierung nach RAK-WB, neuerdings RDA
-- Inhaltserschließung mit RSWK/GND, zwei speziellen NWBib-Klassifikationen + Gliedernde Schlagwörter (GSW)
-  - In Münster: Schlagwortfolgen
-- NWBib ist Teil des hbz-Verbundkatalogs => Aleph
+Zunächst sollen hier die Voraussetzungen für den Aufbau eines modernen NWBib-Webauftritts  skizziert werden. Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph*  der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
+
+Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische
+Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen existiert eine NWBib-spezifische Systematik, die in einen Sachsystematik- und einen Ortssystematikteil untergliedert ist. Ergänzt wird die Ortssystematik durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur räumlichen Verortung des Sachbezugs.
+
+Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifrig an der Ergänzung von Schlagwortfolgen gearbeitet, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
 
 
 ### Methodologie
@@ -75,6 +86,7 @@ Free Software Java-Tooling:
  - GSW
  - Gleiche Treffer bei gleicher Anfrage: DB vs. Suchmaschine
  - Existierende Java-JSON-LD-Tools nicht dazu geeignet, in ES gut nutzbares JSON-LD zu generieren => API 2.0 als Ergebnis
+ - RDA-Umstellung
 
 #### Zusammenarbeit
 
@@ -89,9 +101,11 @@ Free Software Java-Tooling:
 ### Ausblick
 
 - Einbindung der Vorläuferbibliographien in die Recherche
+- hbz-Katalog auf Basis der NWBib-Entwicklung
 
 ### Literatur
 
-Schmidt, Ronald Michael (1998): *Die Nordrhein-Westfälische Bibliographie Online*. In: Bibliographische Datenbanken im Internet: DFG-Kolloquium vom 4. bis 5. Dezember 1997 an der Herzogin Anna Amalia Bibliothek. URL (Internet Archive): http://web.archive.org/web/20000310115644/http://www.weimar-klassik.de/kolloquien/e5i_224d.html
+* @Schmidt1998
 
 [^1]: https://nwbib.de
+[^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
