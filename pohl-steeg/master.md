@@ -51,10 +51,9 @@ Da mit den Jahren der NWBIb-Webauftritt alles andere als zeitgemäßg war, gaben
 Zunächst sollen hier die Voraussetzungen für den Aufbau eines modernen NWBib-Webauftritts  skizziert werden. Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph*  der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
 
 Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische
-Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen existiert eine NWBib-spezifische Systematik, die in einen Sachsystematik- und einen Ortssystematikteil untergliedert ist. Ergänzt wird die Ortssystematik durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur räumlichen Verortung des Sachbezugs.
+Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen existiert eine NWBib-spezifische Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die Ortssystematik durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs einer verzeichneten Ressource.
 
 Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifrig an der Ergänzung von Schlagwortfolgen gearbeitet, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
-
 
 ### Methodologie
 
@@ -109,3 +108,4 @@ Free Software Java-Tooling:
 
 [^1]: https://nwbib.de
 [^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
+[^3]: Siehe [http://nwbib.de/classification?t=Sachsystematik](http://nwbib.de/classification?t=Sachsystematik) und [http://nwbib.de/classification?t=Raumsystematik](http://nwbib.de/classification?t=Raumsystematik).
