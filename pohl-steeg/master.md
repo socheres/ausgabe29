@@ -55,6 +55,42 @@ Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn die
 
 Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifrig an der Ergänzung von Schlagwortfolgen gearbeitet, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
 
+### Anforderungen an einen modernen Webauftritt
+
+Welche Anforderungen sollte ein moderner Webauftritt erfüllen? Im Laufe der Entwicklung haben wir uns diese Frage gestellt. Jan Schnasse hat für einen NWBib-Vortrag beim Bibliothekartag 2015 in Nürnberg eine nützliche Untergliederung von Interessengruppen eines bibliographischen Webauftritts und deren Anforderungen erstellt, an der wir uns hier orientieren.[^4] Es lassen sich vier Interessengruppen unterscheiden:
+
+1. Besucher der NWBib, die nach Literatur recherchieren,
+2. Externe Webservices, z.B. Suchmaschinen wie Google oder Duckduckgo,
+3. Die NWBib-Redaktion an den ULBs Düsseldorf, Münster und Bonn sowie
+4. Web-Entwickler, die auf Basis der NWBib-Daten zusätzliche eigene Anwendungen bauen wollen. 
+
+#### NWBib-Besucher
+
+Im Allgemeinen verlangen Nutzer von Webanwendungen folgende Eigenschaften:
+
+- Verlässlichkeit/Verfügbarkeit
+- Übersichtlichkeit
+- Intuitive Nutzbarkeit
+- Schnelle Ladezeiten
+
+Das gemeinsame Ziel von Nutzern einer bibliographischen Rechercheanwendung wird meist sein, dass sie meist auf der Suche nach Volltexten oder zumindest nach Literaturtipps sind. Darüber hinaus lassen sich wahrscheinlich einige verschiedene Nutzertypen unterscheiden. Ein regelmäßig wiederkehrender Besucher, der etwa spezielle wissenschaftliche Literatur sucht wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt.
+
+#### Externe Webservices
+
+Externe Websites lassen sich auch in verschiedene Typen mit verschiedenen Anforderungen an eine Rechercheanwendung unterscheiden:
+
+- *Suchmaschinen* sammeln (strukturierte) Daten von der Website ein.
+- Andere wie die *Website der NRW-Landesbibliotheken* möchten vielleicht die NWBib als Ganzes in ihren Webauftritt integrieren.
+- Wieder andere möchten auf die Recherchefunktionen und Ergebnislisten der NWBib über eine Schnittstelle zugreifen und strukturierte Daten als Antwort bekommen. Dazu zählt zum Beispiel die Virtuelle Deutsche Landesbibliographie.
+
+#### NWBib-Redaktion
+
+Die NWBib-Redaktion hat vor allem zum Ziel, dass der Detailgrad der erfassten Daten im Webauftritt wiedergegeben wird und dass – teils komplexe –  Recherchen angeboten werden, die die zugrundeliegende Datenstruktur ermöglicht.
+
+#### Web-Entwickler
+
+Web-Entwickler wollen eine gut dokumentierte performante und zuverlässige Schnittstelle zu den Daten. Zudem sehen sie es gerne, wenn die angebotenen Daten explizit offen lizenziert und auch der Quellcode der Anwendung offen lizenziert ist.
+
 ### Methodologie
 
 - Inkrementelle Entwicklung
@@ -109,3 +145,4 @@ Free Software Java-Tooling:
 [^1]: https://nwbib.de
 [^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
 [^3]: Siehe [http://nwbib.de/classification?t=Sachsystematik](http://nwbib.de/classification?t=Sachsystematik) und [http://nwbib.de/classification?t=Raumsystematik](http://nwbib.de/classification?t=Raumsystematik).
+[^4]: Siehe @Schnasse2015, Folie 5.
