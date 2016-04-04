@@ -57,39 +57,49 @@ Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifri
 
 ### Anforderungen an einen modernen Webauftritt
 
-Welche Anforderungen sollte ein moderner Webauftritt erfüllen? Im Laufe der Entwicklung haben wir uns diese Frage gestellt. Jan Schnasse hat für einen NWBib-Vortrag beim Bibliothekartag 2015 in Nürnberg eine nützliche Untergliederung von Interessengruppen eines bibliographischen Webauftritts und deren Anforderungen erstellt, an der wir uns hier orientieren.[^4] Es lassen sich vier Interessengruppen unterscheiden:
+Welche Anforderungen sollte ein moderner Webauftritt erfüllen? Jan Schnasse hat für einen NWBib-Vortrag beim Bibliothekartag 2015 in Nürnberg eine nützliche Untergliederung von Interessengruppen eines bibliographischen Webauftritts und deren Anforderungen erstellt, an der wir uns hier orientieren.[^4] Es lassen sich vier Interessengruppen unterscheiden:
 
 1. Besucher der NWBib, die nach Literatur recherchieren,
-2. Externe Webservices, z.B. Suchmaschinen wie Google oder Duckduckgo,
-3. Die NWBib-Redaktion an den ULBs Düsseldorf, Münster und Bonn sowie
+2. Externe Webservices, z.B. Suchmaschinen wie Google, DuckDuckGo oder die Virtuelle Deutsche Landesbibliographie (VDL),
+3. die NWBib-Redaktion an den ULBs Düsseldorf, Münster und Bonn sowie
 4. Web-Entwickler, die auf Basis der NWBib-Daten zusätzliche eigene Anwendungen bauen wollen. 
 
 #### NWBib-Besucher
 
-Im Allgemeinen verlangen Nutzer von Webanwendungen folgende Eigenschaften:
+Das Ziel von Nutzerinnen und Nitzern einer bibliographischen Rechercheanwendung ist es, Literaturhinwiese zu einem bestimmten Thema plus Angabe von Zugriffsmöglichkeiten zu bekommen, im  besten Fall mit einem direkten Link zum Volltext. 
+
+Von einer Webanwendung im allgemeinen erwarten Nutzerinnen und Nutzer folgende grundlegende Eigenschaften:
 
 - Verlässlichkeit/Verfügbarkeit
-- Übersichtlichkeit
+- Übersichtlichkeiter
 - Intuitive Nutzbarkeit
 - Schnelle Ladezeiten
 
-Das gemeinsame Ziel von Nutzern einer bibliographischen Rechercheanwendung wird meist sein, dass sie meist auf der Suche nach Volltexten oder zumindest nach Literaturtipps sind. Darüber hinaus lassen sich wahrscheinlich einige verschiedene Nutzertypen unterscheiden. Ein regelmäßig wiederkehrender Besucher, der etwa spezielle wissenschaftliche Literatur sucht wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt.
+ Über diese allgemeinen Anforderungen hinaus, variieren die Anforderungen je nach Nutzungstypus. Eine regelmäßig wiederkehrende Besucherin, die etwa spezielle wissenschaftliche Literatur sucht wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt. Letzterer will erst einmal zügig einen Eindruck bekommen, auf was für eine Seite er da gelangt ist und welche Informationen sie ihm bietet.
 
 #### Externe Webservices
 
 Externe Websites lassen sich auch in verschiedene Typen mit verschiedenen Anforderungen an eine Rechercheanwendung unterscheiden:
 
-- *Suchmaschinen* sammeln (strukturierte) Daten von der Website ein.
-- Andere wie die *Website der NRW-Landesbibliotheken* möchten vielleicht die NWBib als Ganzes in ihren Webauftritt integrieren.
-- Wieder andere möchten auf die Recherchefunktionen und Ergebnislisten der NWBib über eine Schnittstelle zugreifen und strukturierte Daten als Antwort bekommen. Dazu zählt zum Beispiel die Virtuelle Deutsche Landesbibliographie.
+- *Suchmaschinen* crawlen große Mengen von Webseiten und verwerten zunehmend darin angebotene strukturierte Daten.
+- Andere wie die *Website der NRW-Landesbibliotheken* möchten die NWBib-Anwendung als Ganzes – inklusive erweiterter Suchmaske und Facettierungsmöglichkeiten – in ihren Webauftritt integrieren.
+- Wieder andere möchten die NWBib über eine dokumentierte Schnittstelle abfragen und strukturierte Daten als Antwort bekommen, um die Ergebnisse in ihrem Webauftritt präsentieren. Dazu zählt zum Beispiel die Virtuelle Deutsche Landesbibliographie (VDL).
 
 #### NWBib-Redaktion
 
-Die NWBib-Redaktion hat vor allem zum Ziel, dass der Detailgrad der erfassten Daten im Webauftritt wiedergegeben wird und dass – teils komplexe –  Recherchen angeboten werden, die die zugrundeliegende Datenstruktur ermöglicht.
+Die NWBib-Redaktion bewertet die Funktionalitäten des NWBib-Auftritts in erster Linie vor dem Hintergrund der von ihr erfassten Daten, dem dabei benutzten Regelwerk zur Formalerschließung und den verschiedenen Methoden zur Inhaltserschließung. 
+
+Konkret bedeutet dies zum Beispiel:
+- Angeboten werden sollte eine erweitere Suche über verschiedene Felder, die mittels Boolescher Operatoren kombiniert werden können.
+- Die Ergebnismenge einer Anfrage soll mit jener in der Aleph-Recherche übereinstimmen, was etwa Methoden wie Stemming o.ä. ausschließt.
+- Die Ergebnisliste soll standardmäßig nach Erscheinungsjahr sortiert sein.
+- Treffer sollten auf eine Merkliste gesetzt werden können, die exportiert werden kann.
+
+So hat die Redaktion zum Ziel, dass die Daten entsprechend den Feldern, Unterscheidungen, Verknüpfungen und Details in den Ausgangsdaten präsentiert werden. Die – teils komplexen – Recherchemöglichkeiten, die die Datenbasis ermöglicht sollen ausgenutzt werden.
 
 #### Web-Entwickler
 
-Web-Entwickler wollen eine gut dokumentierte performante und zuverlässige Schnittstelle zu den Daten. Zudem sehen sie es gerne, wenn die angebotenen Daten explizit offen lizenziert und auch der Quellcode der Anwendung offen lizenziert ist.
+Grundsätzlich versucht das hbz mittels dem lobid-Dienst, offene bibliothekarische Daten so bereitzustellen, dass interessierte Dritte diese innerhalb eigener Anwendungen nutzen können. Damit Entwickler die Daten in eigenen Webanwendungen integrieren können, benötigen sie gut dokumentierte performante und zuverlässige Schnittstellen zu den Daten. Zudem sollten die angebotenen Daten bestenfalls explizit offen lizenziert sein.
 
 ### Methodologie
 
