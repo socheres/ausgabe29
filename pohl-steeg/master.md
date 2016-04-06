@@ -1,8 +1,8 @@
-Aufgaben einer Landesbibliographie:
+Die Aufgaben einer Landesbibliographie bestimmt @Syre2006, S.34 wie folgt:
 
- > Zitat
+ > Aufgabe einer Regionalbibliographie ist es, die Literatur über eine Region, ihre historischen und aktuellen Teilgebiete, ihre Naturräume und ihre Orte sowie die mit der betreffenden Region verbundenen Persönblichkeiten (verstorbenen wie lebenden) zu verzeichnen. Deckt sich der geographie Berichtsraum einer Regionalbibliographie mit den Grenzen eines Bundeslandes, spricht man von einer Landesbibliographie.
 
-Dies gilt so auch für die Nordrhein-Westfälischen Bibliographie, im folgenden "NWBib" abgekürzt. Auf der Webseite des neuen Webauftritts[^1] heißt es:
+Dies gilt so auch für die Nordrhein-Westfälischen Bibliographie, abekürzt "NWBib". In der Selbstdarstellung auf der Webseite des neuen Webauftritts[^1] heißt es:
 
 > Die Nordrhein-Westfälische Bibliographie (NWBib) verzeichnet die Literatur über das Land Nordrhein-Westfalen, seine Regionen, Orte und Persönlichkeiten, Literatur aus allen Lebens- und Wissensbereichen in Geschichte und Gegenwart.
 
@@ -12,7 +12,7 @@ Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, 
 
 ### Organisation
 
-Im Unterschied zu anderen Landesbibliographien sind Erstellung, Entwicklung und Betrieb der Nordrhein-Westfälischen Bibliographie (NWBib) gesetzlich verankert. Im Gesetz zur Regelung des Pflichtexemplarrechts in Nordrhein-Westfalen heißt es in §2:
+Die "entscheidende Grundlage für die Bearbeitung einer Landesbibliographie" liefert die Wahrnehmung des Pflichtexemplarrechts (@Syre2006, S. 36). Wie auch in anderen Bundesländern wird die NWBib von jenen Bibliotheken erstellt, die für die Sammlung und Archivierung von Pflichtstücken zuständig sind. Im Unterschied zu anderen Bundesländern ist die Erstellung, die Entwicklung und der Betrieb der Nordrhein-Westfälischen Landesbibliographie sogar im Pflichtexemplargesetz verankert. Im *Gesetz zur Regelung des Pflichtexemplarrechts in Nordrhein-Westfalen* heißt es in §2:
 
 > (1) Die Aufgabe der Sammlung der Pflichtexemplare nehmen die Universitäts- und Landesbibliotheken Bonn, Düsseldorf und Münster gemeinsam wahr. (...)
 
