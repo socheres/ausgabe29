@@ -52,40 +52,39 @@ Mit dem Aufstieg von Google und Discovery Services in den Bibliotheken wurde die
 
 Zunächst sollen hier die Voraussetzungen für den Aufbau eines modernen NWBib-Webauftritts  skizziert werden. Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph*  der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
 
-Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische
-Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen existiert eine NWBib-spezifische Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die Ortssystematik durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs einer verzeichneten Ressource.
+Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen existiert eine NWBib-spezifische Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die Ortssystematik durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels.
 
-Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifrig an der Ergänzung von Schlagwortfolgen gearbeitet, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
+Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifrig an der Verzeichnung von Schlagwortfolgen gearbeitet, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
 
 ### Anforderungen an einen modernen Webauftritt
 
-Welche Anforderungen sollte ein moderner Webauftritt erfüllen? Jan Schnasse hat für einen NWBib-Vortrag beim Bibliothekartag 2015 in Nürnberg eine nützliche Untergliederung von Interessengruppen eines bibliographischen Webauftritts und deren Anforderungen erstellt, an der wir uns hier orientieren.[^4] Es lassen sich vier Interessengruppen unterscheiden:
+Welche Anforderungen sollte ein moderner Webauftritt erfüllen? @Schnasse2015 hat für einen NWBib-Vortrag beim Bibliothekartag 2015 in Nürnberg eine nützliche Untergliederung von Interessengruppen eines bibliographischen Webauftritts und deren Anforderungen erstellt, an der wir uns hier orientieren.[^4] Es lassen sich vier Interessengruppen unterscheiden:
 
 1. Besucher der NWBib, die nach Literatur recherchieren,
 2. Externe Webservices, z.B. Suchmaschinen wie Google, DuckDuckGo oder die Virtuelle Deutsche Landesbibliographie (VDL),
 3. die NWBib-Redaktionsstellen an den ULBs Düsseldorf, Münster und Bonn sowie
 4. Web-Entwickler, die auf Basis der NWBib-Daten zusätzliche eigene Anwendungen bauen wollen. 
 
+Im folgenden werden die Anforderungen der verschiedenen Nutzergruppen näher beleuchtet.
+
 #### NWBib-Besucher
 
-Das Ziel von Nutzerinnen und Nitzern einer bibliographischen Rechercheanwendung ist es, Literaturhinwiese zu einem bestimmten Thema plus Angabe von Zugriffsmöglichkeiten zu bekommen, im  besten Fall mit einem direkten Link zum Volltext. 
-
-Von einer Webanwendung im allgemeinen erwarten Nutzerinnen und Nutzer folgende grundlegende Eigenschaften:
+Das Ziel von Nutzerinnen und Nutzern einer bibliographischen Rechercheanwendung ist es, Literaturhinwiese zu einem bestimmten Thema plus Angabe von Zugriffsmöglichkeiten zu bekommen, im  besten Fall mit einem direkten Link zum Volltext. Darüber hinaus erwarten Nutzerinnen und Nutzer im Allgemeinen von einer Webanwendung folgende grundlegende Eigenschaften:
 
 - Verlässlichkeit/Verfügbarkeit
 - Übersichtlichkeiter
 - Intuitive Nutzbarkeit
 - Schnelle Ladezeiten
 
- Über diese allgemeinen Anforderungen hinaus, variieren die Anforderungen je nach Nutzungstypus. Eine regelmäßig wiederkehrende Besucherin, die etwa spezielle wissenschaftliche Literatur sucht wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt. Letzterer will erst einmal zügig einen Eindruck bekommen, auf was für eine Seite er da gelangt ist und welche Informationen sie ihm bietet.
+ Über diese allgemeinen Anforderungen hinaus, variieren die Anforderungen je nach Nutzungstypus. Eine regelmäßig wiederkehrende Besucherin, die etwa spezielle wissenschaftliche Literatur sucht, wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt. Letzterer will sich erst einmal auf einfache Weise orientieren, auf was für eine Seite er da gelangt ist und welche Informationen sie ihm bietet. Letztere könnte hingegen Interesse haben, komplexere Recherchefunktionen einzusetzen.
 
 #### Externe Webservices
 
-Externe Websites lassen sich auch in verschiedene Typen mit verschiedenen Anforderungen an eine Rechercheanwendung unterscheiden:
+Externe Websites lassen sich in verschiedene Typen mit unterschiedlichen Anforderungen an eine Rechercheanwendung untergliedern:
 
 - *Suchmaschinen* crawlen große Mengen von Webseiten und verwerten zunehmend darin angebotene strukturierte Daten.
+- Andere möchten die NWBib über eine dokumentierte Schnittstelle abfragen und strukturierte Daten als Antwort bekommen, um die Ergebnisse in ihrem Webauftritt präsentieren. Dazu zählt zum Beispiel die Virtuelle Deutsche Landesbibliographie (VDL).
 - Andere wie die *Website der NRW-Landesbibliotheken* möchten die NWBib-Anwendung als Ganzes – inklusive erweiterter Suchmaske und Facettierungsmöglichkeiten – in ihren Webauftritt integrieren.
-- Wieder andere möchten die NWBib über eine dokumentierte Schnittstelle abfragen und strukturierte Daten als Antwort bekommen, um die Ergebnisse in ihrem Webauftritt präsentieren. Dazu zählt zum Beispiel die Virtuelle Deutsche Landesbibliographie (VDL).
 
 #### NWBib-Redaktion
 
