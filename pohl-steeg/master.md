@@ -24,7 +24,7 @@ Die "entscheidende Grundlage für die Bearbeitung einer Landesbibliographie" lie
 
 ### Historie
 
-Die NWBib ist eine der jüngeren Landesbibliographien Westdeutschlands. Ihre Vorläufer sind die Westfälische Bibliographie, die ab 1954 erstellt wurde und den Zeitraum ab 1945 abdeckt und die Lippische Bibliographie, die ab 1957 erstellt wurde. Mit der Nordrhein-Westfälischen Bibliographie wurden diese Vorläufer fortgeführt und um die bibliographische Verzeichnung von Literatur über das Rheinland ergänzt. Der erste Band der NWBib (Berichtsjahr 1983) ist 1984 erschienen.
+Die NWBib ist eine der jüngeren Landesbibliographien Westdeutschlands. Ihre direkten Vorläufer sind die Westfälische Bibliographie, die ab 1954 erstellt wurde und den Zeitraum ab 1945 abdeckt und die Lippische Bibliographie, die ab 1957 erstellt wurde.[^vorlaeufer] Mit der Nordrhein-Westfälischen Bibliographie wurden diese Vorläufer fortgeführt und um die bibliographische Verzeichnung von Literatur über das Rheinland ergänzt. Der erste Band der NWBib (Berichtsjahr 1983) ist 1984 erschienen.
 
 #### EDV-gestützte Druckproduktion
 
@@ -32,17 +32,21 @@ Wie @Schmidt1998 darstellt wurde von Anfang an auf eine EDV-gestützte Produktio
 
 > Die Titel wurden jahrgangsweise maschinenschriftlich auf Erfassungsbögen von den beiden Redaktionsstellen an der UB Düsseldorf und der UB Münster ans HBZ gesandt, dort von Datenerfassungskräften maschinenlesbar als EDT-Dateien erfaßt, von einer weiteren Redakteurin korrekturgelesen und schließlich mit dem GID-Programm verarbeitet. Das Endprodukt waren vier Magnetbänder für die jeweils vier Teile einer Druckausgabe, fertig kodiert mit Steuerzeichen für die Weiterverarbeitung auf einer Lichtsetzmaschine. Diese Bänder wurden vom HBZ einem durch Ausschreibung ermittelten Druckhaus übergeben, welches über eine bestimmte Lichtsetzanlage verfügen mußte, um die Satzsteuerzeichen der Magnetbänder richtig lesen zu können. (@Schmidt1998)
 
-Die Datenerstellung und -korrektur bedurfte also dreier Abteilungen ehe die Daten für den Druck vorbereitet werden konnten. Heute gibt es nur noch die NWBib-Redaktionsstellen.
+Bei der Datenerfassung und -korrektur waren also drei Abteilungen beteiligt, ehe die Daten für den Druck vorbereitet werden konnten. @HallerMuehl2006 nennen drei erhebliche Nachteile dieses Verfahrens: Erstens der doppelte Schreibaufwand bei der Erfassung über Datenerfassungsbögen und der Übertragung in ein maschinenlesbarers Format, zweitens das aufwändige Korrekturverfahren bei der jährlichen Druckaufbereitung und vor allem – drittens – das Fehlen einer Datenbank, was eine Dublettenkontrolle und die kontrollierte Verschlagwortung mittels der Schlagwortnormdatei (SWD) verunmöglichte.
 
 #### Mit LaTeX ins Web
 
-Ab der Herstellung des elften Band der NWBib hat sich das Verfahren geändert. Der Hauptgrund für die Umstellung des Druckverfahrens war der Anschluss der ULBs Düsseldorf und Münster an den hbz-Verbund Anfang der 1990er Jahre. Seitdem wird die NWBib als eine Untermenge der hbz-Verbunddatenbank geführt. Dies ermöglichte nicht nur das Einsparen von Personalressourcen bei der Druckproduktion, sondern auch die Präsentation der NWBib im World Wide Web.
+Ab der Herstellung des elften Band der NWBib hat sich das Verfahren geändert. Der Hauptgrund für die Umstellung des Druckverfahrens war der Anschluss der ULBs Düsseldorf und Münster an den hbz-Verbund Anfang der 1990er Jahre, womit die NWBib als Sub-System der hbz-Verbunddatenbank geführt wurde (). Dies ermöglichte nicht nur das Einsparen von Personalressourcen bei der Druckproduktion, sondern auch die Präsentation der NWBib im World Wide Web.
 
 Die gedruckte Version wurde nun mit der Software *LaTeX* vorbereitet. Dafür wurde aus der für den hbz-Verbundkatalog genutzten Datenbanksoftware *BIS* ein mit TeX-Steuerzeichen versehener Export des jeweiligen NWBib-Jahrgangs generiert (@Schmidt1998). Als Nebenprodukt des neuen Verfahrens konnte auf Basis der LaTeX-Datei mit wenig Aufwand eine HTML-Version der NWBib erstellt werden. Mit Hilfe freier Software und nach Aufbringen einer Personenwoche konnte NWBib-Jahrgang 1993 als erstes WWW-Angebot des hbz 1996 bereitgestellt werden. In @Schmidt1998 heißt es:
 
 > Um das Marketing dieses zusätzlichen Angebotes der Bibliographie auf dem Internet brauchten wir uns ... nicht zu kümmern, das haben die Gesetze des World Wide Web sozusagen über nacht [sic] erledigt. Die NWB-Seiten wurden schon bald von den Suchmaschinen entdeckt, eingelesen und indiziert. So kann ein Benutzer auch über eine Recherche in einer Suchmaschine wie z.B. Alta Vista als Treffer auf eine NWB-Seite geführt werden und dort dann mit den Navigationswerkzeugen weitersuchen.
 
-Zudem wurde 1996 auch der NWBib-Altbestand in die hbz-Verbunddatenbank eingespielt, so dass die gesamte NWBib über den hbz-OPAC durchsucht werden konnte. Datenbanken können aber nicht durch Suchmaschinen indexiert werden – sie sind damit Teil des "Deep Web" –, weshalb allein das HTML-Angebot die Auffindbarkeit der NWBib über Web-Suchmaschinenen ermöglichte. 2005 wurde die HTML-Version der NWBib eingestellt, und es gab nur noch die Möglichkeit einer Recherche über den Web-OPAC, der mittlerweile auf dem Aleph-System von von Ex Libris basierte. Damit verschwand die NWBib aus dem WWW, und die verzeichnete Literatur war nur für die Leute recherchierbar, die von der Existenz der Bibliographie und ihren Möglichkeiten wussten.
+Zusätzlich zur HTML-Variante der Bibliographie wurde 1996 auch der NWBib-Altbestand in die hbz-Verbunddatenbank eingespielt, so dass die gesamte NWBib über den hbz-OPAC durchsucht werden konnte. Datenbanken können aber nicht durch Suchmaschinen indexiert werden – man bezeichnet derartige Angebote als Teil des "Deep Web" –, weshalb allein das HTML-Angebot die Auffindbarkeit der NWBib über Web-Suchmaschinenen ermöglichte.
+
+Ende der 1990er Jahre wurde das hbz-Verbundsystem auf die Software Aleph von Ex Libris umgestellt. Die NWBib-Redaktion nutzte diese Chance, um die NWBib vollständig in den Verbundkatalog zu integrieren (vgl. @HallerMuehl2006, 314f), was u.a. den Vorteil hatte, dass die Nutzer jetzt auch Besitznachweise für die verzeichneten Titel vorfanden. Laut @HallerMuehl2006, 314 fiel mit "dem Beschluss für eine vollständige Übernahme der Bibliographie in das neue Verbundsystem ... auch die Entscheidung, die Druckausgabe aufzugeben und die Bibliographie nur noch als Datenbank anzubieten." Die letzte Druckausgabe der NWBib erschien 1999 mit Berichtsjahr 1997.
+
+2005 wurde auch die HTML-Version der NWBib eingestellt, und es gab nur noch die Möglichkeit einer Recherche über den Web-OPAC, der mittlerweile auf dem Aleph-System von von Ex Libris basierte. Damit verschwand die NWBib aus dem WWW, und die verzeichnete Literatur war nur für die Leute recherchierbar, die von der Existenz der Bibliographie und ihren Möglichkeiten wussten.
 
 #### Der Auftrag zur Modernisierung des Web-Auftritts
 
@@ -52,7 +56,7 @@ Mit dem Aufstieg von Google und Discovery Services in den Bibliotheken wurde die
 
 Zunächst sollen hier die Voraussetzungen für den Aufbau eines modernen NWBib-Webauftritts  skizziert werden. Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph*  der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
 
-Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen existiert eine NWBib-spezifische Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die Ortssystematik durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels.
+Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen findet eine Klassifizierung statt anhand der NWBib-spezifischen Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die NWBib-Ortssystematik zudem durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels.
 
 Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifrig an der Verzeichnung von Schlagwortfolgen gearbeitet, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
 
@@ -155,5 +159,6 @@ Free Software Java-Tooling:
 
 [^1]: https://nwbib.de
 [^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
+[^vorlaeufer]: Für eine umfassendere Darstellung der NWBib-Vorläufer siehe @HallerMuehl2006, 305ff.
 [^3]: Siehe [http://nwbib.de/classification?t=Sachsystematik](http://nwbib.de/classification?t=Sachsystematik) und [http://nwbib.de/classification?t=Raumsystematik](http://nwbib.de/classification?t=Raumsystematik).
 [^4]: Siehe @Schnasse2015, Folie 5.
