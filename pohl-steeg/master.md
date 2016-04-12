@@ -52,13 +52,11 @@ Ende der 1990er Jahre wurde das hbz-Verbundsystem auf die Software Aleph von Ex 
 
 Mit dem Aufstieg von Google und Discovery Services in den Bibliotheken wurde die NWbib-Recherche immer weniger zeitgemäßg. Als Reaktion gaben die Landesbibliotheken dem hbz Anfang 2013 den Auftrag, den Webauftritt der NWBib zu überarbeiten. Innerhalb des hbz wurde entschieden, den neuen Webauftritt auf Basis der lobid-API umzusetzen, die im Herbst 2013 in Produktion gegangen war. Dies würde u.a. garantieren, dass die NWBib wieder integraler Bestandteil des WWWW würde. Anfang 2014 begannen die Entwicklungsarbeiten für den neuen NWBib-Webauftritt.
 
-### Voraussetzungen / Bibliothekarisches
+### Bibliothekarische Voraussetzungen
 
-Zunächst sollen hier die Voraussetzungen für den Aufbau eines modernen NWBib-Webauftritts  skizziert werden. Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph*  der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
+Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph*  der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
 
-Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach Resource Description and Access (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen findet eine Klassifizierung statt anhand der NWBib-spezifischen Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die NWBib-Ortssystematik zudem durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels.
-
-Was die Inhaltserschließung angeht, wird insbesondere an der ULB Münster eifrig an der Verzeichnung von Schlagwortfolgen gearbeitet, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
+Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach *Resource Description and Access* (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen findet eine Klassifizierung statt anhand der NWBib-spezifischen Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die NWBib-Ortssystematik zudem durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels. Zudem arbeitet insbesondere die ULB Münster an der Verzeichnung von Schlagwortfolgen, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
 
 ### Anforderungen an einen modernen Webauftritt
 
@@ -100,7 +98,7 @@ Konkret bedeutet dies zum Beispiel:
 - Die Ergebnisliste soll standardmäßig nach Erscheinungsjahr sortiert sein.
 - Treffer sollten auf eine Merkliste gesetzt werden können, die exportiert werden kann.
 
-So hat die Redaktion zum Ziel, dass die Daten entsprechend den Feldern, Unterscheidungen, Verknüpfungen und Details in den Ausgangsdaten präsentiert werden. Die – teils komplexen – Recherchemöglichkeiten, die die Datenbasis ermöglicht sollen ausgenutzt werden.
+So hat die Redaktion zum Ziel, dass die Daten entsprechend den Feldern, Unterscheidungen, Verknüpfungen und Details in den Ausgangsdaten präsentiert werden. Die – teils komplexen – Recherchemöglichkeiten, die die Datenbasis ermöglicht, sollen ausgenutzt werden.
 
 #### Web-Entwickler
 
