@@ -110,31 +110,33 @@ Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetis
 
 ### Der Entwicklungsprozess
 
-Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung. Grundsätzlich war der Entwicklungsprototyp von Beginn der Entwicklung an offen im Web erreichbar. Der Prototyp diente als Referenzpunkt für die Diskussion über offene Anforderungen und bestehende Software-Bugs. An ihm wird kontinuierlich weiterentwickelt (inkrementelle Entwicklung). Für verschiedene Recherchefunktionen sowie teilweise auch für die Einzeltrefferanzeige konnte zudem die Aleph-basierte Version der NWBib als Referenz herangezogen werden.
+Die Software für den neuen NWBib-Webauftritt wird schrittweise in stetigem Austausch mit dem Kunden entwickelt. Der Entwicklungsprototyp ist von Beginn der Entwicklung an offen im Web erreichbar und dient als Referenzpunkt für die Diskussion über offene Anforderungen und bestehende Software-Bugs. An ihm wird kontinuierlich weiterentwickelt (inkrementelle Entwicklung). Für verschiedene Recherchefunktionen sowie teilweise auch für die Einzeltrefferanzeige konnte zudem die Aleph-basierte Version der NWBib als Referenz herangezogen werden.
+
+Zunächst war die Fertigstellung des Webauftritts vom Entwicklungsteam für Ende 2014 geplant, weil danach der Hauptentwickler für einige Monate in Elternzeit ging. Dieses Ziel wurde nicht erreicht und auch danach wurde der offizielle Launchtermin mehrmals nach hinten verschoben. Im April 2016 haben die Leitungen der Landesbibliotheken beschlossen, dass das Angebot nun einer breiten Öffentlichkeit vorgestellt werden können. Der Produktionsgang wird Ende August stattfinden.
 
 #### Rollen und Kommunikation
 
-Für die technische Entwicklung des NWBib-Webauftritts ist ein Entwicklungsteam im hbz verantwortlich, das die Anforderungen der NWBib-Redaktion umsetzt. Das Team besteht aus zwei Entwicklern und einem wissenschaftlichen Bibliothekar, der die Rolle eines Product Owners übernimmt und damit vor allem für die Kommunikation zwischen dem Entwicklungsteam und der NWBib-Redaktion verantwortlich ist. Um die Anforderungen zu definieren, zu priorisieren, umzusetzen und die erfolgreiche Umsetzung abzunehmen, mussten die beteiligten Akteure vielfältig miteinander kommunizieren. Dabei haben sich
-Im ersten Entwicklungsjahr musste sich ein einheitlicher und zuverlässiger Kommunikations- und Begutachtunsprozess noch finden. Im Februar 2015 stellte die NWBib-Redaktion strukturierte Liste bereit mit Anforderungen, die für den Launch des neuen NWBib-Webauftritt unverzichtbar seien.[^prio] Diese Liste war fortan enorm hilfreich als ein Bezugspunkt für die ganze weitere Entwicklung und Kommunikation zwischen den Projektbeteiligten. Diese dienten im Folgenden als Entwicklungsvorgabe. Der typische Ablauf bei der Umsetzung der Anforderungen sah wie folgt aus:
+Für die technische Entwicklung des NWBib-Webauftritts ist ein Entwicklungsteam im hbz verantwortlich, das die Anforderungen der NWBib-Redaktion umsetzt. Das Team besteht aus zwei Entwicklern und einem wissenschaftlichen Bibliothekar, der die Rolle eines Product Owners übernimmt und damit vor allem für die Kommunikation zwischen dem Entwicklungsteam und der NWBib-Redaktion verantwortlich ist. Die drei Mitglieder des Entwicklungsteams arbeiten zusammengenommen etwa im Umfang einer Vollzeitstelle an dem Projekt.
+
+Um die Anforderungen zu definieren, zu priorisieren, umzusetzen und die erfolgreiche Umsetzung abzunehmen, mussten die beteiligten Akteure viel und regelmäßig miteinander kommunizieren. Dies geschah in erster Linie über eine gemeinsame Mailingliste und ein Wiki[^wiki]. Zudem gab es zwei persönliche Treffen im hbz im September 2014 und April 2015. Zunächst dienten verschiedene von der Redaktion verschickte oder beim gemeinsamen Treffen erstellte Anforderungslisten als Entwicklungvorgaben. Da Fragen der Priorisierung teilweise unklar waren und das Entwicklungsteam einen baldigen Launch des neuen Webauftritts anvisierte, wurden nach etwa einem Jahr Entwicklung im Februar 2015 die verbliebenen Anforderungen durch die NWBib-Redaktion zusammengeführt und priorisiert. So entstand eine strukturierten Übersicht von Anforderungen, die für den Launch des neuen NWBib-Webauftritt unverzichtbar seien.[^prio] Diese Liste diente fortan als Bezugspunkt für die ganze weitere Entwicklung und die Kommunikation zwischen den Projektbeteiligten. Mit der Zeit wurden einige der Anforderungen konkretisiert bzw. in detailliertere Aufgabenpakete aufgeteilt. Der typische Ablauf zur Umsetzung von Anforderungen sah wie folgt aus:
+
+1. Eine Anforderung oder ein Softwarebug wird von der Redaktion gemeldet.
+2. Der Product Owner legt ein oder mehrere Tickets an für die Umsetzung der Anforderung bzw. die Behebung des Bugs.
+3. Der Product Owner priorisiert die offenen Tickets gemeinsam Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit dem Kunden entwickelt.Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit dem Kunden entwickelt. dem Rest des Entwicklungsteams und weist das Ticket einem Entwickler zu.
+4. Der Entwickler arbeitet so lange an der Umsetzung des Tickets, bis er meint, die Anforderungen werden hinreichend erfüllt.
 5. Die neue bzw. reparierte Funktionalität und der Code wird durch Mitglieder des Entwicklungsteams begutachtet.
 6. Sobald die Begutachtung positiv ist, wird die Anpassung auf dem offen einsehbaren Entwicklungsprototyp produktiv.
-7. Ist eine relvante Anzahl von Änderungen produktiv (dies sind meist fünf oder mehr Anpassungen), schickt der Product Owner eine Mail an die gemeinsame NWBib-Mailingliste mit der Bitte um Begutachtung durch die NWBib-Redaktion.
+7. Ist eine relvante Anzahl von Änderungen produktiv (dies sind meist fünf oder mehr Anpassungen), schickt der Product Owner eine Mail an die gemeinsame NWBib-Mailingliste mit der Bitte um Begutachtung durch die NWBib-Redaktion.. Der Prototyp
 8. Die NWBib-Redaktionsstellen stimmen sich untereinander ab, ob die Anpassungen den Anforderungen genügen. Sodann melden sie das Ergebnis der Abstimmung via Mailingliste an das Entwicklerteam.
 9. Ist die Rückmeldung positiv, wird die Entwicklung der Funktionalität als abgeschlossen erklärt, indem die Anforderung im Wiki entsprechend markiert wird. Andernfalls arbeitet das Enticklungsteam an der gewünschten Anpassung und der Prozess setzt wieder bei Punkt 4. ein.
+
+Das Entwicklungsteam arbeitete nicht ausschließlich an der NWBib und die Abstimmung der  NWBib-Redaktionsstellen zur Begutachtung des Fortschritts nahm einige Zeit in Anspruch. Zudem fielen alle Teammitglieder während der Entwicklungszeit wegen Elternzeit aus. Dementsprechend variiert die Länge eines Entwicklungszyklus vom Melden einer Anforderung/eines Bugs bis zur endgültigen Abnahme durch die Redaktion erheblich: Wenn keine Urlaubszeit war und alle Beteiligten da waren, dauerte ein Zyklus zwei bis drei Wochen, in Abwesenheit des Hautentwicklers mehrere Monate.
 
 Neben den Anforderungen der NWBib-Redaktion hat das Entwicklungsteam auch eigene Vorstellungen umgesetzt. So wurden manche Use Cases durch andere Funktionalitäten gelöst als ursprünglich von der Redaktion gefordert. In anderen Fällen setzte das Entwicklungsteam eigene Ideen um – so etwa die Visualisierung von Suchergebnissen oder Bestandsinformationen auf einer Karte. Auch diese Umsetzungen wurden dann der Redaktion zur Begutachtung vorgelegt (Schritt 7).
 
 ### Entwicklungsmethodologie
 
-In Absprache mit der NWBib-Redaktion als Kunde wurde regelmäßig über offen stehende Anforderungen und Softwarebugs kommuniziert. Von der NWBib-Redaktion wurden Minimalanforderungen an den Webauftritt definiert, die bis zu einem offiziellen Launch umgesetzt werden müssen. 
-
-https://hbz.github.io/#dev-process
-- Inkrementelle Entwicklung
-- Kanban; grundsätzliche Regel: jeder nur ein Ticket in Working
-- offener Prototyp
-- - gitHub-Flow
-- Kommunikation innerhalb des Entwicklungsteams: GitHub, Waffle, Chat, Daily Standups (keine Sprints)
-
+Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung.[^dev] Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit dem Kunden entwickelt. Als Kommunikationswerkzeuge benutzt das Entwicklungsteam vor allem GitHub und zur Visualisierung, Priorisierung und Organisation der Aufgaben die GitHub-basierte Kanban-Software *Waffle*.[^waffle] Vom Scrum-Ansatz[^scrum] wird das Stand-up übernommen, ein kurzes tägliches Treffen, bei dem sich die Teammitglieder über ihre erledigten und anstehenden Aufgaben austauschen und aktuelle Probleme benennen. Der Entwicklungsprozess folgt dem GitHub-Flow[^flow]. 
 
 #### Technologie
 
@@ -142,13 +144,9 @@ Free Software Java-Tooling:
 - lobid-API (Metafacture, elasticsearch, Play)
 - für das NWBib-Frontend: Play & Bootstrap 
 
-#### Planung und Fortschritt
-
-- zunächst Fertigstellung bis Ende 2014 geplant.
-- zweimal verlängert
-- Produktionsgang und Bewerbung nun für Ende August geplant.
-
-### Herausforderungen
+### Herausforderungen & Lessons Learned
+ 
+ Im Laufe des Projekts sind die Beteiligten einigen Herausforderungen begegnet. Im folgenden werden einige davon – insbesondere aus Sicht des Entwicklungsteams – erläutert.
  
 #### Daten und Recherche
  
@@ -164,27 +162,37 @@ Free Software Java-Tooling:
 
 - Inkrementelles, transparentes offenes Arbeiten noch nicht verinnerlicht
 - Präsentation unfertiger Produkte, die in Arbeit sind, ist schwierig
- 
+- Englisch als Ticketing-Sprache nicht unbedingt die beste Wahl
 
 #### Endnutzereinbindung
 
-### Lessons Learned
-
-- Englisch als Tecketing-Sprache nicht unbedingt die beste Wahl
+- wurde vom lobid-Team mehrmals angemahnt
+- hat bis heute nicht stattgefunden
+- 2017?
 
 ### Ausblick
 
+- API 2.0 und alle Vorteile, die das mit sich bringt
 - Einbindung der Vorläuferbibliographien in die Recherche
 - hbz-Katalog auf Basis der NWBib-Entwicklung
 - Usability-Studien
 
 ### Literatur
 
+* @HallerMuehl2006
+* @Pichler2009
 * @Schmidt1998
+* @Schnasse2015
+* @Syre2006
 
-[^1]: https://nwbib.de
+[^1]: [https://nwbib.de](https://nwbib.de)
 [^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
 [^vorlaeufer]: Für eine umfassendere Darstellung der NWBib-Vorläufer siehe @HallerMuehl2006, 305ff.
 [^3]: Siehe [http://nwbib.de/classification?t=Sachsystematik](http://nwbib.de/classification?t=Sachsystematik) und [http://nwbib.de/classification?t=Raumsystematik](http://nwbib.de/classification?t=Raumsystematik).
 [^4]: Siehe @Schnasse2015, Folie 5.
+[^wiki]: Siehe [https://wiki1.hbz-nrw.de/x/mYyW](https://wiki1.hbz-nrw.de/x/mYyW).
 [^prio]: Siehe [https://wiki1.hbz-nrw.de/x/CoCDAw](https://wiki1.hbz-nrw.de/x/CoCDAw).
+[^dev]: Für eine detaillierte Beschreibung des Entwicklungsprozesses im lobid-Team (allerdings in Englisch) siehe [https://hbz.github.io/#dev-process](https://hbz.github.io/#dev-process).
+[^waffle]: Siehe das gemeinsame Waffle-Board für alle Projekte des lobid-Teams: https://waffle.io/hbz/lobid
+[^scrum]: Siehe etwa @Pichler2009.
+[^flow]: Siehe [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/).
