@@ -1,4 +1,4 @@
-Die Aufgaben einer Landesbibliographie bestimmt @Syre2006, S.34 wie folgt:
+Dieser Artikel beschreibt die Entwicklung eines modernen Webauftritts für die Nordrhein-Westfälische Bibliographie (NWBib) vor im Kontext der historischen Entwicklung dieser Landesbibliographie. Die Aufgaben einer Landesbibliographie bestimmt @Syre2006, S.34 wie folgt:
 
  > Aufgabe einer Regionalbibliographie ist es, die Literatur über eine Region, ihre historischen und aktuellen Teilgebiete, ihre Naturräume und ihre Orte sowie die mit der betreffenden Region verbundenen Persönblichkeiten (verstorbenen wie lebenden) zu verzeichnen. Deckt sich der geographie Berichtsraum einer Regionalbibliographie mit den Grenzen eines Bundeslandes, spricht man von einer Landesbibliographie.
 
@@ -8,7 +8,7 @@ Dies gilt so auch für die Nordrhein-Westfälischen Bibliographie, abekürzt "NW
 
 > Die NWBib ist eine der umfangreichsten Regionalbibliographien Deutschlands. Sie erschließt nicht nur Bücher und Zeitschriften, sondern auch Aufsätze und andere Medien wie etwa Karten, DVDs, Hörbücher und elektronische Publikationen. 
 
-Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, mehr als 60 Prozent davon sind Aufsätze aus Zeitschriften oder Sammelbänden.
+Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, mehr als 60 Prozent davon sind Aufsätze aus Zeitschriften oder Sammelbänden. Von Januar 2014 bis voraussichtlich August 2016 wird an einem gänzlich neuen Webauftritt für die NWBib gearbeitet. Dieser Beitrag beschreibt die historische Entwicklung der NWBib mit Fokus auf die Beziehung der Bibliographie zum WWW, skizziert die Voraussetzungen dür die Neuentwicklung, beschreibt die Leitlinien des Entwicklungsprozesses und schließt mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. 
 
 ### Organisation
 
@@ -104,10 +104,21 @@ So hat die Redaktion zum Ziel, dass die Daten entsprechend den Feldern, Untersch
 
 Grundsätzlich versucht das hbz mittels dem lobid-Dienst, offene bibliothekarische Daten so bereitzustellen, dass interessierte Dritte diese innerhalb eigener Anwendungen nutzen können. Damit Entwickler die Daten in eigenen Webanwendungen integrieren können, benötigen sie gut dokumentierte performante und zuverlässige Schnittstellen zu den Daten. Zudem sollten die angebotenen Daten bestenfalls explizit offen lizenziert sein.
 
-### Methodologie
+### Rollen und Methodologie
 
+#### Rollen
+
+Die Rollenverteilung bei der Entwicklung 
+
+Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung. Von Beginn der Entwicklung war der Entwicklungsprototyp im Web für jedermann zugänglich, er wurde kontinuierlich weiterentwickelt (inkrementelle Entwicklung). In Absprache mit der NWBib-Redaktion als Kunde wurde regelmäßig über offen stehende Anforderungen und Softwarebugs kommuniziert. Von der NWBib-Redaktion wurden Minimalanforderungen an den Webauftritt definiert, die bis zu einem offiziellen Launch umgesetzt werden müssen. 
+
+Die Kommunikation zwischen Entwicklerteam und NWBib-Redaktion fand über eine geschlossene Mailingliste statt. War eine gewisse Anzahl von Anforderungen erledigt, schickte
+
+- https://hbz.github.io/#dev-process
 - Inkrementelle Entwicklung
+- Kanban; grundsätzliche Regel: jeder nur ein Ticket in Working
 - offener Prototyp
+- - gitHub-Flow
 - Rollen/Stakeholder: Projektteam (Entwickler, Projektmanager/Product Owner/Produktmanager) + Kunden (Redaktionen in Düsseldorf und Münster + Bonn)
   - Endnutzer bisher nicht einbezogen
 - Kommunikation zwischen Entwicklungsteam und Kunden/Redaktion: Mailingliste, Wiki + zwei persönliche Treffen als Hauptkanäle
@@ -123,6 +134,7 @@ Free Software Java-Tooling:
 
 - zunächst Fertigstellung bis Ende 2014 geplant.
 - zweimal verlängert
+- Produktionsgang und Bewerbung nun für Ende August geplant.
 
 ### Herausforderungen
  
@@ -145,6 +157,8 @@ Free Software Java-Tooling:
 #### Endnutzereinbindung
 
 ### Lessons Learned
+
+- Englisch als Tecketing-Sprache nicht unbedingt die beste Wahl
 
 ### Ausblick
 
