@@ -145,9 +145,13 @@ Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiede
 
 #### Technologie
 
-Free Software Java-Tooling:
-- lobid-API (Metafacture, elasticsearch, Play)
-- für das NWBib-Frontend: Play & Bootstrap 
+Die Implementierung des NWBib-Webauftritts verwendet Java- und Web-Technologie und basiert komplett auf Open-Source-Software.
+
+Wie oben beschrieben, werden die Daten der NWBib im Bibliothekssystem Aleph katalogisiert. Die Daten werden in einem XML-Format exportiert und mithilfe des Datentransformationstools Matafacture in JSON-LD gewandelt. Diese JSON-Daten werden in Elasticsearch indexiert und über die Lobid-API im Web bereitgestellt. Die NWBib-Webanwendung greift über HTTP auf diese API zu. API und NWBib sind auf Basis des Play-Frameworks implementiert, die NWBib verwendet zusätzlich das HTML/CSS-Framework Bootstrap.
+
+Die folgende Abbildung bietet einen Überblick über diese Komponenten und den Datenfluss aus Aleph in die NWBib:
+
+![Datenfluss](img/data-workflow.svg "Datenfluss")
 
 ### Herausforderungen & Lessons Learned
  
