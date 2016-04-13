@@ -8,7 +8,9 @@ Dies gilt so auch für die Nordrhein-Westfälische Bibliographie, abgekürzt "NW
 
 > Die NWBib ist eine der umfangreichsten Regionalbibliographien Deutschlands. Sie erschließt nicht nur Bücher und Zeitschriften, sondern auch Aufsätze und andere Medien wie etwa Karten, DVDs, Hörbücher und elektronische Publikationen. 
 
-Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, mehr als 60 Prozent davon sind Aufsätze aus Zeitschriften oder Sammelbänden. Die Arbeit an einem gänzlich neuen NWBib-Webauftritt erstreckt sich von Januar 2014 bis voraussichtlich zum August 2016. Dieser Beitrag beschreibt die historische Entwicklung der NWBib mit Fokus auf die Beziehung der Bibliographie zum World Wide Web (WWW), skizziert die Voraussetzungen für die Neuentwicklung, beschreibt die Leitlinien des Entwicklungsprozesses und schließt mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. 
+Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, mehr als 60 Prozent davon sind Aufsätze aus Zeitschriften oder Sammelbänden. Die Arbeit an einem gänzlich neuen NWBib-Webauftritt erstreckt sich von Januar 2014 bis voraussichtlich zum August 2016.
+
+Dieser Beitrag skizziert die historische Entwicklung der NWBib mit Fokus auf die Beziehung der Bibliographie zum World Wide Web (WWW), beschreibt die Voraussetzungen für die Neuentwicklung sowie die Leitlinien des Entwicklungsprozesses und schließt mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. Da die Autoren beide Teil des Software-Entwicklungsteams am hbz sind, wird die Entwicklungsperspektive hier im Vordergrund stehen. Die Perspektive der NWBib-Redaktion wird demgemäß unterrepräsentiert sein.
 
 ### Rechtliche Voraussetzungen und Verantwortlichkeiten
 
@@ -141,7 +143,7 @@ Neben den Anforderungen der NWBib-Redaktion hat das Entwicklungsteam auch eigene
 
 ### Entwicklungsmethodologie
 
-Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung.[^dev] Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit der NWBib-Redaktion entwickelt. Als Kommunikationswerkzeuge benutzt das Entwicklungsteam vor allem GitHub sowie zusätzlich zur Visualisierung, Priorisierung und Organisation der Aufgaben die GitHub-basierte Kanban-Software *Waffle*.[^waffle] Vom Scrum-Ansatz[^scrum] wird das Stand-up übernommen, ein kurzes tägliches Treffen, bei dem sich die Teammitglieder über ihre erledigten und anstehenden Aufgaben austauschen und aktuelle Probleme benennen. Der Entwicklungsprozess folgt dem GitHub-Flow[^flow].
+Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung (@becketal2001).[^dev] Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit der NWBib-Redaktion entwickelt. Als Kommunikationswerkzeuge benutzt das Entwicklungsteam vor allem GitHub sowie zusätzlich zur Visualisierung, Priorisierung und Organisation der Aufgaben die GitHub-basierte Kanban-Software *Waffle*.[^waffle] Vom Scrum-Ansatz[^scrum] wird das Stand-up übernommen, ein kurzes tägliches Treffen, bei dem sich die Teammitglieder über ihre erledigten und anstehenden Aufgaben austauschen und aktuelle Probleme benennen. Der Entwicklungsprozess folgt dem GitHub-Flow[^flow].
 
 #### Technologie
 
@@ -151,7 +153,7 @@ Free Software Java-Tooling:
 
 ### Herausforderungen & Lessons Learned
  
- Im Laufe des Projekts sind die Beteiligten einigen Herausforderungen begegnet. Im folgenden werden einige davon – insbesondere aus Sicht des Entwicklungsteams – erläutert.
+ Im Laufe des Projekts sind die Beteiligten einigen Herausforderungen begegnet und das Entwicklungsteam hat eine Menge gelernt. Im folgenden werden einige davon – insbesondere aus Sicht des Entwicklungsteams – erläutert.
  
 #### Daten und Recherche
  
@@ -197,8 +199,8 @@ Free Software Java-Tooling:
 [^4]: Siehe @Schnasse2015, Folie 5.
 [^wiki]: Siehe [https://wiki1.hbz-nrw.de/x/mYyW](https://wiki1.hbz-nrw.de/x/mYyW).
 [^prio]: Siehe [https://wiki1.hbz-nrw.de/x/CoCDAw](https://wiki1.hbz-nrw.de/x/CoCDAw).
-[^dev]: Für eine detaillierte Beschreibung des Entwicklungsprozesses im lobid-Team (allerdings in Englisch) siehe [https://hbz.github.io/#dev-process](https://hbz.github.io/#dev-process).
+[^dev]: Für eine detaillierte Beschreibung des Entwicklungsprozesses im lobid-Team (allerdings in Englisch) siehe http://hbz.github.io/#dev-process. [https://hbz.github.io/#dev-process](https://hbz.github.io/#dev-process).
 [^waffle]: Siehe das gemeinsame Waffle-Board für alle Projekte des lobid-Teams: https://waffle.io/hbz/lobid
 [^scrum]: Siehe etwa @Pichler2009.
-[^flow]: Siehe [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/) sowie die Dokumentation des Lobid-Entwicklungsprozesses: [http://hbz.github.io/#dev-process](http://hbz.github.io/#dev-process).
+[^flow]: Siehe [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/) sowie die Dokumentation des lobid-Entwicklungsprozesses: [http://hbz.github.io/#dev-process](http://hbz.github.io/#dev-process).
 [^satzung]: Die "technische Organisation und Präsentation der Nordrhein-Westfälischen Bibliographie" ist auch in der Satzung des Hochulbibliothekszentrums explizit genannt, s. https://www.hbz-nrw.de/ueberuns/satzung/ (§2, Abs. 3 a, Punkt 7).
