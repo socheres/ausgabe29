@@ -181,27 +181,31 @@ Die folgende Abbildung bietet einen Überblick über diese Komponenten und den D
  
 #### Daten und Recherche
  
- Die NWBib basiert wie gesagt auf dem lobid-Programmierschnittstelle, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses als Linked Data
+ Die NWBib basiert auf der lobid-API, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses ermöglicht. Für die Bereitstellung der Schnittstelle werden die Quelldaten, die in einem Aleph-XML-Exportformat (hbz-Verbunddaten) sowie Pica+-XML (ISIL-Daten) vorliegen, nach RDF/Linked Data überführt. Die Transformation von bibliothekarischen MAB-/MARC-basierten Daten in eine für Entwickler leich zu nutzende Datenstruktur ist alles andere als trivial. Auch wenn für die Bereitstellung der lobid-API bereits eine Menge Vorarbeiten stattgefunden hatten, mussten im Zuge der Entwicklung des neuen NWBib-Webauftritts einige Herausforderungen auf Datenebene gemeistert werden.
+
+*JSON-LD und Elasticsearch*: Existierende Java-JSON-LD-Tools nicht dazu geeignet, in ES gut nutzbares JSON-LD zu generieren => API 2.0 als Ergebnis
+
+*Körperschaftssuche*: Die NWBib-Redaktion besteht auf einer Suchmöglichkeit bibliographischer Ressourcen auf Basis der beteiligten Körperschaften. Da bei der bisherigen Datenmodellierung ein solcher Anwendungsfall nicht berücksichtigt wurde, waren einige temporäre Anpassungen möglich, um eine Körperschaftssuche anbieten zu können. Für die anstehende komplette Neuüberarbeitung der Datenstrukturen hinter der lobid-API wurde schließlich beschlossen, eine grundlegende Unterscheidung von Körperschaften und Personen auf Feldebene umzusetzen.
  
- - Körperschaftssuche
- - Schlagwortfolgen
- - GND: Ansetzungs- und Verweisungsformen
- - GSW
- - Gleiche Treffer bei gleicher Anfrage: DB vs. Suchmaschine
- - Existierende Java-JSON-LD-Tools nicht dazu geeignet, in ES gut nutzbares JSON-LD zu generieren => API 2.0 als Ergebnis
- - RDA-Umstellung
+*Schlagwortfolgen*:
+ 
+*Ansetzungs- und Verweisungsformen der GND*:
+ 
+*Gliedernde Schlagwörter*:
+ 
+*Aleph-Rechercheergebnisse als Vorbild*: auch Schiller-Räuber-Problem
+
+*RDA-Umstellung*
 
 #### Zusammenarbeit
 
-- Inkrementelles, transparentes offenes Arbeiten noch nicht verinnerlicht
-- Präsentation unfertiger Produkte, die in Arbeit sind, ist schwierig
-- Englisch als Ticketing-Sprache nicht unbedingt die beste Wahl
+*Agile Entwicklung* als Herausforderung: Inkrementelles, transparentes offenes Arbeiten noch nicht verinnerlicht. Präsentation unfertiger Produkte, die in Arbeit sind, ist schwierig
+*Englisch als Ticketing-Sprache* nicht unbedingt die beste Wahl
 
 #### Endnutzereinbindung
 
-- wurde vom lobid-Team mehrmals angemahnt
-- hat bis heute nicht stattgefunden
-- 2017?
+Wurde vom lobid-Team mehrmals angesprochen: Wer sind die Stakholder/Nutzergruppen? Worauf sollte man mit Blick auf die Endnutzer bei der Entwicklugn achten?
+Usability wurde bisher nicht getestet. Für 2017 angedacht.
 
 ### Ausblick
 
