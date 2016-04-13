@@ -10,7 +10,7 @@ Dies gilt so auch für die Nordrhein-Westfälische Bibliographie, abgekürzt "NW
 
 Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, mehr als 60 Prozent davon sind Aufsätze aus Zeitschriften oder Sammelbänden. Die Arbeit an einem gänzlich neuen NWBib-Webauftritt erstreckt sich von Januar 2014 bis voraussichtlich zum August 2016.
 
-Dieser Beitrag skizziert die historische Entwicklung der NWBib mit Fokus auf die Beziehung der Bibliographie zum World Wide Web (WWW), beschreibt die Voraussetzungen für die Neuentwicklung sowie die Leitlinien des Entwicklungsprozesses und schließt mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. Da die Autoren beide Teil des Software-Entwicklungsteams am hbz sind, wird die Entwicklungsperspektive hier im Vordergrund stehen. Die Perspektive der NWBib-Redaktion wird demgemäß unterrepräsentiert sein.
+Dieser Beitrag skizziert die historische Entwicklung der NWBib mit Fokus auf die Beziehung der Bibliographie zum World Wide Web (WWW), beschreibt die Voraussetzungen für die Neuentwicklung sowie die Leitlinien des Entwicklungsprozesses und schließt mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. Da die Autoren beide Teil des Software-Entwicklungsteams am hbz sind, wird die Entwicklungsperspektive hier im Vordergrund stehen. Die Perspektive der NWBib-Redaktion ist demgemäß unterrepräsentiert.
 
 ### Rechtliche Voraussetzungen und Verantwortlichkeiten
 
@@ -22,7 +22,7 @@ Die "entscheidende Grundlage für die Bearbeitung einer Landesbibliographie" lie
  
 > (3) Das Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen unterstützt die Pflichtexemplarsammlung der Universitäts- und Landesbibliotheken sowie die Herausgabe der Nordrhein-Westfälischen Bibliographie durch die Entwicklung und den Betrieb von technischen Infrastrukturleistungen.
 
-Ähnlich dem Gesetzesinhalt sieht auch die tatsächliche Arbeitsteilung aus. Die Redaktionsstellen an den Universitäts- und Landesbibliotheken Münster und Düsseldorf arbeiten an der Erstellung und Pflege der NWBib, wobei sie von der ULB Bonn unterstützt werden, die sich auf die Erfassung von Monographien beschränkt. Das Hochschulbibliothekszentrum fungiert in erster Linie als technischer Dienstleister für Betrieb und Entwicklung der Erfassungsumgebung und des Webauftritts.[^satzung]
+Ähnlich dem Gesetzesinhalt sieht auch die tatsächliche Arbeitsteilung aus. Die Redaktionsstellen an den Universitäts- und Landesbibliotheken Münster und Düsseldorf arbeiten an der Erstellung und Pflege der NWBib, wobei sie von der ULB Bonn unterstützt werden, die sich auf die Erfassung von Monographien beschränkt. Das Hochschulbibliothekszentrum fungiert in erster Linie als technischer Dienstleister für Betrieb und Entwicklung der Erfassungsumgebung und des Webauftritts.[^satzung] Für den Aufbau des neuen NWBib-Webauftritts war dasselbe Team am hbz verantwortlich, das auch den hbz-Linked-Data-Dienstes lobid (Linking Open Bibliographic Data) betreibt. Das lobid-Team besteht aus zwei Entwicklern (Pascal Christoph mit Schwerpunkt auf dem Backend und Fabian Steeg, der vor allem für das Frontend zuständig ist) und einem wissenschaftlichen Bibliothekar (Adrian Pohl), der für Metadatenstandards, Projektmanagement und Kommunikation verantwortlich ist.
 
 ### Historie der NWBib
 
@@ -153,9 +153,11 @@ Free Software Java-Tooling:
 
 ### Herausforderungen & Lessons Learned
  
- Im Laufe des Projekts sind die Beteiligten einigen Herausforderungen begegnet und das Entwicklungsteam hat eine Menge gelernt. Im folgenden werden einige davon – insbesondere aus Sicht des Entwicklungsteams – erläutert.
+ Im Laufe des Projekts sind die Beteiligten einigen Herausforderungen begegnet, und das lobid-Team hat eine Menge gelernt. Im folgenden werden einige Herausforderungen und Lessons Learned aus Sicht des Entwicklungsteams erläutert.
  
 #### Daten und Recherche
+ 
+ Die NWBib basiert wie gesagt auf dem lobid-Programmierschnittstelle, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses als Linked Data
  
  - Körperschaftssuche
  - Schlagwortfolgen
