@@ -1,14 +1,14 @@
 Dieser Artikel beschreibt die Entwicklung eines modernen Webauftritts für die Nordrhein-Westfälische Bibliographie (NWBib) im Kontext der historischen Entwicklung dieser Landesbibliographie. Die Aufgaben einer Landesbibliographie bestimmt @Syre2006, S.34 wie folgt:
 
- > Aufgabe einer Regionalbibliographie ist es, die Literatur über eine Region, ihre historischen und aktuellen Teilgebiete, ihre Naturräume und ihre Orte sowie die mit der betreffenden Region verbundenen Persönblichkeiten (verstorbenen wie lebenden) zu verzeichnen. Deckt sich der geographie Berichtsraum einer Regionalbibliographie mit den Grenzen eines Bundeslandes, spricht man von einer Landesbibliographie.
+ > Aufgabe einer Regionalbibliographie ist es, die Literatur über eine Region, ihre historischen und aktuellen Teilgebiete, ihre Naturräume und ihre Orte sowie die mit der betreffenden Region verbundenen Persönlichkeiten (verstorbenen wie lebenden) zu verzeichnen. Deckt sich der geographische Berichtsraum einer Regionalbibliographie mit den Grenzen eines Bundeslandes, spricht man von einer Landesbibliographie.
 
-Dies gilt so auch für die Nordrhein-Westfälischen Bibliographie, abekürzt "NWBib". In der Selbstdarstellung auf der Webseite des neuen Webauftritts[^1] heißt es:
+Dies gilt so auch für die Nordrhein-Westfälische Bibliographie, abgekürzt "NWBib". In der Selbstdarstellung auf der Webseite des neuen Webauftritts[^1] heißt es:
 
 > Die Nordrhein-Westfälische Bibliographie (NWBib) verzeichnet die Literatur über das Land Nordrhein-Westfalen, seine Regionen, Orte und Persönlichkeiten, Literatur aus allen Lebens- und Wissensbereichen in Geschichte und Gegenwart.
 
 > Die NWBib ist eine der umfangreichsten Regionalbibliographien Deutschlands. Sie erschließt nicht nur Bücher und Zeitschriften, sondern auch Aufsätze und andere Medien wie etwa Karten, DVDs, Hörbücher und elektronische Publikationen. 
 
-Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, mehr als 60 Prozent davon sind Aufsätze aus Zeitschriften oder Sammelbänden. Die Arbeit an einem gänzlich neuen NWBib-Webauftritt erstreckt sich von Januar 2014 bis voraussichtlich zum August 2016. Dieser Beitrag beschreibt die historische Entwicklung der NWBib mit Fokus auf die Beziehung der Bibliographie zum WWW, skizziert die Voraussetzungen dür die Neuentwicklung, beschreibt die Leitlinien des Entwicklungsprozesses und schließt mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. 
+Die NWBib verzeichnet mit Stand März 2016 mehr als 370.000 Literaturnachweise, mehr als 60 Prozent davon sind Aufsätze aus Zeitschriften oder Sammelbänden. Die Arbeit an einem gänzlich neuen NWBib-Webauftritt erstreckt sich von Januar 2014 bis voraussichtlich zum August 2016. Dieser Beitrag beschreibt die historische Entwicklung der NWBib mit Fokus auf die Beziehung der Bibliographie zum World Wide Web (WWW), skizziert die Voraussetzungen für die Neuentwicklung, beschreibt die Leitlinien des Entwicklungsprozesses und schließt mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. 
 
 ### Rechtliche Voraussetzungen und Verantwortlichkeiten
 
@@ -20,7 +20,7 @@ Die "entscheidende Grundlage für die Bearbeitung einer Landesbibliographie" lie
  
 > (3) Das Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen unterstützt die Pflichtexemplarsammlung der Universitäts- und Landesbibliotheken sowie die Herausgabe der Nordrhein-Westfälischen Bibliographie durch die Entwicklung und den Betrieb von technischen Infrastrukturleistungen.
 
-Ähnlich dem Gesetzesinhalt sieht auch die tatsächliche Arbeitsteilung aus. Die Redaktionsstellen an den Universitäts- und Landesbibliotheken Münster und Düsseldorf arbeiten an der Erstellung und Pflege der NWBib, wobei sie von der ULB Bonn unterstützt werden, die sich auf die Erfassung von Monographien beschränkt. Das Hochschulbibliothekszentrum fungiert in erster Linie als technischer Dienstleister für Betrieb und Entwicklung der Erfassungsumgebung und des Webauftritts.
+Ähnlich dem Gesetzesinhalt sieht auch die tatsächliche Arbeitsteilung aus. Die Redaktionsstellen an den Universitäts- und Landesbibliotheken Münster und Düsseldorf arbeiten an der Erstellung und Pflege der NWBib, wobei sie von der ULB Bonn unterstützt werden, die sich auf die Erfassung von Monographien beschränkt. Das Hochschulbibliothekszentrum fungiert in erster Linie als technischer Dienstleister für Betrieb und Entwicklung der Erfassungsumgebung und des Webauftritts.[^satzung]
 
 ### Historie der NWBib
 
@@ -30,13 +30,13 @@ Die NWBib ist eine der jüngeren Landesbibliographien Westdeutschlands. Ihre dir
 
 Wie @Schmidt1998 darstellt wurde von Anfang an auf eine EDV-gestützte Produktion gesetzt, auch wenn die Bibliographie zunächst allein als Druckfassung erschien. Dennoch war der Aufwand zur Erstellung einer gedruckten Bibliographie ungleich größer im Vergleich zur heute gängigen Pflege einer Datenbank. Für die ersten zehn Bände beschreibt @Schmidt1998 das Verfahren wie folgt:
 
-> Die Titel wurden jahrgangsweise maschinenschriftlich auf Erfassungsbögen von den beiden Redaktionsstellen an der UB Düsseldorf und der UB Münster ans HBZ gesandt, dort von Datenerfassungskräften maschinenlesbar als EDT-Dateien erfaßt, von einer weiteren Redakteurin korrekturgelesen und schließlich mit dem GID-Programm verarbeitet. Das Endprodukt waren vier Magnetbänder für die jeweils vier Teile einer Druckausgabe, fertig kodiert mit Steuerzeichen für die Weiterverarbeitung auf einer Lichtsetzmaschine wird an einem gänzlich neuen Webauftritt für die NWBib gearbeitet. Diese Bänder wurden vom HBZ einem durch Ausschreibung ermittelten Druckhaus übergeben, welches über eine bestimmte Lichtsetzanlage verfügen mußte, um die Satzsteuerzeichen der Magnetbänder richtig lesen zu können. (@Schmidt1998)
+> Die Titel wurden jahrgangsweise maschinenschriftlich auf Erfassungsbögen von den beiden Redaktionsstellen an der UB Düsseldorf und der UB Münster ans HBZ gesandt, dort von Datenerfassungskräften maschinenlesbar als EDT-Dateien erfaßt, von einer weiteren Redakteurin korrekturgelesen und schließlich mit dem GID-Programm verarbeitet. Das Endprodukt waren vier Magnetbänder für die jeweils vier Teile einer Druckausgabe, fertig kodiert mit Steuerzeichen für die Weiterverarbeitung auf einer Lichtsetzmaschine. Diese Bänder wurden vom HBZ einem durch Ausschreibung ermittelten Druckhaus übergeben, welches über eine bestimmte Lichtsetzanlage verfügen mußte, um die Satzsteuerzeichen der Magnetbänder richtig lesen zu können. (@Schmidt1998)
 
-Bei der Datenerfassung und -korrektur waren also drei Abteilungen beteiligt, ehe die Daten für den Druck vorbereitet werden konnten. @HallerMuehl2006 nennen drei erhebliche Nachteile dieses Verfahrens: Erstens der doppelte Schreibaufwand bei der Erfassung über Datenerfassungsbögen und der Übertragung in ein maschinenlesbarers Format, zweitens das aufwändige Korrekturverfahren bei der jährlichen Druckaufbereitung und vor allem – drittens – das Fehlen einer Datenbank, was eine Dublettenkontrolle und die kontrollierte Verschlagwortung mittels der Schlagwortnormdatei (SWD) verunmöglichte.
+Bei der Datenerfassung und -korrektur waren also drei Abteilungen beteiligt, ehe die Daten für den Druck vorbereitet werden konnten. @HallerMuehl2006 nennen drei erhebliche Nachteile dieses Verfahrens: Erstens der doppelte Schreibaufwand bei der Erfassung über Datenerfassungsbögen und der Übertragung in ein maschinenlesbarers Format, zweitens das aufwändige Korrekturverfahren bei der jährlichen Druckaufbereitung und vor allem – drittens – das Fehlen einer Datenbank, was eine Dublettenkontrolle und die kontrollierte Verschlagwortung mittels der Schlagwortnormdatei (SWD) unmöglich machte.
 
 #### Mit LaTeX ins Web
 
-Ab der Herstellung des elften Band der NWBib hat sich das Verfahren geändert. Der Hauptgrund für die Umstellung des Druckverfahrens war der Anschluss der ULBs Düsseldorf und Münster an den hbz-Verbund Anfang der 1990er Jahre, womit die NWBib als Sub-System der hbz-Verbunddatenbank geführt wurde (). Dies ermöglichte nicht nur das Einsparen von Personalressourcen bei der Druckproduktion, sondern auch die Präsentation der NWBib im World Wide Web.
+Ab der Herstellung des elften Bandes der NWBib (Jahrgang 1993) hat sich das Verfahren geändert. Der Hauptgrund für die Umstellung des Druckverfahrens war der Anschluss der ULBs Düsseldorf und Münster an den hbz-Verbund Anfang der 1990er Jahre, womit die NWBib als Sub-System der hbz-Verbunddatenbank geführt wurde (**?**). Dies ermöglichte nicht nur das Einsparen von Personalressourcen bei der Druckproduktion, sondern auch die Präsentation der NWBib im WWW.
 
 Die gedruckte Version wurde nun mit der Software *LaTeX* vorbereitet. Dafür wurde aus der für den hbz-Verbundkatalog genutzten Datenbanksoftware *BIS* ein mit TeX-Steuerzeichen versehener Export des jeweiligen NWBib-Jahrgangs generiert (@Schmidt1998). Als Nebenprodukt des neuen Verfahrens konnte auf Basis der LaTeX-Datei mit wenig Aufwand eine HTML-Version der NWBib erstellt werden. Mit Hilfe freier Software und nach Aufbringen einer Personenwoche konnte NWBib-Jahrgang 1993 als erstes WWW-Angebot des hbz 1996 bereitgestellt werden. In @Schmidt1998 heißt es:
 
@@ -50,7 +50,7 @@ Ende der 1990er Jahre wurde das hbz-Verbundsystem auf die Software Aleph von Ex 
 
 #### Der Auftrag zur Modernisierung des Web-Auftritts
 
-Mit dem Aufstieg von Google und Discovery Services in den Bibliotheken wurde die NWbib-Recherche immer weniger zeitgemäßg. Als Reaktion gaben die Landesbibliotheken dem hbz Anfang 2013 den Auftrag, den Webauftritt der NWBib zu überarbeiten. Innerhalb des hbz wurde entschieden, den neuen Webauftritt auf Basis der lobid-API umzusetzen, die im Herbst 2013 in Produktion gegangen war. Dies würde u.a. garantieren, dass die NWBib wieder integraler Bestandteil des WWWW würde. Anfang 2014 begannen die Entwicklungsarbeiten für den neuen NWBib-Webauftritt.
+Mit dem Aufstieg von Google und Discovery Services in den Bibliotheken wurde die NWbib-Recherche immer weniger zeitgemäßg. Als Reaktion gaben die Landesbibliotheken dem hbz Anfang 2013 den Auftrag, den Webauftritt der NWBib zu überarbeiten. Innerhalb des hbz wurde entschieden, den neuen Webauftritt auf Basis der Programmierschnittstelle (Application Programming Interface, API) des hbz-Linked-Data-Dienstes lobid (Linking Open Bibliographic Data) umzusetzen, die im Herbst 2013 in Produktion gegangen war. Dies sollte u.a. garantieren, dass die NWBib wieder integraler Bestandteil des WWW würde. Anfang 2014 begannen die Entwicklungsarbeiten für den neuen NWBib-Webauftritt.
 
 ### Anforderungen an einen modernen Webauftritt
 
@@ -65,16 +65,16 @@ Im folgenden werden die Anforderungen der verschiedenen Nutzergruppen näher bel
 
 #### NWBib-Besucher
 
-Das Ziel von Nutzerinnen und Nutzern einer bibliographischen Rechercheanwendung ist es, Literaturhinwiese zu einem bestimmten Thema plus Angabe von Zugriffsmöglichkeiten zu bekommen, im  besten Fall mit einem direkten Link zum Volltext. Darüber hinaus erwarten Nutzerinnen und Nutzer im Allgemeinen von einer Webanwendung folgende grundlegende Eigenschaften:
+Das Ziel von Nutzerinnen und Nutzern einer bibliographischen Rechercheanwendung ist es, Literaturhinweise zu einem bestimmten Thema sowie Hinweise zu Zugriffsmöglichkeiten zu bekommen, im besten Fall mit einem direkten Link zum Volltext. Darüber hinaus erwarten Nutzerinnen und Nutzer im Allgemeinen von einer Webanwendung folgende grundlegende Eigenschaften:
 
 - Verlässlichkeit/Verfügbarkeit
-- Übersichtlichkeiter
+- Übersichtlichkeit
 - Intuitive Nutzbarkeit
 - Schnelle Ladezeiten
 
- Über diese allgemeinen Anforderungen hinaus, variieren die Anforderungen je nach Nutzungstypus. Eine regelmäßig wiederkehrende Besucherin, die etwa spezielle wissenschaftliche Literatur sucht, wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt. Letzterer will sich erst einmal auf einfache Weise orientieren, auf was für eine Seite er da gelangt ist und welche Informationen sie ihm bietet. Letztere könnte hingegen Interesse haben, komplexere Recherchefunktionen einzusetzen.
+Über diese allgemeinen Anforderungen hinaus, variieren die Anforderungen je nach Nutzungstypus. Eine regelmäßig wiederkehrende Besucherin, die etwa spezielle wissenschaftliche Literatur sucht, wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt. Letzterer will sich erst einmal auf einfache Weise orientieren, auf was für eine Seite er da gelangt ist und welche Informationen sie ihm bietet. Letztere könnte hingegen Interesse haben, komplexere Recherchefunktionen einzusetzen.
  
- Bisher wurde darauf verzichtet, systematisch herauszufinden, wie zufrieden Endnutzer/innen mit dem NWBib-Webauftritt sind und welche Dinge verbesserungswürdig sind.
+Bisher haben wir darauf verzichtet, systematisch herauszufinden, wie zufrieden Endnutzer/innen mit dem NWBib-Webauftritt sind und welche Dinge verbesserungswürdig sind. Im Zuge der kontinuierlichen Weiterentwicklung des Auftritts planen wir Usability-Studien im Jahr 2017.
 
 #### Externe Webservices
 
@@ -88,15 +88,16 @@ Externe Websites lassen sich in verschiedene Typen mit unterschiedlichen Anforde
 
 Die NWBib-Redaktion bewertet die Funktionalitäten des NWBib-Auftritts in erster Linie vor dem Hintergrund der von ihr erfassten Daten, dem dabei benutzten Regelwerk zur Formalerschließung und den verschiedenen Methoden zur Inhaltserschließung. 
 
-Konkret bedeutet dies zum Beispiel:
-- Angeboten werden sollte eine erweitere Suche über verschiedene Felder, die mittels Boolescher Operatoren kombiniert werden können.
+Konkret erwartet die NWBib-Redaktion zum Beispiel folgende Funktionalität:
+
+- Angeboten werden sollte eine erweiterte Suche über verschiedene Felder, die mittels Boolescher Operatoren kombiniert werden können.
 - Die Ergebnismenge einer Anfrage soll mit jener in der Aleph-Recherche übereinstimmen, was etwa Methoden wie Stemming o.ä. ausschließt.
 - Die Ergebnisliste soll standardmäßig nach Erscheinungsjahr sortiert sein.
 - Treffer sollten auf eine Merkliste gesetzt werden können, die exportiert werden kann.
 
 So hat die Redaktion zum Ziel, dass die Daten entsprechend den Feldern, Unterscheidungen, Verknüpfungen und Details in den Ausgangsdaten präsentiert werden. Die – teils komplexen – Recherchemöglichkeiten, die die Datenbasis ermöglicht, sollen ausgenutzt werden.
 
-Momentan ist die NWBib-Redaktion jeneder Stakeholder, der am meisten Einfluss auf den Entwicklungsprozess nehmen konnte.
+Momentan ist die NWBib-Redaktion jener Stakeholder, der am meisten Einfluss auf den Entwicklungsprozess nehmen konnte.
 
 #### Web-Entwickler
 
@@ -104,39 +105,43 @@ Grundsätzlich versucht das hbz mittels dem lobid-Dienst, offene bibliothekarisc
 
 ### Bibliothekarische Voraussetzungen
 
-Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph*  der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
+Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit der Software *Aleph* der Firma Ex Libris katalogisiert. Zur Identifizierung von NWBib-Titeln wird ein Sortierzeichen in Feld 078n gesetzt.[^2]
 
-Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach *Resource Description and Access* (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen findet eine Klassifizierung statt anhand der NWBib-spezifischen Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die NWBib-Ortssystematik zudem durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels. Zudem arbeitet insbesondere die ULB Münster an der Verzeichnung von Schlagwortfolgen, die auch im neuen Webauftritt nutzbar gemacht werden sollen.
+Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach *Resource Description and Access* (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen findet eine Klassifizierung statt anhand der NWBib-spezifischen Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die NWBib-Ortssystematik zudem durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels. Zudem arbeitet insbesondere die ULB Münster an der Verzeichnung von Schlagwortfolgen, die auch im neuen Webauftritt nutzbar gemacht werden.
 
 ### Der Entwicklungsprozess
 
-Die Software für den neuen NWBib-Webauftritt wird schrittweise in stetigem Austausch mit dem Kunden entwickelt. Der Entwicklungsprototyp ist von Beginn der Entwicklung an offen im Web erreichbar und dient als Referenzpunkt für die Diskussion über offene Anforderungen und bestehende Software-Bugs. An ihm wird kontinuierlich weiterentwickelt (inkrementelle Entwicklung). Für verschiedene Recherchefunktionen sowie teilweise auch für die Einzeltrefferanzeige konnte zudem die Aleph-basierte Version der NWBib als Referenz herangezogen werden.
+Die Software für den neuen NWBib-Webauftritt wird schrittweise in stetigem Austausch mit der NWBib-Redaktion entwickelt. Der Entwicklungsprototyp war von Beginn der Entwicklung an offen im Web erreichbar und dient als Referenzpunkt für die Diskussion über offene Anforderungen und bestehende Softwarebugs. An ihm wird kontinuierlich weiterentwickelt (inkrementelle Entwicklung). Für verschiedene Recherchefunktionen sowie teilweise auch für die Einzeltrefferanzeige konnte zudem die Aleph-basierte Version der NWBib als Referenz herangezogen werden.
 
-Zunächst war die Fertigstellung des Webauftritts vom Entwicklungsteam für Ende 2014 geplant, weil danach der Hauptentwickler für einige Monate in Elternzeit ging. Dieses Ziel wurde nicht erreicht und auch danach wurde der offizielle Launchtermin mehrmals nach hinten verschoben. Im April 2016 haben die Leitungen der Landesbibliotheken beschlossen, dass das Angebot nun einer breiten Öffentlichkeit vorgestellt werden können. Der Produktionsgang wird Ende August stattfinden.
+Zunächst war die Beendigung der Testphase (Beta) des neuen Webauftritts vom Entwicklungsteam für Ende 2014 geplant, weil danach der Hauptentwickler für einige Monate in Elternzeit ging. Der offizielle Launchtermin wurde jedoch mehrmals nach hinten verschoben. Im April 2016 haben die Leitungen der Landesbibliotheken beschlossen, dass das Angebot nun einer breiten Öffentlichkeit vorgestellt werden kann. Eine öffentliche Vorstellung des neuen Auftritts wird Ende August im Rahmen der Feierlichkeiten zu 70 Jahren NRW stattfinden.
 
 #### Rollen und Kommunikation
 
-Für die technische Entwicklung des NWBib-Webauftritts ist ein Entwicklungsteam im hbz verantwortlich, das die Anforderungen der NWBib-Redaktion umsetzt. Das Team besteht aus zwei Entwicklern und einem wissenschaftlichen Bibliothekar, der die Rolle eines Product Owners übernimmt und damit vor allem für die Kommunikation zwischen dem Entwicklungsteam und der NWBib-Redaktion verantwortlich ist. Die drei Mitglieder des Entwicklungsteams arbeiten zusammengenommen etwa im Umfang einer Vollzeitstelle an dem Projekt.
+Für die technische Entwicklung des NWBib-Webauftritts ist ein Entwicklungsteam im hbz verantwortlich, das die Anforderungen der NWBib-Redaktion umsetzt. Das Team besteht aus zwei Entwicklern und einem wissenschaftlichen Bibliothekar, der die Rolle eines Product Owners übernimmt und damit vor allem für die Kommunikation zwischen dem Entwicklungsteam und der NWBib-Redaktion verantwortlich ist. Die drei Mitglieder des Entwicklungsteams arbeiten zusammengenommen etwa im Umfang von 1,5 Vollzeitstellen an dem Projekt.
 
-Um die Anforderungen zu definieren, zu priorisieren, umzusetzen und die erfolgreiche Umsetzung abzunehmen, mussten die beteiligten Akteure viel und regelmäßig miteinander kommunizieren. Dies geschah in erster Linie über eine gemeinsame Mailingliste und ein Wiki[^wiki]. Zudem gab es zwei persönliche Treffen im hbz im September 2014 und April 2015. Zunächst dienten verschiedene von der Redaktion verschickte oder beim gemeinsamen Treffen erstellte Anforderungslisten als Entwicklungvorgaben. Da Fragen der Priorisierung teilweise unklar waren und das Entwicklungsteam einen baldigen Launch des neuen Webauftritts anvisierte, wurden nach etwa einem Jahr Entwicklung im Februar 2015 die verbliebenen Anforderungen durch die NWBib-Redaktion zusammengeführt und priorisiert. So entstand eine strukturierten Übersicht von Anforderungen, die für den Launch des neuen NWBib-Webauftritt unverzichtbar seien.[^prio] Diese Liste diente fortan als Bezugspunkt für die ganze weitere Entwicklung und die Kommunikation zwischen den Projektbeteiligten. Mit der Zeit wurden einige der Anforderungen konkretisiert bzw. in detailliertere Aufgabenpakete aufgeteilt. Der typische Ablauf zur Umsetzung von Anforderungen sah wie folgt aus:
+Um die Anforderungen zu definieren, zu priorisieren, umzusetzen und die erfolgreiche Umsetzung abzunehmen, mussten die beteiligten Akteure viel und regelmäßig miteinander kommunizieren. Dies geschah in erster Linie über eine gemeinsame Mailingliste und ein Wiki[^wiki]. Zudem gab es zwei persönliche Treffen im hbz im September 2014 und April 2015.
+
+Zunächst dienten verschiedene von der Redaktion verschickte oder beim gemeinsamen Treffen erstellte Anforderungslisten als Entwicklungvorgaben. Da Fragen der Priorisierung teilweise unklar waren und das Entwicklungsteam einen baldigen Launch des neuen Webauftritts anvisierte, wurden nach etwa einem Jahr Entwicklung im Februar 2015 die verbliebenen Anforderungen durch die NWBib-Redaktion zusammengeführt und priorisiert. So entstand eine strukturierten Übersicht von Anforderungen, die für den Launch des neuen NWBib-Webauftritt unverzichtbar seien.[^prio] Diese Liste diente fortan als Bezugspunkt für die ganze weitere Entwicklung und die Kommunikation zwischen den Projektbeteiligten. Mit der Zeit wurden einige der Anforderungen konkretisiert bzw. in detailliertere Aufgabenpakete aufgeteilt.
+
+Der typische Ablauf zur Umsetzung von Anforderungen sah wie folgt aus:
 
 1. Eine Anforderung oder ein Softwarebug wird von der Redaktion gemeldet.
 2. Der Product Owner legt ein oder mehrere Tickets an für die Umsetzung der Anforderung bzw. die Behebung des Bugs.
-3. Der Product Owner priorisiert die offenen Tickets gemeinsam Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit dem Kunden entwickelt.Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit dem Kunden entwickelt. dem Rest des Entwicklungsteams und weist das Ticket einem Entwickler zu.
+3. Der Product Owner priorisiert die offenen Tickets gemeinsam mit dem Rest des Entwicklungsteams und weist das Ticket einem Entwickler zu.
 4. Der Entwickler arbeitet so lange an der Umsetzung des Tickets, bis er meint, die Anforderungen werden hinreichend erfüllt.
 5. Die neue bzw. reparierte Funktionalität und der Code wird durch Mitglieder des Entwicklungsteams begutachtet.
 6. Sobald die Begutachtung positiv ist, wird die Anpassung auf dem offen einsehbaren Entwicklungsprototyp produktiv.
-7. Ist eine relvante Anzahl von Änderungen produktiv (dies sind meist fünf oder mehr Anpassungen), schickt der Product Owner eine Mail an die gemeinsame NWBib-Mailingliste mit der Bitte um Begutachtung durch die NWBib-Redaktion.. Der Prototyp
+7. Ist eine relvante Anzahl von Änderungen produktiv (dies sind meist fünf oder mehr Anpassungen), schickt der Product Owner eine Mail an die gemeinsame NWBib-Mailingliste mit der Bitte um Begutachtung durch die NWBib-Redaktion.
 8. Die NWBib-Redaktionsstellen stimmen sich untereinander ab, ob die Anpassungen den Anforderungen genügen. Sodann melden sie das Ergebnis der Abstimmung via Mailingliste an das Entwicklerteam.
 9. Ist die Rückmeldung positiv, wird die Entwicklung der Funktionalität als abgeschlossen erklärt, indem die Anforderung im Wiki entsprechend markiert wird. Andernfalls arbeitet das Enticklungsteam an der gewünschten Anpassung und der Prozess setzt wieder bei Punkt 4. ein.
 
-Das Entwicklungsteam arbeitete nicht ausschließlich an der NWBib und die Abstimmung der  NWBib-Redaktionsstellen zur Begutachtung des Fortschritts nahm einige Zeit in Anspruch. Zudem fielen alle Teammitglieder während der Entwicklungszeit wegen Elternzeit aus. Dementsprechend variiert die Länge eines Entwicklungszyklus vom Melden einer Anforderung/eines Bugs bis zur endgültigen Abnahme durch die Redaktion erheblich: Wenn keine Urlaubszeit war und alle Beteiligten da waren, dauerte ein Zyklus zwei bis drei Wochen, in Abwesenheit des Hautentwicklers mehrere Monate.
+Das Entwicklungsteam arbeitete nicht ausschließlich an der NWBib und die Abstimmung der NWBib-Redaktionsstellen zur Begutachtung des Fortschritts nahm einige Zeit in Anspruch. Zudem fielen alle Teammitglieder in unterschiedlichen Zeiträumen während der Entwicklungszeit wegen Elternzeit aus. Dementsprechend variiert die Länge eines Entwicklungszyklus vom Melden einer Anforderung/eines Bugs bis zur endgültigen Abnahme durch die Redaktion erheblich: Wenn keine Urlaubszeit war und alle Beteiligten da waren, dauerte ein Zyklus zwei bis drei Wochen, in Abwesenheit des Hautentwicklers mehrere Monate.
 
 Neben den Anforderungen der NWBib-Redaktion hat das Entwicklungsteam auch eigene Vorstellungen umgesetzt. So wurden manche Use Cases durch andere Funktionalitäten gelöst als ursprünglich von der Redaktion gefordert. In anderen Fällen setzte das Entwicklungsteam eigene Ideen um – so etwa die Visualisierung von Suchergebnissen oder Bestandsinformationen auf einer Karte. Auch diese Umsetzungen wurden dann der Redaktion zur Begutachtung vorgelegt (Schritt 7).
 
 ### Entwicklungsmethodologie
 
-Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung.[^dev] Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit dem Kunden entwickelt. Als Kommunikationswerkzeuge benutzt das Entwicklungsteam vor allem GitHub und zur Visualisierung, Priorisierung und Organisation der Aufgaben die GitHub-basierte Kanban-Software *Waffle*.[^waffle] Vom Scrum-Ansatz[^scrum] wird das Stand-up übernommen, ein kurzes tägliches Treffen, bei dem sich die Teammitglieder über ihre erledigten und anstehenden Aufgaben austauschen und aktuelle Probleme benennen. Der Entwicklungsprozess folgt dem GitHub-Flow[^flow]. 
+Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung.[^dev] Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit der NWBib-Redaktion entwickelt. Als Kommunikationswerkzeuge benutzt das Entwicklungsteam vor allem GitHub sowie zusätzlich zur Visualisierung, Priorisierung und Organisation der Aufgaben die GitHub-basierte Kanban-Software *Waffle*.[^waffle] Vom Scrum-Ansatz[^scrum] wird das Stand-up übernommen, ein kurzes tägliches Treffen, bei dem sich die Teammitglieder über ihre erledigten und anstehenden Aufgaben austauschen und aktuelle Probleme benennen. Der Entwicklungsprozess folgt dem GitHub-Flow[^flow].
 
 #### Technologie
 
@@ -195,4 +200,5 @@ Free Software Java-Tooling:
 [^dev]: Für eine detaillierte Beschreibung des Entwicklungsprozesses im lobid-Team (allerdings in Englisch) siehe [https://hbz.github.io/#dev-process](https://hbz.github.io/#dev-process).
 [^waffle]: Siehe das gemeinsame Waffle-Board für alle Projekte des lobid-Teams: https://waffle.io/hbz/lobid
 [^scrum]: Siehe etwa @Pichler2009.
-[^flow]: Siehe [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/).
+[^flow]: Siehe [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/) sowie die Dokumentation des Lobid-Entwicklungsprozesses: [http://hbz.github.io/#dev-process](http://hbz.github.io/#dev-process).
+[^satzung]: Die "technische Organisation und Präsentation der Nordrhein-Westfälischen Bibliographie" ist auch in der Satzung des Hochulbibliothekszentrums explizit genannt, s. https://www.hbz-nrw.de/ueberuns/satzung/ (§2, Abs. 3 a, Punkt 7).
