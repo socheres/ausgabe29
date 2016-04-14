@@ -183,23 +183,23 @@ Java-basierte Ansätze zur Entwicklung von Webanwendungen sind im Bibliothekswes
 
 Historisch betrachtet hat Webenwticklung mit Java den Ruf, schwergewichtig und komplex zu sein. Dies liegt vor allem an den Frameworks und Tools, die als Teil der Java-Enterprise-Edition (Java-EE, früher J2EE) zum Einsatz kommen. Applikationsserver und GUI-Frameworks (z.B. Java-Server-Faces, JSF), die als Abstraktionsschicht das Hypertext-Transfer-Protocol (HTTP) vom Entwickler wegkapseln, sind unter bestimmten Umständen für die Entwicklung von Unternehmenssoftware in großen Teams geeignet, für typische Webapplikationen aber häufig nicht optimal.
 
-Hier haben sich leichtgewichtigere Frameworks und Technologien wie PHP und Ruby on Rails etabliert. Diese sind näher an den zugrundeliegenden Web-Technologien wie HTTP und HTML, und erlauben einen schnelleren Entwicklungszyklus: Änderungen im Quellcode werden einfach gespeichert und die Seite im Browser neu geladen. Diese Vorteile dynamischer Sprachen wie PHP, Perl oder Ruby überwiegen gerade in Projekten, die von einem einzigen Entwickler oder einer einzigen Entwicklerin umgesetzt werden deren Nachteile, speziell die höhere Fehleranfälligkeit durch dynamische Typisierung.
+Hier haben sich leichtgewichtigere Frameworks und Technologien wie PHP und Ruby on Rails etabliert. Diese sind näher an den zugrundeliegenden Web-Technologien wie HTTP und HTML, und erlauben einen schnelleren Entwicklungszyklus: Änderungen im Quellcode werden einfach gespeichert und die Seite im Browser neu geladen. Diese Vorteile dynamischer Sprachen wie PHP, Perl oder Ruby überwiegen gerade in Projekten von Einzelpersonen deren Nachteile, speziell die höhere Fehleranfälligkeit durch dynamische Typisierung.
 
-Eine statische Typisierung wie in Java hat neben einer höheren Laufzeitperformanz auch für die Arbeit im Team Vorteile: viele Fehler, die durch Änderungen im Quellcode eingeführt werden, werden durch die Typisierung früh erkannt, nämlich nicht erst bei der Verwendung einer bestimmten Funktionalität, z.B. beim Zugriff auf eine bestimmte Seite, sondern schon bei der Kompilierung des Quellcodes, und damit bevor die Seite überhaupt aufgerufen wird. Die Überprüfung kann zudem sehr einfach automatisiert werden, so dass der fehlerhafte Code erst gar nicht ins Code-Repository hochgeladen wird.
+Eine statische Typisierung wie in Java hat neben einer höheren Laufzeitperformanz auch für die Arbeit im Team Vorteile: Viele Fehler, die durch Änderungen im Quellcode eingeführt werden, werden durch die Typisierung früh erkannt, nämlich nicht erst bei der Verwendung einer bestimmten Funktionalität, z.B. beim Zugriff auf eine bestimmte Seite, sondern schon bei der Kompilierung des Quellcodes, und damit bevor die Seite überhaupt aufgerufen wird. Die Überprüfung kann zudem sehr einfach automatisiert werden, so dass der fehlerhafte Code erst gar nicht ins Code-Repository hochgeladen wird.
 
 #### Webentwicklung mit Play
 
-Das von uns verwendete Play-Framework verbindet die Vorteile der schnellen Entwicklungszyklen und Web-nativen Entwicklung mit der Typsicherheit von Java: bei der Verwendung des Play-Frameworks können wie bei PHP oder Rails nach dem Editieren des Quellcodes die Seiten einfach neu geladen werden. Die nötige Kompilierung erfolgt inkrementell und on-the-fly im Hintergrund. 
+Das von uns verwendete Play-Framework verbindet die Vorteile der schnellen Entwicklungszyklen und Web-nativen Entwicklung mit der Typsicherheit von Java: Bei der Verwendung des Play-Frameworks können wie bei PHP oder Rails nach dem Editieren des Quellcodes die Seiten einfach neu geladen werden. Die nötige Kompilierung erfolgt inkrementell und on-the-fly im Hintergrund. 
 
 Wesentliche Komponenten bei der Webentwicklung mit Play sind Routen, Controller und Templates:
 
-- Routen beschreiben die HTTP-URLs der Anwendung, deren Query-Parameter und den entsprechenden Controller-Aufruf
-- Controller werden bei Aufruf der entsprechenden URLs ausgeführt. Sie verarbeiten den ankommenden HTTP-Request und erzeugen eine HTTP-Response, z.B. indem sie ein Template aufrufen
-- Templates erzeugen das darzustellende HTML und können dazu beliebige aus den Controllern übergebene Daten verwenden
+- *Routen* beschreiben die HTTP-URLs der Anwendung, deren Query-Parameter und den entsprechenden Controller-Aufruf.
+- *Controller* werden bei Aufruf der entsprechenden URLs ausgeführt. Sie verarbeiten den ankommenden HTTP-Request und erzeugen eine HTTP-Response, z.B. indem sie ein Template aufrufen.
+- *Templates* erzeugen das darzustellende HTML und können dazu beliebige aus den Controllern übergebene Daten verwenden.
 
-Alle drei Komponenten werden dabei von Play typsicher verarbeitet. Wird etwa eine Route definiert, bei der z.B. ein `size` Parameter vom Typ `Int` an einen Controller übergeben wird, der einen `String` erwartet, erkennt der Compiler dies bei Start der Anwendung. Ebenso wenn etwa im Template ein Wert als `String` verwendet wird, der aber im Controller als `JsonNode` übergeben wurde. Fehler in Routen, Controllern und Templates werden so früh erkannt, ohne dass dazu erst die betroffene Funktionalität der Anwendung ausgeführt werden muss.
+Alle drei Komponenten werden dabei von Play typsicher verarbeitet. Wird etwa eine Route definiert, bei der z.B. ein `size` Parameter vom Typ `Int` an einen Controller übergeben wird, der einen `String` erwartet, erkennt der Compiler dies bei Start der Anwendung. Ebenso wenn etwa im Template ein Wert als `String` verwendet wird, der aber im Controller als `JsonNode` übergeben wurde. Fehler in Routen, Controllern und Templates werden somit früh erkannt, ohne dass dazu erst die betroffene Funktionalität der Anwendung ausgeführt werden muss.
 
-So ermöglicht das Play-Framework moderne Web-Entwicklung nah am HTTP, mit effizienten Entwicklungszyklen, performater Laufzeit und typsicherem Code.
+So ermöglicht das Play-Framework moderne Web-Entwicklung nah am HTTP, mit effizienten Entwicklungszyklen, performanter Laufzeit und typsicherem Code.
 
 ### Herausforderungen & Lessons Learned
  
