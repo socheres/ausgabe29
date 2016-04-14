@@ -135,7 +135,7 @@ Neben dieser grundsätzlichen Funktionalität bietet der Auftritt über die Men�
 
 Die Software für den neuen NWBib-Webauftritt wird schrittweise in stetigem Austausch mit der NWBib-Redaktion entwickelt. Der Entwicklungsprototyp war von Beginn der Entwicklung an offen im Web erreichbar und dient als Referenzpunkt für die Diskussion über offene Anforderungen und bestehende Softwarebugs. An ihm wird kontinuierlich weiterentwickelt (inkrementelle Entwicklung). Für verschiedene Recherchefunktionen sowie teilweise auch für die Einzeltrefferanzeige konnte zudem die Aleph-basierte Version der NWBib als Referenz herangezogen werden.
 
-Zunächst war die Beendigung der Testphase (Beta) des neuen Webauftritts vom Entwicklungsteam für Ende 2014 geplant, weil danach der Hauptentwickler für einige Monate in Elternzeit ging. Der offizielle Launchtermin wurde jedoch mehrmals nach hinten verschoben. Im April 2016 haben die Leitungen der Landesbibliotheken beschlossen, dass das Angebot nun einer breiten Öffentlichkeit vorgestellt werden kann. Eine öffentliche Vorstellung des neuen Auftritts wird Ende August im Rahmen der Feierlichkeiten zu 70 Jahren NRW stattfinden.
+Zunächst war die Beendigung der Testphase (Beta) des neuen Webauftritts vom Entwicklungsteam für Ende 2014 geplant, weil danach der Hauptentwickler für einige Monate in Elternzeit ging. Der offizielle Launchtermin wurde jedoch mehrmals nach hinten verschoben. Im April 2016 haben die Leitungen der Landesbibliotheken mitgeteilt, dass das Angebot nun beworben werden könne. Eine öffentliche Vorstellung des neuen Auftritts wird Ende August im Rahmen der Feierlichkeiten zu 70 Jahren NRW stattfinden.
 
 #### Rollen und Kommunikation
 
@@ -181,21 +181,22 @@ Die folgende Abbildung bietet einen Überblick über diese Komponenten und den D
  
 #### Daten und Recherche
  
- Die NWBib basiert auf der lobid-API, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses ermöglicht. Für die Bereitstellung der Schnittstelle werden die Quelldaten, die in einem Aleph-XML-Exportformat (hbz-Verbunddaten) sowie Pica+-XML (ISIL-Daten) vorliegen, nach RDF/Linked Data überführt. Die Transformation von bibliothekarischen MAB-/MARC-basierten Daten in eine für Entwickler leich zu nutzende Datenstruktur ist alles andere als trivial. Auch wenn für die Bereitstellung der lobid-API bereits eine Menge Vorarbeiten stattgefunden hatten, mussten im Zuge der Entwicklung des neuen NWBib-Webauftritts einige Herausforderungen auf Datenebene gemeistert werden.
+ Die NWBib basiert auf der lobid-API, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses ermöglicht. Für die Bereitstellung der Schnittstelle werden die Quelldaten, die in einem Aleph-XML-Exportformat (hbz-Verbunddaten) sowie Pica+-XML (ISIL-Daten) vorliegen, nach RDF/Linked Data überführt. Die Transformation von bibliothekarischen MAB-/MARC-basierten Daten in eine für Entwickler leicht zu nutzende Datenstruktur ist alles andere als trivial. Auch wenn für die Bereitstellung der lobid-API bereits eine Menge Vorarbeiten stattgefunden hatten, mussten im Zuge der Entwicklung des neuen NWBib-Webauftritts einige Herausforderungen auf Datenebene gemeistert werden, um die gewünschten Funktionalitäten anbieten zu können.
 
-*JSON-LD und Elasticsearch*: Ein grundlegendes Problem mit dem JSON-LD, das in die Suchmaschine indexiert wird, war schon seit Anfang 2014 bekannt. Durch die Benutzung von existierendem Java-JSON-LD-Tooling mit beschränkten Möglichkeiten zur Überführung von N-Triples in JSON-LD hat das resultierende JSON-LD nicht die optimale Struktur. Es weist keine geschachtelte Baumstruktur, sondern ein flache Struktur auf, so dass sich viele Möglichkeiten der Suchmaschine nicht nutzen lassen. Als Ergebnis wurde im Mai 2014 die Planung für eine Version 2.0 der lobid-API begonnen.
+*JSON-LD und Elasticsearch*: Ein grundlegendes Problem mit dem JSON-LD, das in die Elasticsearch-Suchmaschine indexiert wird, war schon seit Anfang 2014 bekannt. Die verwendeten existierenden Java-JSON-LD-Tools bieten beschränkte Möglichkeiten zur Überführung von N-Triples in JSON-LD, so dass das resultierende JSON-LD nicht die optimale Struktur aufweist. Es hat keine geschachtelte Baumstruktur, sondern ein flache Struktur, so dass sich viele Möglichkeiten der Suchmaschine nicht nutzen lassen. Als Ergebnis wurde im Mai 2014 die Planung für eine Version 2.0 der lobid-API begonnen. Die Generierung eines für Elasticsearch optimierten JSON-LD ist eines der Hauptziele.
 
-*Körperschaftssuche*: Die NWBib-Redaktion besteht auf einer Suchmöglichkeit bibliographischer Ressourcen auf Basis der beteiligten Körperschaften. Da bei der bisherigen Datenmodellierung ein solcher Anwendungsfall nicht berücksichtigt wurde, waren einige temporäre Anpassungen möglich, um eine Körperschaftssuche anbieten zu können. Für die erwähnte komplette Neuüberarbeitung der Datenstrukturen (lobid-API 2.0) wurde schließlich beschlossen, eine grundlegende Unterscheidung von Körperschaften und Personen auf Feldebene umzusetzen.
+*Körperschaftssuche*: Die NWBib-Redaktion besteht auf einer Suchmöglichkeit bibliographischer Ressourcen auf Basis von beteiligten Körperschaften. Da bei der bisherigen Datenmodellierung ein solcher Anwendungsfall nicht berücksichtigt wurde, waren einige temporäre Anpassungen möglich, um eine Körperschaftssuche anbieten zu können. Für die erwähnte komplette Neuüberarbeitung der Datenstrukturen (lobid-API 2.0) wurde schließlich beschlossen, eine grundlegende Unterscheidung von Körperschaften und Personen auf Feldebene umzusetzen, damit eine Körperschaftssuche einfach umsetzbar ist.
  
-*Schlagwortfolgen*: Wie bereits erwähnt sind eine Menge der NWBib-Titel mit einer oder mehreren Schlagwortfolgen versehen. 
- 
-*Ansetzungs- und Verweisungsformen der GND*:
- 
-*Gliedernde Schlagwörter*:
- 
-*Aleph-Rechercheergebnisse als Vorbild*: auch Schiller-Räuber-Problem
+*Schlagwortfolgen*: Wie oben bereits erwähnt sind eine Menge der NWBib-Titel mit einer oder mehreren Schlagwortfolgen versehen. Generell ist die Abbildung von Reihenfolgen in RDF umständlich und wurde bisher auch nicht umgesetzt. Um Schlagwortfolgen anzeigen zu können wurde im Laufe des Projekts eine temporäre Lösung gewählt, in der Schlagwortfolgen als Ganzes in einem extra Feld gespeichert werden. Mit der API 2.0 wird sich das ändern und Schlagwörtern – wie auch Autoren – werden in einer geordneten Liste in der richtigen Reihenfolge gespeichert werden.
 
-*RDA-Umstellung*
+*RDA-Umstellung*: Wie bei der Katalogisierung und wue in allen anderen bibliothekarischen Rechercheumgebungen auch, mussten mit der Umstellung auf die neuen Katalogisierungsregeln *RDA* einige Anpassungen an der Transformation der Daten aus dem Verbundkatalog nach RDF vorgenommen werden. Die wichtigsten Anpassungen sind bereits umsetzt, einige stehen aber noch aus.
+ 
+*Filterung nach Publikations- und Medientypen*: Für die NWBib wurde eine Facettierung nach "Publikationstyp" und "Medientyp" umgesetzt. Die Katalogisierung nach RAK-WB hat sich als sehr ungünstige Basis herausgestellt zum Aufbau einer nützlichen Facettierung. Auf Basis von Vorarbeiten für die DigiBib wurde eine brauchbare Lösung erreicht.[^typfacette] Im Hinblick auf den Medientyp sind die neuen RDA-Katalogisierungsregeln zu begrüßen, die eine in sich schlüssige Unterscheidung und Erfassung von Inhaltstyp, Medientyp und Datenträgertyp (IMD) vorgeben.[^imd]
+ 
+*Gliedernde Schlagwörter*: Als fortwährendes und bis heute nich gelöstes Problem erwiesen sich die von der NWBib-Redaktion so genannten "Gliedernden Schlagwörter" (GSW). Diese sind der groben Ortsklassifikation beigeordnet und geben einen konkreten Ort, auf den sich der Inhalt eines Titel bezieht. Dabei kann es sich um Angabe eines Orts (z.B. "Köln") oder eines Ortsteils (z.B. "Köln-Ehrenfeld") handeln. Diese Schlagwörter sind nicht normiert, so dass es für denselben Ort verschiedene Schreibweisen geben kann. Schon früh gab es den Wunsch, die GSW in die normierte Systematik zu integrieren und im Zuge dessen verschiedene Schreibweisen zu eliminieren. Eine vernünftige und zukunftssichere Lösung ist allerdings nur unter Anpassung der Quelldaten in der Aleph-Verbunddatenbank machbar und sollte mit einer Änderung der Katalogisierungspraxis einhergehen. Da sich hier keine einfache Lösung anbietet, wurde die Umsetzung auf die Zeit nach dem offiziellen Launch der NWBib vertagt. Aus Sicht des Entwicklungsteams sollte es Ziel sein, die Ortssystematik um Orte und Ortsteile zu erweitern bzw. bestehende Ortsdatenbanken wie GeoNames oder Wikidata zu nutzen, um eine kontrolierte Erfasung zu gewährleisten.
+ 
+*Aleph-Datenbanksuche als Vorbild*: Die NWbib-Redaktion hat bei der Begutachtung des Entwicklungsprototypen stets die Aleph-basierte NWBib-Recherche zum Maßstab genommen. Die Forderung war, dass bei gleicher Suchanfrage auch die gleiche Anzahl von Treffern ergeben sollte. Da eine Suchmaschine anders funktioniert als die relationale Datenbank des hbz-Vernundkatalogs, mussten hier einige Anpassungen vorgenommen werden. So musste etwa die Volltextsuche über alle Felder auf bestimmte Felder eingeschränkt werden, damit die Anzahl der Treffer bei einer freien Suche mit der Aleph-Suche übereinstimmte. Zur Lösung des Schiller-Räuber-Problems (@wikipedia2016) wurde allerdings von dieser Vorgabe abgewichen. Somit können nun auch die Bände eines mehrbändigen Werks durch eine Kombination von Autorenname und Titel in der NWBib gefunden werden.
+Auch in Bezug auf die Sortierung der Suchergebnisse gab es Uneinigkeiten. Während das lobid-Team die Möglichkeiten der Suchmaschine ausnutzen und standardmäßig die Suchergebnisse mit einer Relevanzsortierung anbieten wollte, bestand die NWBib-Redaktion auf der Sortierung nach Veröffentlichungsdatum als Default-Einstellung.
 
 #### Zusammenarbeit
 
@@ -213,6 +214,7 @@ Usability wurde bisher nicht getestet. Für 2017 angedacht.
 - Einbindung der Vorläuferbibliographien in die Recherche
 - hbz-Katalog auf Basis der NWBib-Entwicklung
 - Usability-Studien
+- Export für Literaturverwaltungssysteme; @zumsteinstoehr2015
 
 ### Literatur
 
@@ -234,3 +236,5 @@ Usability wurde bisher nicht getestet. Für 2017 angedacht.
 [^scrum]: Siehe etwa @Pichler2009.
 [^flow]: Siehe [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/) sowie die Dokumentation des lobid-Entwicklungsprozesses: [http://hbz.github.io/#dev-process](http://hbz.github.io/#dev-process).
 [^satzung]: Die "technische Organisation und Präsentation der Nordrhein-Westfälischen Bibliographie" ist auch in der Satzung des Hochulbibliothekszentrums explizit genannt, s. https://www.hbz-nrw.de/ueberuns/satzung/ (§2, Abs. 3 a, Punkt 7).
+[^typfacette]: Siehe [https://wiki1.hbz-nrw.de/display/SEM/Facetten+ueber+hbz01-Daten](https://wiki1.hbz-nrw.de/display/SEM/Facetten+ueber+hbz01-Daten).
+[^imd]: Vgl. die Folien  der AG RDA zum Thema: [https://wiki.dnb.de/download/attachments/105260204/Modul_2_04_IMD.pptx](https://wiki.dnb.de/download/attachments/105260204/Modul_2_04_IMD.pptx).
