@@ -183,11 +183,11 @@ Die folgende Abbildung bietet einen Überblick über diese Komponenten und den D
  
  Die NWBib basiert auf der lobid-API, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses ermöglicht. Für die Bereitstellung der Schnittstelle werden die Quelldaten, die in einem Aleph-XML-Exportformat (hbz-Verbunddaten) sowie Pica+-XML (ISIL-Daten) vorliegen, nach RDF/Linked Data überführt. Die Transformation von bibliothekarischen MAB-/MARC-basierten Daten in eine für Entwickler leich zu nutzende Datenstruktur ist alles andere als trivial. Auch wenn für die Bereitstellung der lobid-API bereits eine Menge Vorarbeiten stattgefunden hatten, mussten im Zuge der Entwicklung des neuen NWBib-Webauftritts einige Herausforderungen auf Datenebene gemeistert werden.
 
-*JSON-LD und Elasticsearch*: Existierende Java-JSON-LD-Tools nicht dazu geeignet, in ES gut nutzbares JSON-LD zu generieren => API 2.0 als Ergebnis
+*JSON-LD und Elasticsearch*: Ein grundlegendes Problem mit dem JSON-LD, das in die Suchmaschine indexiert wird, war schon seit Anfang 2014 bekannt. Durch die Benutzung von existierendem Java-JSON-LD-Tooling mit beschränkten Möglichkeiten zur Überführung von N-Triples in JSON-LD hat das resultierende JSON-LD nicht die optimale Struktur. Es weist keine geschachtelte Baumstruktur, sondern ein flache Struktur auf, so dass sich viele Möglichkeiten der Suchmaschine nicht nutzen lassen. Als Ergebnis wurde im Mai 2014 die Planung für eine Version 2.0 der lobid-API begonnen.
 
-*Körperschaftssuche*: Die NWBib-Redaktion besteht auf einer Suchmöglichkeit bibliographischer Ressourcen auf Basis der beteiligten Körperschaften. Da bei der bisherigen Datenmodellierung ein solcher Anwendungsfall nicht berücksichtigt wurde, waren einige temporäre Anpassungen möglich, um eine Körperschaftssuche anbieten zu können. Für die anstehende komplette Neuüberarbeitung der Datenstrukturen hinter der lobid-API wurde schließlich beschlossen, eine grundlegende Unterscheidung von Körperschaften und Personen auf Feldebene umzusetzen.
+*Körperschaftssuche*: Die NWBib-Redaktion besteht auf einer Suchmöglichkeit bibliographischer Ressourcen auf Basis der beteiligten Körperschaften. Da bei der bisherigen Datenmodellierung ein solcher Anwendungsfall nicht berücksichtigt wurde, waren einige temporäre Anpassungen möglich, um eine Körperschaftssuche anbieten zu können. Für die erwähnte komplette Neuüberarbeitung der Datenstrukturen (lobid-API 2.0) wurde schließlich beschlossen, eine grundlegende Unterscheidung von Körperschaften und Personen auf Feldebene umzusetzen.
  
-*Schlagwortfolgen*:
+*Schlagwortfolgen*: Wie bereits erwähnt sind eine Menge der NWBib-Titel mit einer oder mehreren Schlagwortfolgen versehen. 
  
 *Ansetzungs- und Verweisungsformen der GND*:
  
