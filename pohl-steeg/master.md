@@ -189,7 +189,7 @@ Die folgende Abbildung bietet einen Überblick über diese Komponenten und den D
  
 *Schlagwortfolgen*: Wie oben bereits erwähnt sind eine Menge der NWBib-Titel mit einer oder mehreren Schlagwortfolgen versehen. Generell ist die Abbildung von Reihenfolgen in RDF umständlich und wurde bisher auch nicht umgesetzt. Um Schlagwortfolgen anzeigen zu können wurde im Laufe des Projekts eine temporäre Lösung gewählt, in der Schlagwortfolgen als Ganzes in einem extra Feld gespeichert werden. Mit der API 2.0 wird sich das ändern und Schlagwörtern – wie auch Autoren – werden in einer geordneten Liste in der richtigen Reihenfolge gespeichert werden.
 
-*RDA-Umstellung*: Wie bei der Katalogisierung und wue in allen anderen bibliothekarischen Rechercheumgebungen auch, mussten mit der Umstellung auf die neuen Katalogisierungsregeln *RDA* einige Anpassungen an der Transformation der Daten aus dem Verbundkatalog nach RDF vorgenommen werden. Die wichtigsten Anpassungen sind bereits umsetzt, einige stehen aber noch aus.
+*RDA-Umstellung*: Wie bei der Katalogisierung und wie in allen anderen bibliothekarischen Rechercheumgebungen auch, mussten mit der Umstellung auf die neuen Katalogisierungsregeln *RDA* einige Anpassungen an der Transformation der Daten aus dem Verbundkatalog nach RDF vorgenommen werden. Die wichtigsten Anpassungen sind bereits umsetzt, einige stehen aber noch aus.
  
 *Filterung nach Publikations- und Medientypen*: Für die NWBib wurde eine Facettierung nach "Publikationstyp" und "Medientyp" umgesetzt. Die Katalogisierung nach RAK-WB hat sich als sehr ungünstige Basis herausgestellt zum Aufbau einer nützlichen Facettierung. Auf Basis von Vorarbeiten für die DigiBib wurde eine brauchbare Lösung erreicht.[^typfacette] Im Hinblick auf den Medientyp sind die neuen RDA-Katalogisierungsregeln zu begrüßen, die eine in sich schlüssige Unterscheidung und Erfassung von Inhaltstyp, Medientyp und Datenträgertyp (IMD) vorgeben.[^imd]
  
@@ -218,11 +218,13 @@ Usability wurde bisher nicht getestet. Für 2017 angedacht.
 
 ### Literatur
 
+* @becketal2001
 * @HallerMuehl2006
 * @Pichler2009
 * @Schmidt1998
 * @Schnasse2015
 * @Syre2006
+* @wikipedia2016
 
 [^1]: [https://nwbib.de](https://nwbib.de)
 [^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
