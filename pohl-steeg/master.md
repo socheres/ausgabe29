@@ -1,6 +1,6 @@
 Dieser Artikel beschreibt die Entwicklung eines modernen Webauftritts für die Nordrhein-Westfälische Bibliographie (NWBib) im Kontext der historischen Entwicklung dieser Landesbibliographie. Die Aufgaben einer Landesbibliographie bestimmt @Syre2006, S.34 wie folgt:
 
- > Aufgabe einer Regionalbibliographie ist es, die Literatur über eine Region, ihre historischen und aktuellen Teilgebiete, ihre Naturräume und ihre Orte sowie die mit der betreffenden Region verbundenen Persönlichkeiten (verstorbenen wie lebenden) zu verzeichnen. Deckt sich der geographische Berichtsraum einer Regionalbibliographie mit den Grenzen eines Bundeslandes, spricht man von einer Landesbibliographie.
+> Aufgabe einer Regionalbibliographie ist es, die Literatur über eine Region, ihre historischen und aktuellen Teilgebiete, ihre Naturräume und ihre Orte sowie die mit der betreffenden Region verbundenen Persönlichkeiten (verstorbenen wie lebenden) zu verzeichnen. Deckt sich der geographische Berichtsraum einer Regionalbibliographie mit den Grenzen eines Bundeslandes, spricht man von einer Landesbibliographie.
 
 Dies gilt so auch für die Nordrhein-Westfälische Bibliographie, abgekürzt "NWBib". In der Selbstdarstellung auf der Webseite des neuen Webauftritts[^1] heißt es:
 
@@ -111,6 +111,26 @@ Wie bereits erwähnt wird die NWBib als Untermenge des hbz-Verbundkatalogs mit d
 
 Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetische Katalogisierung in wissenschaftlichen Bibliotheken* (RAK-WB) und seit Beginn dieses Jahres nach *Resource Description and Access* (RDA). Die Inhaltserschließung wird zum einen nach den *Regeln für den Schlagwortkatalog* (RSWK) mithilfe der Gemeinsamen Normdatei (GND) durchgeführt, zum anderen findet eine Klassifizierung statt anhand der NWBib-spezifischen Systematik, die in einen Sachsystematik- und einen Ortssystematikteil[^3] untergliedert ist. Ergänzt wird die NWBib-Ortssystematik zudem durch sogenannte "Gliedernde Schlagwörter", das sind unkontrollierte Einträge von Ortsnamen zur genaueren räumlichen Verortung des Sachbezugs eines Titels. Zudem arbeitet insbesondere die ULB Münster an der Verzeichnung von Schlagwortfolgen, die auch im neuen Webauftritt nutzbar gemacht werden.
 
+### Der Webauftritt
+
+Die Startseite des neuen NWBib-Webauftritts bietet ein Suchfeld für den einfachen Einstieg, eine Beschreibung der NWBib sowie eine Karte für die ortsbasierte Suche, bei der zwischen Kreis- oder Gemeindeebene gewählt werden kann:
+
+![Startseite](img/nwbib-screenshot-startseite.png "Startseite")
+
+Über das Suchfeld und die kartenbasierte Ortsfacette können auf einfache Weise inhaltliche und räumliche Suchkriterien kombiniert werden, hier z.B. wurde die textbasierte Suche nach "braunkohle" durch eine Auswahl in der Karte auf eine Suche von Ressourcen über Braunkohle im rheinischen Braunkohlerevier eingeschränkt:
+
+![Ergebnisliste](img/nwbib-screenshot-ergebnisliste.png "Ergebnisliste")
+
+Weitere Facetten bieten Möglichkeiten zur Einschränkung der Ergebnisse nach inhaltlichen Kriterien, nach Medien- und Publikationstypen, sowie nach Bestand in bestimmten Bibliotheken:
+
+![Facetten](img/nwbib-screenshot-facetten.png "Facetten")
+
+Die Detailansicht eines Treffers bietet über Links Möglichkeiten zum Suchen nach weiteren Treffern desselben Urhebers und derselben inhaltlichen Erschliessung sowie auf einer Karte Details zum Bestand und, wenn verfügbar, Links zum Abfragen der Verfügbarkeit im lokalen Katalog der Bibliotheken:
+
+![Detailansicht](img/nwbib-screenshot-detailansicht.png "Detailansicht")
+
+Neben dieser grundsätzlichen Funktionalität bietet der Auftritt über die Menüleiste eine erweiterte Suche in bestimmten Feldern, eine Themensuche über inhaltserschließende Schlagwortfolgen, Zugriff auf Titel über die Raum- und Sachsystematik, sowie eine Merkliste zum Zusammenstellen und Drucken einer Literaturliste.
+
 ### Der Entwicklungsprozess
 
 Die Software für den neuen NWBib-Webauftritt wird schrittweise in stetigem Austausch mit der NWBib-Redaktion entwickelt. Der Entwicklungsprototyp war von Beginn der Entwicklung an offen im Web erreichbar und dient als Referenzpunkt für die Diskussion über offene Anforderungen und bestehende Softwarebugs. An ihm wird kontinuierlich weiterentwickelt (inkrementelle Entwicklung). Für verschiedene Recherchefunktionen sowie teilweise auch für die Einzeltrefferanzeige konnte zudem die Aleph-basierte Version der NWBib als Referenz herangezogen werden.
@@ -141,7 +161,7 @@ Das Entwicklungsteam arbeitete nicht ausschließlich an der NWBib und die Abstim
 
 Neben den Anforderungen der NWBib-Redaktion hat das Entwicklungsteam auch eigene Vorstellungen umgesetzt. So wurden manche Use Cases durch andere Funktionalitäten gelöst als ursprünglich von der Redaktion gefordert. In anderen Fällen setzte das Entwicklungsteam eigene Ideen um – so etwa die Visualisierung von Suchergebnissen oder Bestandsinformationen auf einer Karte. Auch diese Umsetzungen wurden dann der Redaktion zur Begutachtung vorgelegt (Schritt 7).
 
-### Entwicklungsmethodologie
+#### Entwicklungsmethodologie
 
 Die Methodologie zur Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen Ansätzen der agilen Softwarentwicklung (@becketal2001).[^dev] Die Software wird – wie bereits beschrieben – inkrementell in stetigem Austausch mit der NWBib-Redaktion entwickelt. Als Kommunikationswerkzeuge benutzt das Entwicklungsteam vor allem GitHub sowie zusätzlich zur Visualisierung, Priorisierung und Organisation der Aufgaben die GitHub-basierte Kanban-Software *Waffle*.[^waffle] Vom Scrum-Ansatz[^scrum] wird das Stand-up übernommen, ein kurzes tägliches Treffen, bei dem sich die Teammitglieder über ihre erledigten und anstehenden Aufgaben austauschen und aktuelle Probleme benennen. Der Entwicklungsprozess folgt dem GitHub-Flow[^flow].
 
