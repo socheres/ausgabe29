@@ -5,4 +5,7 @@ verantwortlich für das Projekt- und Produktmanagement des Linked-Open-Data-Team
 Er studierte Kommunikationswissenschaft und Philosophie in Aachen sowie Bibliotheks- und 
 Informationswissenschaft an der FH Köln.
 
-**Fabian Steeg** 
+**Fabian Steeg** ist Softwareentwickler mit Schwerpunkt Informationssysteme und 
+Open-Source-Software und verantwortlich für Webentwicklung und Datenverarbeitung im 
+Linked-Open-Data-Team am hbz. Er studierte Informationsverarbeitung, Allgemeine Sprachwissenschaft 
+und Geographie an der Universität zu Köln.
