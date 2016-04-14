@@ -113,11 +113,11 @@ Die Titelerfassung für die NWBib geschieht nach den *Regeln für die alphabetis
 
 ### Der Webauftritt
 
-Die Startseite bietet ein Suchfeld für den einfachen Einstieg, eine Beschreibung der NWBib sowie eine Karte für die ortsbasierte Suche, bei der zwischen Kreis- oder Gemeindeebene gewählt werden kann:
+Die Startseite des neuen NWBib-Webauftritts bietet ein Suchfeld für den einfachen Einstieg, eine Beschreibung der NWBib sowie eine Karte für die ortsbasierte Suche, bei der zwischen Kreis- oder Gemeindeebene gewählt werden kann:
 
 ![Startseite](img/nwbib-screenshot-startseite.png "Startseite")
 
-Über das Suchfeld und die kartenbasierte Ortsfacette können auf einfache Weise inhaltliche und räumliche Suchkriterien kombiniert werden, hier z.B. zur Suche nach Literatur über das rheinische Braunkohlerevier:
+Über das Suchfeld und die kartenbasierte Ortsfacette können auf einfache Weise inhaltliche und räumliche Suchkriterien kombiniert werden, hier z.B. wurde die textbasierte Suche nach "braunkohle" durch eine Auswahl in der Karte auf eine Suche von Ressourcen über Braunkohle im rheinischen Braunkohlerevier eingeschränkt:
 
 ![Ergebnisliste](img/nwbib-screenshot-ergebnisliste.png "Ergebnisliste")
 
@@ -125,7 +125,7 @@ Weitere Facetten bieten Möglichkeiten zur Einschränkung der Ergebnisse nach in
 
 ![Facetten](img/nwbib-screenshot-facetten.png "Facetten")
 
-Die Detailansicht eines Treffers bietet über Links Möglichkeiten zum Suchen nach weiteren Treffern desselben Urhebers und derselben inhaltlichen Erschliessung sowie Details zum Bestand und, wenn verfügbar, Links zum Abfragen der Verfügbarkeit im lokalen Katalog der Bibliotheken:
+Die Detailansicht eines Treffers bietet über Links Möglichkeiten zum Suchen nach weiteren Treffern desselben Urhebers und derselben inhaltlichen Erschliessung sowie auf einer Karte Details zum Bestand und, wenn verfügbar, Links zum Abfragen der Verfügbarkeit im lokalen Katalog der Bibliotheken:
 
 ![Detailansicht](img/nwbib-screenshot-detailansicht.png "Detailansicht")
 
