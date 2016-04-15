@@ -251,18 +251,9 @@ Die Rückmeldungen von Wikipedianer/innen hat uns wie eben erwähnt einige nütz
 
 Die für 2017 geplanten *Usability-Studien* sollen vor allem als Orientierung für die weitere Planung dienen. Sind Nutzerverhalten und -wünsche bekannt, kann die Anpassung bestehender Funktionalitäten und die Entwicklung neuer Funktionalitäten erst sinnvoll geplant und priorisiert werden.
 
-### Literatur
+### Referenzen
 
-* @becketal2001
-* @BoemerDegering1951
-* @HallerMuehl2006
-* @Pichler2009
-* @pohl2015
-* @Schmidt1998
-* @Schnasse2015
-* @Syre2006
-* @wikipedia2016
-* @zumsteinstoehr2015
+
 
 [^1]: [https://nwbib.de](https://nwbib.de)
 [^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
