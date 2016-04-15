@@ -28,7 +28,7 @@ Die "entscheidende Grundlage für die Bearbeitung einer Landesbibliographie" lie
  
 > (3) Das Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen unterstützt die Pflichtexemplarsammlung der Universitäts- und Landesbibliotheken sowie die Herausgabe der Nordrhein-Westfälischen Bibliographie durch die Entwicklung und den Betrieb von technischen Infrastrukturleistungen.
 
-Dem Gesetzesinhalt entsprechend sieht auch die tatsächliche Arbeitsteilung aus. Die Redaktionsstellen an den Universitäts- und Landesbibliotheken Münster und Düsseldorf arbeiten an der Erstellung und Pflege der NWBib, wobei sie von der ULB Bonn unterstützt werden, die sich auf die Erfassung von Monographien beschränkt. Das Hochschulbibliothekszentrum fungiert als technischer Dienstleister für Betrieb und Entwicklung der Erfassungsumgebung und des Webauftritts.[^satzung]
+Entsprechend sieht auch die tatsächliche Arbeitsteilung aus. Die Redaktionsstellen an den Universitäts- und Landesbibliotheken Münster und Düsseldorf arbeiten an der Erstellung und Pflege der NWBib, wobei sie von der ULB Bonn unterstützt werden, die sich auf die Erfassung von Monographien beschränkt. Das Hochschulbibliothekszentrum fungiert als technischer Dienstleister für Betrieb und Entwicklung der Erfassungsumgebung und des Webauftritts.[^satzung]
 
 Für den Aufbau des neuen NWBib-Webauftritts war am hbz dasselbe Team verantwortlich, das auch den hbz-Linked-Data-Dienstes lobid (Linking Open Bibliographic Data) betreibt. Das lobid-Team besteht aus zwei Entwicklern (Pascal Christoph mit Schwerpunkt auf Datentransformation und Fabian Steeg mit Schwerpunkt auf Webentwicklung) und einem wissenschaftlichen Bibliothekar (Adrian Pohl, verantwortlich für Metadatenstandards, Projektmanagement und Kommunikation).
 
