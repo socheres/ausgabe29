@@ -211,7 +211,7 @@ So ermöglicht das Play-Framework moderne Web-Entwicklung nah am HTTP, mit effiz
  
  Die NWBib basiert auf der lobid-API, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses ermöglicht. Für die Bereitstellung der Schnittstelle werden die Quelldaten, die in einem Aleph-XML-Exportformat (hbz-Verbunddaten) sowie Pica+-XML (ISIL-Daten) vorliegen, nach RDF/Linked Data überführt. Die Transformation von bibliothekarischen MAB-/MARC-basierten Daten in eine für Entwickler leicht zu nutzende Datenstruktur ist alles andere als trivial. Auch wenn für die Bereitstellung der lobid-API bereits eine Menge Vorarbeiten stattgefunden hatten, mussten im Zuge der Entwicklung des neuen NWBib-Webauftritts einige Herausforderungen auf Datenebene gemeistert werden, um die gewünschten Funktionalitäten anbieten zu können.
 
-*JSON-LD und Elasticsearch*: Ein grundlegendes Problem mit dem JSON-LD, das in die Elasticsearch-Suchmaschine indexiert wird, war schon seit Anfang 2014 bekannt. Die verwendeten existierenden Java-JSON-LD-Tools bieten beschränkte Möglichkeiten zur Überführung von N-Triples in JSON-LD, so dass das resultierende JSON-LD nicht die optimale Struktur aufweist. Es hat keine geschachtelte Baumstruktur, sondern ein flache Struktur, so dass sich viele Möglichkeiten der Suchmaschine nicht nutzen lassen. Als Ergebnis wurde im Mai 2014 die Planung für eine Version 2.0 der lobid-API begonnen. Die Generierung eines für Elasticsearch optimierten JSON-LD ist eines der Hauptziele.
+*JSON-LD und Elasticsearch*: Ein grundlegendes Problem mit dem JSON-LD, das in die Elasticsearch-Suchmaschine indexiert wird, war schon seit Anfang 2014 bekannt. Die verwendeten existierenden Java-JSON-LD-Tools bieten beschränkte Möglichkeiten zur Überführung von N-Triples in JSON-LD, so dass das resultierende JSON-LD nicht die optimale Struktur aufweist. Es hat keine geschachtelte Baumstruktur, sondern ein flache Struktur, so dass sich viele Möglichkeiten der Suchmaschine nicht nutzen lassen. Als Ergebnis wurde im Mai 2014 die Planung für eine Version 2.0 der lobid-API begonnen. Die Generierung eines für Elasticsearch optimierten JSON-LD ist eines der Hauptziele. lobid-API 2.0 soll bis zum Herbst dieses Jahres produktiv gehen.
 
 *Körperschaftssuche*: Die NWBib-Redaktion verlangt eine Suchmöglichkeit bibliographischer Ressourcen auf Basis von beteiligten Körperschaften. Da bei der bisherigen Datenmodellierung ein solcher Anwendungsfall nicht berücksichtigt wurde, waren einige temporäre Anpassungen nötig, um eine Körperschaftssuche anbieten zu können. Für die erwähnte komplette Neuüberarbeitung der Datenstrukturen (lobid-API 2.0) wurde schließlich beschlossen, eine grundlegende Unterscheidung von Körperschaften und Personen auf Feldebene umzusetzen, damit eine Körperschaftssuche einfach umsetzbar ist.
  
@@ -241,19 +241,20 @@ Die Zusammenarbeit von Fachleuten verschiedener Professionen gestaltet sich nich
 
 #### Endnutzereinbindung
 
-Die Endnutzer/innen wurden vom lobid-Team stets als wichtige – wenn nicht sogar: wichtigste – Stakeholder der NWBib angesehen. Ein Vorschlag zu Beginn des Projekts, Endnutzer/innen bei der Entwicklung des neuen Webauftritts zu beteiligen wurde von der NWBib-Redaktion mit Skepsis betrachtet und als nicht realisierbar angesehen. Entsprechend wurden im Projektverlauf keinerlei Versuche unternommen, Vorschläge und Rückmeldungen zum Prototypen von Endnutzer/innen einzuholen. Einzige Ausnahme war die Vorstellung des NWBib-Prototypen bei Wikipedianern, die wertvolles Feedback gaben und sich interessante Funktionalitäten wünschten (vgl. @pohl2015). Auch Usibility Tests haben bisher keine stattgefunden, sind aber für 2017 geplant.
+Die Endnutzer/innen wurden vom lobid-Team stets als wichtige – wenn nicht sogar: wichtigste – Stakeholder der NWBib angesehen. Ein Vorschlag zu Beginn des Projekts, Endnutzer/innen bei der Entwicklung des neuen Webauftritts zu beteiligen wurde von der NWBib-Redaktion mit Skepsis betrachtet und als nicht realisierbar angesehen. Entsprechend wurden im Projektverlauf keinerlei Versuche unternommen, Vorschläge und Rückmeldungen zum Prototypen von Endnutzer/innen einzuholen. Einzige Ausnahme war die Vorstellung des NWBib-Prototypen bei Wikipedianer/innen, die wertvolles Feedback gaben und sich interessante Funktionalitäten wünschten (vgl. @pohl2015). Auch Usibility Tests haben bisher keine stattgefunden, sind aber für 2017 geplant.
 
 ### Ausblick
 
-- API 2.0 und alle Vorteile, die das mit sich bringt
-- Einbindung der Vorläuferbibliographien in die Recherche
-- hbz-Katalog auf Basis der NWBib-Entwicklung
-- Usability-Studien
-- Export für Literaturverwaltungssysteme; @zumsteinstoehr2015
+Das Entwicklungsteam sieht die NWBib als eine Daueraufgabe, weshalb einige bereits einige Entwicklungen für die nahe und ferne Zukunft geplant sind. Bereits genannt wurde die *Integration der Gliedernden Schlagwörter in die Systematik* und die *Implementierung von lobid-API 2.0 und Migration der NWBib auf die neue API*. Letzteres ist eine bereits seit einiger Zeit laufende Aufgabe und soll in den nächsten Monaten abgeschlossen werden. Die Einzeltrefferansicht der NWBib basiert bereits auf den neuen Daten, sobald die neu Datenstruktur endgültig umgesetzt ist, werden auch die Recherche und die Facettierungsfunktionen auf API 2.0 umgestellt. Dieser Wechsel bringt unter anderem mit sich, dass viele Funktionen, die Elasticsearch out-of-the-box mit sich bringt gewinnbringend genutzt werden können. Eine Menge temporärer Anpassungen, die über die Zeit entstanden sind, werden dabei überflüssig.
+  
+Die Rückmeldungen von Wikipedianer/innen hat uns wie eben erwähnt einige nützliche Funktionalitäten aufgezeigt, die sich zu entwickeln lohnt. Erstens war dies der Wunsch, Literaturlisten teilen und in Literaturverwaltungsprogramme übernehmen zu können. Seitdem wurde es zwar ermöglicht, den Link zu einer Merkliste zu speichern und zu versenden, eine Exportfunktionalität für Literaturverwaltungssysteme steht allerdings noch aus. Es ist geplant, zum Ende des Jahres mit der Entwicklung einer Funktion zum *Export von Ergebnis- und Merklisten für Literaturverwaltungssysteme* zu beginnen.[^zumsteinstoehr2015] Zweitens wünschten sich die Wikipedianer auch Literatur von vor 1983 zu finden. Da die Vorläufer der NWbib digitalisiert mit OCR vorliegen[^bibbsp], ist geplant, einen *Volltextindex mit NWbib-Vorläuferbibliographien* aufzubauen, den Nutzer/innen der NWBib bei der Recherche hinzuschalten können.
+
+Die für 2017 geplanten *Usability-Studien* sollen vor allem als Orientierung für die weitere Planung dienen. Sind Nutzerverhalten und -wünsche bekannt, kann die Anpassung bestehender Funktionalitäten und die Entwicklung neuer Funktionalitäten erst sinnvoll geplant und priorisiert werden.
 
 ### Literatur
 
 * @becketal2001
+* @BoemerDegering1951
 * @HallerMuehl2006
 * @Pichler2009
 * @pohl2015
@@ -261,6 +262,7 @@ Die Endnutzer/innen wurden vom lobid-Team stets als wichtige – wenn nicht soga
 * @Schnasse2015
 * @Syre2006
 * @wikipedia2016
+* @zumsteinstoehr2015
 
 [^1]: [https://nwbib.de](https://nwbib.de)
 [^2]: Eigentlich ein System basierend auf dem MARC-Standard, wurde Aleph für den deutschsprachigen Raum angepasst, um mit MAB verwendet werden zu können.
@@ -276,3 +278,5 @@ Die Endnutzer/innen wurden vom lobid-Team stets als wichtige – wenn nicht soga
 [^satzung]: Die "technische Organisation und Präsentation der Nordrhein-Westfälischen Bibliographie" ist auch in der Satzung des Hochulbibliothekszentrums explizit genannt, s. https://www.hbz-nrw.de/ueberuns/satzung/ (§2, Abs. 3 a, Punkt 7).
 [^typfacette]: Siehe [https://wiki1.hbz-nrw.de/display/SEM/Facetten+ueber+hbz01-Daten](https://wiki1.hbz-nrw.de/display/SEM/Facetten+ueber+hbz01-Daten).
 [^imd]: Vgl. die Folien  der AG RDA zum Thema: [https://wiki.dnb.de/download/attachments/105260204/Modul_2_04_IMD.pptx](https://wiki.dnb.de/download/attachments/105260204/Modul_2_04_IMD.pptx).
+[^zumsteinstoehr2015]: Zum Angebot von Katalogdaten für Literaturverwaltungssysteme siehe auch @zumsteinstoehr2015.
+[^bibbsp]: Siehe zum Beispiel die Digitalisate von @BoemerDegering1951 bei der ULB Münster: [http://nbn-resolving.de/urn:nbn:de:hbz:6-85659520092](http://nbn-resolving.de/urn:nbn:de:hbz:6-85659520092).
