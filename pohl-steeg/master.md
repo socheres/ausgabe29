@@ -60,7 +60,7 @@ Ende der 1990er Jahre wurde das hbz-Verbundsystem auf die Software *Aleph* von E
 
 ## Der Auftrag zur Modernisierung des Web-Auftritts
 
-Mit dem Aufstieg von Google und Discovery-Services in den Bibliotheken wurde die NWBib-Recherche immer weniger zeitgemäß. Als Reaktion gaben die Landesbibliotheken dem hbz Anfang 2013 den Auftrag, den Webauftritt der NWBib zu überarbeiten. Innerhalb des hbz wurde entschieden, den neuen Webauftritt auf Basis der Programmierschnittstelle (Application Programming Interface, API) des hbz-Linked-Data-Dienstes lobid umzusetzen, die im Herbst 2013 in Produktion gegangen war. Dies sollte u.a. garantieren, dass die NWBib wieder integraler Bestandteil des WWW würde. Anfang 2014 begannen die Entwicklungsarbeiten für den neuen NWBib-Webauftritt.
+Mit dem Aufstieg von Google und Discovery-Services in den Bibliotheken wurde die NWBib-Recherche immer weniger zeitgemäß. Als Reaktion gaben die Landesbibliotheken dem hbz Anfang 2013 den Auftrag, den Webauftritt der NWBib zu überarbeiten. Innerhalb des hbz wurde entschieden, den neuen Webauftritt auf Basis der Programmierschnittstelle (Application Programming Interface, API) des hbz-Linked-Data-Dienstes lobid umzusetzen, die im Herbst 2013 in Produktion gegangen war. Dies sollte u.a. garantieren, dass die NWBib – wie bereits knapp zwanzig Jahre zuvor – wieder integraler Bestandteil des WWW würde. Anfang 2014 begannen die Entwicklungsarbeiten für den neuen NWBib-Webauftritt.
 
 # Anforderungen an einen modernen Webauftritt
 
