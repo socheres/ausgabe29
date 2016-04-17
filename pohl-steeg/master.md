@@ -137,7 +137,7 @@ Die Detailansicht eines Treffers bietet über Links Möglichkeiten zum Suchen na
 
 ![Detailansicht](img/nwbib-screenshot-detailansicht.png "Detailansicht")
 
-Neben dieser grundsätzlichen Funktionalität bietet der Auftritt über die Menüleiste eine erweiterte Suche in bestimmten Feldern, eine Themensuche über inhaltserschließende Schlagwortfolgen, Zugriff auf Titel über die Raum- und Sachsystematik, sowie mit der Merklistenfunktion die möglichkeit zum Zusammenstellen und Drucken einer Literaturliste.
+Neben dieser grundsätzlichen Funktionalität bietet der Auftritt über die Menüleiste eine erweiterte Suche in bestimmten Feldern, eine Themensuche über inhaltserschließende Schlagwortfolgen, Zugriff auf Titel über die Raum- und Sachsystematik, sowie mit der Merklistenfunktion die Möglichkeit zum Zusammenstellen und Drucken einer Literaturliste.
 
 # Der Entwicklungsprozess
 
