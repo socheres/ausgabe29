@@ -10,7 +10,7 @@ Dies gilt so auch für die Nordrhein-Westfälische Bibliographie. In der Selbstd
 
 > Die Nordrhein-Westfälische Bibliographie (NWBib) verzeichnet die Literatur über das Land Nordrhein-Westfalen, seine Regionen, Orte und Persönlichkeiten, Literatur aus allen Lebens- und Wissensbereichen in Geschichte und Gegenwart.
 
-> Die NWBib ist eine der umfangreichsten Regionalbibliographien Deutschlands. Sie erschließt nicht nur Bücher und Zeitschriften, sondern auch Aufsätze und andere Medien wie etwa Karten, DVDs, Hörbücher und elektronische Publikationen. 
+> Die NWBib ist eine der umfangreichsten Regionalbibliographien Deutschlands. Sie erschließt nicht nur Bücher und Zeitschriften, sondern auch Aufsätze und andere Medien wie etwa Karten, DVDs, Hörbücher und elektronische Publikationen.
 
 Mit Stand April 2016 verzeichnet die NWBib mehr als 370.000 Literaturnachweise, davon mehr als 60 Prozent Aufsätze aus Zeitschriften oder Sammelbänden.
 
@@ -69,7 +69,7 @@ Welche Anforderungen sollte ein moderner Webauftritt erfüllen? @Schnasse2015 ha
 1. Besucher der NWBib, die nach Literatur recherchieren,
 2. Externe Webservices, z.B. Suchmaschinen wie Google, DuckDuckGo oder die Virtuelle Deutsche Landesbibliographie (VDL),
 3. die NWBib-Redaktion sowie
-4. Web-Entwickler, die auf Basis der NWBib-Daten zusätzliche eigene Anwendungen bauen wollen. 
+4. Web-Entwickler, die auf Basis der NWBib-Daten zusätzliche eigene Anwendungen bauen wollen.
 
 Im folgenden werden die Anforderungen der verschiedenen Nutzergruppen näher beleuchtet.
 
@@ -83,7 +83,7 @@ Das Ziel von Nutzerinnen und Nutzern einer bibliographischen Rechercheanwendung 
 - Schnelle Ladezeiten
 
 Über diese allgemeinen Anforderungen hinaus variieren die Anforderungen je nach Nutzungstypus. Eine regelmäßig wiederkehrende Besucherin, die etwa spezielle wissenschaftliche Literatur sucht, wird andere Wünsche und Anforderungen haben als ein Besucher, der über eine Google-Suche direkt auf einen Einzeltreffer gelangt. Letzterer will sich erst einmal auf einfache Weise orientieren, auf was für eine Seite er da gelangt ist und welche Informationen sie ihm bietet. Letztere könnte hingegen Interesse haben, komplexere Recherchefunktionen einzusetzen.
- 
+
 Bisher wurde darauf verzichtet, systematisch herauszufinden, wie zufrieden Endnutzerinnen und Endnutzer mit dem NWBib-Webauftritt sind und welche Dinge verbesserungswürdig sind. Im Zuge der kontinuierlichen Weiterentwicklung des Auftritts sind Usability-Studien für das Jahr 2017 geplant.
 
 ## Externe Webservices
@@ -96,7 +96,7 @@ Externe Websites lassen sich in verschiedene Typen mit unterschiedlichen Anforde
 
 ## NWBib-Redaktion
 
-Die NWBib-Redaktion bewertet die Funktionalitäten des NWBib-Auftritts in erster Linie vor dem Hintergrund der von ihr erfassten Daten, dem dabei benutzten Regelwerk zur Formalerschließung und den verschiedenen Methoden zur Inhaltserschließung. 
+Die NWBib-Redaktion bewertet die Funktionalitäten des NWBib-Auftritts in erster Linie vor dem Hintergrund der von ihr erfassten Daten, dem dabei benutzten Regelwerk zur Formalerschließung und den verschiedenen Methoden zur Inhaltserschließung.
 
 Konkret erwartet die NWBib-Redaktion zum Beispiel folgende Funktionalität:
 
@@ -181,7 +181,7 @@ Wie oben beschrieben, werden die Daten der NWBib im Bibliothekssystem Aleph kata
 
 Die folgende Abbildung bietet einen Überblick über diese Komponenten und den Datenfluss aus Aleph in die NWBib:
 
-![Datenfluss](img/data-workflow.svg "Datenfluss")
+![Datenfluss](img/data-workflow.png "Datenfluss")
 
 Java-basierte Ansätze zur Entwicklung von Webanwendungen sind im Bibliothekswesen nach unserem Eindruck relativ selten. Wir wollen daher an dieser Stelle einen kurzen Einblick in die von uns verwendete Technologie und den damit verbundenen Ablauf der Webentwicklung geben. Auf die nur indirekt über die Lobid-API verwendeten Komponenten Metafacture und Elasticsearch gehen wir an dieser Stelle nicht ein.
 
@@ -195,7 +195,7 @@ Eine statische Typisierung wie in Java hat neben einer höheren Laufzeitperforma
 
 ## Webentwicklung mit Play
 
-Das von uns verwendete Play-Framework verbindet die Vorteile der schnellen Entwicklungszyklen und Web-nativen Entwicklung mit der Typsicherheit von Java: Bei der Verwendung des Play-Frameworks können wie bei PHP oder Rails nach dem Editieren des Quellcodes die Seiten einfach neu geladen werden. Die nötige Kompilierung erfolgt inkrementell und on-the-fly im Hintergrund. 
+Das von uns verwendete Play-Framework verbindet die Vorteile der schnellen Entwicklungszyklen und Web-nativen Entwicklung mit der Typsicherheit von Java: Bei der Verwendung des Play-Frameworks können wie bei PHP oder Rails nach dem Editieren des Quellcodes die Seiten einfach neu geladen werden. Die nötige Kompilierung erfolgt inkrementell und on-the-fly im Hintergrund.
 
 Wesentliche Komponenten bei der Webentwicklung mit Play sind Routen, Controller und Templates:
 
@@ -208,27 +208,27 @@ Alle drei Komponenten werden dabei von Play typsicher verarbeitet. Wird etwa ein
 So ermöglicht das Play-Framework moderne Web-Entwicklung nah am HTTP, mit effizienten Entwicklungszyklen, performanter Laufzeit und typsicherem Code.
 
 # Herausforderungen & Lessons Learned
- 
+
 Im Laufe des Projekts sind den Beteiligten einige Herausforderungen begegnet, und das lobid-Team hat eine Menge gelernt. Im folgenden werden einige Herausforderungen und Lessons Learned aus Sicht des Entwicklungsteams erläutert.
- 
+
 ## Daten und Recherche
- 
+
 Wie oben beschrieben basiert die NWBib auf der lobid-API, die unter anderem Zugriff auf die hbz-Verbundkatalogdaten sowie die Daten des deutschen ISIL-Verzeichnisses ermöglicht. Für die Bereitstellung der lobid-API werden die Quelldaten, die in einem Aleph-XML-Exportformat (hbz-Verbunddaten) sowie Pica+-XML (ISIL-Daten) vorliegen, nach JSON-LD überführt. Die Transformation von bibliothekarischen MAB-/MARC-basierten Daten in eine für Entwickler leicht zu nutzende Datenstruktur ist nicht trivial. Auch wenn für die Bereitstellung der lobid-API bereits eine Menge Vorarbeiten stattgefunden hatten, mussten im Zuge der Entwicklung des neuen NWBib-Webauftritts einige Herausforderungen auf Datenebene gemeistert werden, um die gewünschten Funktionalitäten anbieten zu können.
 
 *JSON-LD und Elasticsearch*: Ein grundlegendes Problem mit dem JSON-LD, das in die Elasticsearch-Suchmaschine indexiert wird, war schon seit Anfang 2014 bekannt. Die verwendeten existierenden Java-JSON-LD-Tools bieten beschränkte Möglichkeiten zur Überführung von N-Triples in JSON-LD, so dass das resultierende JSON-LD nicht die optimale Struktur aufweist. Es hat keine geschachtelte Baumstruktur, sondern ein flache Struktur, so dass sich viele Möglichkeiten der Suchmaschine nicht nutzen lassen. Als Ergebnis wurde im Mai 2014 die Planung für eine Version 2.0 der lobid-API begonnen. Die Generierung eines für Elasticsearch optimierten JSON-LD ist eines der Hauptziele. Die lobid-API 2.0 soll bis zum Herbst dieses Jahres produktiv gehen.
 
 *Körperschaftssuche*: Die NWBib-Redaktion verlangt eine Suchmöglichkeit bibliographischer Ressourcen auf Basis von beteiligten Körperschaften. Da bei der bisherigen Datenmodellierung ein solcher Anwendungsfall nicht berücksichtigt wurde, waren einige temporäre Anpassungen nötig, um eine Körperschaftssuche anbieten zu können. Für die erwähnte komplette Neuüberarbeitung der Datenstrukturen (lobid-API 2.0) wurde schließlich beschlossen, analog zu den Quelldaten eine grundlegende Unterscheidung von Körperschaften und Personen auf Feldebene umzusetzen, damit eine Körperschaftssuche einfach umsetzbar ist.
- 
+
 *Schlagwortfolgen*: Wie oben bereits erwähnt sind eine Menge NWBib-Titel mit einer oder mehreren Schlagwortfolgen versehen. Generell ist die Abbildung von Reihenfolgen in RDF umständlich und wurde bisher im lobid-Dienst auch nicht umgesetzt. Um Schlagwortfolgen anzeigen zu können wurde im Laufe des Projekts eine temporäre Lösung gewählt, in der Schlagwortfolgen als Ganzes in einem extra Feld gespeichert werden. Mit der API 2.0 wird sich das ändern und Schlagwörter – wie auch Autoren – werden in einer geordneten Liste in der richtigen Reihenfolge gespeichert.
 
 *RDA-Umstellung*: Wie bei der Katalogisierung und in allen anderen bibliothekarischen Rechercheumgebungen, mussten mit der Umstellung auf die neuen Katalogisierungsregeln *RDA* einige Anpassungen an der Transformation der Daten aus dem Verbundkatalog nach RDF vorgenommen werden. Die wichtigsten Anpassungen sind bereits umsetzt, einige stehen aber noch aus.
- 
+
 *Filterung nach Publikations- und Medientypen*: Für die NWBib wurde eine Facettierung nach "Publikationstyp" und "Medientyp" umgesetzt. Die Katalogisierung nach RAK-WB hat sich als sehr ungünstige Basis zum Aufbau einer nützlichen Facettierung herausgestellt. Auf Basis von Vorarbeiten für die DigiBib wurde eine brauchbare Lösung erreicht.[^typfacette] Im Hinblick auf den Medientyp sind die neuen RDA-Katalogisierungsregeln zu begrüßen, die eine in sich schlüssige Unterscheidung und Erfassung von Inhaltstyp, Medientyp und Datenträgertyp (IMD) vorgeben.[^imd]
- 
-*Gliedernde Schlagwörter*: Als fortwährendes und bis heute nicht gelöstes Problem erwiesen sich die von der NWBib-Redaktion so genannten "Gliedernden Schlagwörter" (GSW). Diese sind der groben Ortsklassifikation beigeordnet und geben einen konkreten Ort, auf den sich der Inhalt eines Titel bezieht. Dabei kann es sich um Angabe eines Orts (z.B. "Köln") oder eines Ortsteils (z.B. "Köln-Ehrenfeld") handeln. Diese Schlagwörter sind nicht normiert, so dass es für denselben Ort verschiedene Schreibweisen geben kann. Das lobid-Team hat auf Basis der GSW die kartenbasierte Ortsfacette entwickelt. Dazu wurden die GSW Wikidata-Einträgen zugeordnet und von dort die Geodaten übernommen. Zusätzlich dazu gibt es eine textbasierte Facette über die GSW. Mit der Ortssystematik, der GSW-Textfacette, der kartenbasierten Ortsfacette sowie der GND-Verschlagwortung gibt es also vier Möglichkeiten, Suchergebnisse nach Ortsbezug zu filtern. Hier besteht sicher noch Verbesserungsbedarf, weil diese Redundanz bei den meisten Nutzerinnen und Nutzern zu einiger Verwirrung führen dürfte. 
+
+*Gliedernde Schlagwörter*: Als fortwährendes und bis heute nicht gelöstes Problem erwiesen sich die von der NWBib-Redaktion so genannten "Gliedernden Schlagwörter" (GSW). Diese sind der groben Ortsklassifikation beigeordnet und geben einen konkreten Ort, auf den sich der Inhalt eines Titel bezieht. Dabei kann es sich um Angabe eines Orts (z.B. "Köln") oder eines Ortsteils (z.B. "Köln-Ehrenfeld") handeln. Diese Schlagwörter sind nicht normiert, so dass es für denselben Ort verschiedene Schreibweisen geben kann. Das lobid-Team hat auf Basis der GSW die kartenbasierte Ortsfacette entwickelt. Dazu wurden die GSW Wikidata-Einträgen zugeordnet und von dort die Geodaten übernommen. Zusätzlich dazu gibt es eine textbasierte Facette über die GSW. Mit der Ortssystematik, der GSW-Textfacette, der kartenbasierten Ortsfacette sowie der GND-Verschlagwortung gibt es also vier Möglichkeiten, Suchergebnisse nach Ortsbezug zu filtern. Hier besteht sicher noch Verbesserungsbedarf, weil diese Redundanz bei den meisten Nutzerinnen und Nutzern zu einiger Verwirrung führen dürfte.
 
 Schon früh gab es den Wunsch, die GSW in die normierte Systematik zu integrieren und im Zuge dessen verschiedene Schreibweisen zu eliminieren. Eine vernünftige und zukunftssichere Lösung ist allerdings nur unter Anpassung der Quelldaten in der Aleph-Verbunddatenbank machbar und sollte mit einer Änderung der Katalogisierungspraxis einhergehen. Da sich hier keine einfache Lösung anbietet, wurde die Umsetzung auf die Zeit nach dem offiziellen Launch der NWBib vertagt. Aus Sicht des Entwicklungsteams sollte es Ziel sein, die Raumsystematik um Orte und Ortsteile zu erweitern bzw. bestehende Ortsdatenbanken wie GeoNames oder Wikidata zu nutzen, um eine kontrollierte Erfassung zu gewährleisten.
- 
+
 *Aleph-Datenbanksuche als Vorbild*: Die NWBib-Redaktion hat bei der Begutachtung des Entwicklungsprototypen stets die Aleph-basierte NWBib-Recherche zum Maßstab genommen. Die Forderung war, dass sich bei gleicher Suchanfrage auch die gleiche Anzahl von Treffern ergeben sollte. Da eine Suchmaschine anders funktioniert als die relationale Datenbank des hbz-Verbundkatalogs, mussten hier einige Anpassungen vorgenommen werden. So musste etwa die Volltextsuche über alle Felder auf bestimmte Felder eingeschränkt werden, damit die Anzahl der Treffer bei einer freien Suche mit der Aleph-Suche übereinstimmte. Zur Lösung des Schiller-Räuber-Problems (@wikipedia2016) wurde allerdings von dieser Vorgabe abgewichen. Somit können nun auch die Bände eines mehrbändigen Werks durch eine Kombination von Autorenname und Titel in der NWBib gefunden werden.
 
 Auch in Bezug auf die Sortierung der Suchergebnisse gab es Uneinigkeiten. Während das lobid-Team die Möglichkeiten der Suchmaschine ausnutzen und standardmäßig die Suchergebnisse mit einer für die NWBib optimierten Relevanzsortierung anbieten wollte, verlangte die NWBib-Redaktion die Sortierung nach Veröffentlichungsdatum als Default-Einstellung. Da ein Relevanzranking für Nutzer nicht ohne weiteres nachvollziehbar ist und auf unterschiedlichen Ebenen als voreingenommen wahrgenommen werden kann[^algo-bias], ist das objektive Ranking nach Veröffentlichungsdatum möglicherweise sogar die geeignetere Default-Einstellung.
@@ -239,9 +239,9 @@ Die Zusammenarbeit von Fachleuten verschiedener Professionen gestaltet sich nich
 
 *Agile Entwicklung als Herausforderung*: Die inkrementelle Entwicklung eines neuen Produkts war offenbar eine neue Erfahrung für die NWBib-Redaktion. Gerade in der Anfangsphase des Projekts lag der Fokus stark auf den Defiziten des Auftritts, anstatt sich etwa auf die Priorisierung von Funktionen und zu behebenden Fehlern und deren schrittweise Abarbeitung zu konzentrieren. Auch war es für die NWBib-Redaktion offensichtlich nicht möglich, das unfertige aber in seiner Entwicklung schon fortgeschrittene Produkt auf dem Bibliothekartag 2015 in Nürnberg vorzustellen: Es fand sich am Ende kein Redaktionsmitglied für einen gemeinsamen Vortrag. Die Vermutung liegt nahe, dass Ängste bestehen, einen Entwicklungsprototypen zu präsentieren, weil dieser in erster Linie als defizitäres Produkt gesehen wurde, das nicht den eigenen bibliothekarischen Anforderungen entspricht. Im Laufe des Projekts entwickelte sich das Vertrauen zwischen Redaktion und Entwicklungsteam und die Abläufe spielten sich ein, was die Zufriedenheit mit dem Prozess auf beiden Seiten vergrößerte.
 
-*Links in Bug-Meldungen*: Eine immer wieder auftauchendes Thema waren fehlende URLs bei der Meldung eines Fehlers. Von Beginn der Entwicklung an hatte das lobid-Team hervorgehoben, dass – entgegen der sessionbasierten, im Deep Web versteckten Aleph-basierten NWBib-Version – jeder Titel, jede Suchanfrage und jede Modifikation einer Ergebnisliste ihre eigene Web-Adresse hat, was nicht nur zum Bookmarken, sondern auch beim Melden von Software-Bugs sehr nützlich ist. Es hat lange Zeit gedauert, bis die – im Aleph-System einzig mögliche – Praxis der Nennung eines Titels (z.B. "Nobilitierte Hauslandschaft"), einer hbz-ID oder von Suchfeldern und -begriffen (z.B. "Wenn ich im Schlagwortfeld mit 'Wiedertäufer' suche") zugunsten der einfachen Angabe eines klickbaren Links aufgegeben wurde. 
+*Links in Bug-Meldungen*: Eine immer wieder auftauchendes Thema waren fehlende URLs bei der Meldung eines Fehlers. Von Beginn der Entwicklung an hatte das lobid-Team hervorgehoben, dass – entgegen der sessionbasierten, im Deep Web versteckten Aleph-basierten NWBib-Version – jeder Titel, jede Suchanfrage und jede Modifikation einer Ergebnisliste ihre eigene Web-Adresse hat, was nicht nur zum Bookmarken, sondern auch beim Melden von Software-Bugs sehr nützlich ist. Es hat lange Zeit gedauert, bis die – im Aleph-System einzig mögliche – Praxis der Nennung eines Titels (z.B. "Nobilitierte Hauslandschaft"), einer hbz-ID oder von Suchfeldern und -begriffen (z.B. "Wenn ich im Schlagwortfeld mit 'Wiedertäufer' suche") zugunsten der einfachen Angabe eines klickbaren Links aufgegeben wurde.
 
-*Englischsprachige Tickets*: Wie bereits oben beschrieben, ist das lobid-Team nicht nur für das Abarbeiten, sondern auch für das Anlegen von Tickets verantwortlich. Der Versuch, auch die Redaktionsmitglieder ernsthaft zum direkten Aufgeben von Tickets zu motivieren, wurde gar nicht erst unternommen. Der Grund dafür ist, dass neben der ohnehin schon hohen Hürde der Nutzung von GitHub ein weiteres Hindernis besteht: Das lobid-Team hatte sich bereits 2012 für Englisch nicht nur als Sprache für Quelltext-Kommentare und Dokumentation, sondern auch als Sprache für die Tickets entschieden. Oftmals hat sich diese Praxis bewährt, da bei Diskussionen in einem internationalen Kontext die Tickets ohne Übersetzungsleistung referenziert werden können. Für die NWBib war die Entscheidung womöglich eher kontraproduktiv und es ist nicht unwahrscheinlich, dass in ähnlichen Projekten in Zukunft Tickets in Deutsch geschrieben werden. Dies würde als weiteren großen Vorteil mit sich bringen, dass das Kanban-Board als Projektorganisationstool des gesamten Projektteams genutzt werden könnte. Zum Beispiel könnten Aufgaben gemeinsam priorisiert werden durch Verschieben von Tickets auf dem Board. 
+*Englischsprachige Tickets*: Wie bereits oben beschrieben, ist das lobid-Team nicht nur für das Abarbeiten, sondern auch für das Anlegen von Tickets verantwortlich. Der Versuch, auch die Redaktionsmitglieder ernsthaft zum direkten Aufgeben von Tickets zu motivieren, wurde gar nicht erst unternommen. Der Grund dafür ist, dass neben der ohnehin schon hohen Hürde der Nutzung von GitHub ein weiteres Hindernis besteht: Das lobid-Team hatte sich bereits 2012 für Englisch nicht nur als Sprache für Quelltext-Kommentare und Dokumentation, sondern auch als Sprache für die Tickets entschieden. Oftmals hat sich diese Praxis bewährt, da bei Diskussionen in einem internationalen Kontext die Tickets ohne Übersetzungsleistung referenziert werden können. Für die NWBib war die Entscheidung womöglich eher kontraproduktiv und es ist nicht unwahrscheinlich, dass in ähnlichen Projekten in Zukunft Tickets in Deutsch geschrieben werden. Dies würde als weiteren großen Vorteil mit sich bringen, dass das Kanban-Board als Projektorganisationstool des gesamten Projektteams genutzt werden könnte. Zum Beispiel könnten Aufgaben gemeinsam priorisiert werden durch Verschieben von Tickets auf dem Board.
 
 ## Endnutzereinbindung
 
