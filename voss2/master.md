@@ -32,13 +32,13 @@ bibliographischen Daten in/mit Wikidata im Speziellen entwickelt.
 # Wikidata als Universalbibliographie
 
 Um es kurz zu machen, möchte ich an dieser Stelle nur meine Einschätzung
-abgeben: *Wikidata hat das Potential für Bibliographien verleichbares zu
+abgeben: *Wikidata hat das Potential für Bibliographien vergleichbares zu
 leisten wie Wikipedia für allgemeine Nachschlagewerke*. Mit allen Vor- und
 Nachteilen.[^2][^3] Insbesondere ist seit Paul Otlets [Répertoire
 bibliographique universel](http://www.wikidata.org/entity/Q3456262) das Ziel
 einer wirklichen Universalbibliographie erstmals wieder in greifbare Nähe
 gerückt.[^4]  Diese Einschätzung basiert nicht nur auf meiner allgemeinen Erfahrung
-mit Wikipedia, Wikidata, Social Cataloging, bibligraphischen Datenformaten und
+mit Wikipedia, Wikidata, Social Cataloging, bibliographischen Datenformaten und
 Datenbanken etc., sondern kann auch durch einige Indizien belegt werden:
 
 [^2]: Diese Vor- und Nachteile wären unter Anderem Gegenstand einer
@@ -57,7 +57,7 @@ aus der bereits der Datenbank-Charakter dieser Universalbibliographie hervorgeht
   [WikiProject Periodicals](https://www.wikidata.org/wiki/Wikidata:WikiProject_Periodicals),
   [WikiProject Source MetaData](https://www.wikidata.org/wiki/Wikidata:WikiProject_Source_MetaData)...).
   Wie in Wikipedia gibt es allerdings keine
-  zentrale Koordination, so dass von verschiedener Seite bibliographische 
+  zentrale Koordination, so dass von verschiedener Seite bibliographische
   Angaben in Wikidata einfließen.[^5]
 
 
@@ -67,7 +67,7 @@ Willighagen und Samuel Lampa die Säurekonstante ($pK_a$) verschiedener
 chemischer Substanzen in einer Datenbank. Jeder Eintrag besteht aus dem
 International Chemical Identifier  (InChI), einem Messwert und einer
 Fachpublikation in welcher der Messwert publiziert wurde. In Wikidata würden im
-Rahem des Umzugs der Datenbank nach Wikidata für alle Fachpublikationen
+Rahmen des Umzugs der Datenbank nach Wikidata für alle Fachpublikationen
 einzelne Wikidata-Einträge angelegt.
 
 
@@ -76,8 +76,8 @@ einzelne Wikidata-Einträge angelegt.
   Datenbestand ("set-model"), ähnlich wie bei einem Verbundkatalog.
 
 * Verglichen mit bibliothekarischer Verbundkatalogisierung ist die Hürde Fehler
-  zu beseitigen oder Ergänzungen vorzunehmen in Wikidata allerdings ungleich 
-  niedriger. Während die Mittel von Bibliotheken eher begrenzt sind, ist bei 
+  zu beseitigen oder Ergänzungen vorzunehmen in Wikidata allerdings ungleich
+  niedriger. Während die Mittel von Bibliotheken eher begrenzt sind, ist bei
   Wikidata von einer weiter wachsenden Zahl von Beitragenden auszugehen.
 
 * Die umfangreiche Verfügbarkeit der Inhalte von Wikidata über verschiedene
@@ -97,8 +97,8 @@ einzelne Wikidata-Einträge angelegt.
   vorangetrieben. Der Antrag zum EU-Projekt Wikidata for Research (Wiki4R) gibt
   einen guten Überblick über die zu erwartende Entwicklung [@Wiki4R].
 
-* Ende Mai findet in Berlin die [WikiCite-Tagung](https://meta.wikimedia.org/wiki/WikiCite_2016) 
-  mit 50 ExpertInnen statt, um einen konkreten Plan für die Umsetzung der Migration aller Quellenanaben
+* Ende Mai findet in Berlin die [WikiCite-Tagung](https://meta.wikimedia.org/wiki/WikiCite_2016)
+  mit 50 ExpertInnen statt, um einen konkreten Plan für die Umsetzung der Migration aller Quellenangaben
   aus Wikipedia nach Wikidata festzulegen.
 
 Es kann also davon ausgegangen werden, dass alle die sich mit der Sammlung
