@@ -26,9 +26,9 @@ unsicher ist. Es gibt sie allerdings! So führt eine Google-Suche nach
 "bibliography of bibliographies of bibliographies" unter anderem zu folgendem
 Ergebnis ("A World Bibliography of Bibliographies" 1939):
 
-> "Eventually the ever increasing number of bibliographies of > bibliographies
+> Eventually the ever increasing number of bibliographies of > bibliographies
 has justified the publication of Mr. Josephson’s > bibliography of
-bibliographies of bibliographies."
+bibliographies of bibliographies.
 
 Verwiesen wird hier auf die zunächst 1901 und in erweiterter Auflage zwischen
 1910 und 1913 herausgegebene Bibliographie von Aksel Josephson. Neben der
