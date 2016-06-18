@@ -224,8 +224,8 @@ JavaScript-Editor^[<http://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst
 eingefügt und anschließend im rechten "Result"-Fenster (Abb.3) die
 automatisch erzeugte Autoren-SWB-PPN intellektuell kontrolliert. Für die
 leichte Kontrolle und eventuelle Nachverknüpfung der PPN werden
-zusätzlich zwei Links^[Link 1: <http://swb.bsz-bw.de/DB=2.104/SET=1/TTL=1/CMD?SGE=&ACT=SRCHM&MATCFILTER=Y&MATCSET=Y&NOSCAN=Y&PARSE_MNEMONICS=N&PARSE_OPWORDS=N&PARSE_OLDSETS=N&IMPLAND=Y&NOABS=Y&ACT0=SRCHA&SHRTST=50&IKT0=1004&TRM0=Berger, Klaus&ACT1=*&IKT1=2057&TRM1=3.*&ACT2=*&IKT2=8991&TRM2=19**&ACT3=%2B&IKT3=4060&TRM3=tpv*&ACT4=%2B&IKT4=8991&TRM4=theol* neutestament*&ACT5=*&IKT5=1004&TRM5=Berger, Klaus>, Link 2:
-<http://swb.bsz-bw.de/DB=2.104/SET=1/TTL=1/CMD?SGE=&ACT=SRCHM&MATCFILTER=Y&MATCSET=Y&NOSCAN=Y&PARSE_MNEMONICS=N&PARSE_OPWORDS=N&PARSE_OLDSETS=N&IMPLAND=Y&NOABS=Y&ACT0=SRCHA&SHRTST=50&IKT0=1004&TRM0=Berger&ACT1=*&IKT1=2057&TRM1=3.*&ACT2=*&IKT2=8991&TRM2=19**&ACT3=%2B&IKT3=4060&TRM3=tpv*&ACT4=%2B&IKT4=8991&TRM4=theol* neutestament*&ACT5=*&IKT5=1004&TRM5=Berger>]
+zusätzlich zwei Links^[Link 1: <http://bit.ly/1UCrmJE>, Link 2:
+<http://bit.ly/1ZYyzE3>]
 mit unterschiedlich vordefinierten Suchabfragen automatisch erzeugt,
 deren Ergebnis im rechten "Result"-Fenster direkt angeklickt und
 angezeigt werden kann. (Abb. 3)
