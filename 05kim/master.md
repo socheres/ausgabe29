@@ -204,7 +204,7 @@ Fachdatenbanken, OA-Journals und Bibliothekskatalogen et cetera in
 unterschiedlichen Downloadoptionen gewählt werden (Einzel- und
 Mehrfachübernahmen, Persistente Identifikatoren mittels "*Zauberstab"*,
 Importfunktion von anderen Formate). In den meisten großen
-Aufsatzdatenbanken wie JSTOR oder EBSCO ist Mehrfachübernahme, das hißt
+Aufsatzdatenbanken wie JSTOR oder EBSCO ist Mehrfachübernahme, das heißt
 alle Aufsätze eines Zeitschriftenheftes mit einem Klick, möglich.
 
 ![Katalogisierungsworkflow](img/Workflow.jpg)
@@ -238,7 +238,7 @@ von Autoren wurden im Vorfeld zusammen mit der SWB-PPN in einer
 Mapping-Tabelle hinterlegt. Jedes Mal wenn bei einem Aufsatz der
 Zeitschriftentitel oder Autorenname in dieser Liste vorkommt, wird
 dieser Text beim Export mit dem Pica3-Translator durch die entsprechende
-Normdatenverknüpfung (PPN) ersetzt. Zusätzlich werden bei den Autoren
+Normdatenverknüpfung (PPN) ersetzt. Diese automatische PPN-Verknüpfung der Autorennamen werden auch bei einem vorhandenen eindeutigen Treffersatz in OGND - Lookup für Autoren - erzeugt. Zusätzlich werden bei den Autoren
 auch noch zwei Links im Pseudo-Pica-Felder 0999 erzeugt. Diese Links
 fragen die Namensform "Nachname, Vorname" verbunden mit weiteren
 spezifizierten Suchattributen wie Berufsbezeichnung ("theol\*",
