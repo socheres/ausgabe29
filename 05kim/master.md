@@ -3,7 +3,7 @@ zu erschließen und für die Recherche nutzbar zu machen. Dabei
 konzentrierte sich die Katalogisierungsarbeit in Bibliotheken meist auf
 Monographien, Sammelwerke oder die Gesamtaufnahmen von Zeitschriften,
 ohne die darin enthaltenen Artikel auszuwerten. Eine Ausnahme stellt der
-Index Theologicus (IxTheo)^[<https://www.openhub.net/>] der
+Index Theologicus (IxTheo)^[<http://www.ixtheo.de/>] der
 Universitätsbibliothek Tübingen dar.
 
 Der IxTheo geht zurück auf die 1975 als gedruckter
