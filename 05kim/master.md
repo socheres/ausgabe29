@@ -194,7 +194,7 @@ nutzt sie in PME^[<https://github.com/proquest/PME>] nach.
 
 Zur Illustration des Katalogisierungsworkflow in der Praxis, welchen wir
 hier im Folgenden beschreiben, haben wir noch ein kurzes Video (ohne
-Ton) erstellt^[<https://bibserv24.bib.uni-mannheim.de/owncloud/index.php/s/oLAXTm9yBaqHaVc>].
+Ton) erstellt^[<https://rawgit.com/libreas/ausgabe29/master/05kim/video/zotkat-video.html>].
 
 Nach der Installation von Zotero als Add-on im Firefox-Browser werden
 über den Zotero-Picker in der Symbolleiste die bibliographischen
