@@ -220,7 +220,7 @@ zusammen.
 
 Die im Zotero-Ordner gespeicherten Metadaten werden dann einzeln mit
 Copy & Paste oder Drag & Drop in einen
-[*JavaScript-Editor*](http://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst)
+JavaScript-Editor^[<http://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst>]
 eingefügt und anschließend im rechten "Result"-Fenster (Abb.3) die
 automatisch erzeugte Autoren-SWB-PPN intellektuell kontrolliert. Für die
 leichte Kontrolle und eventuelle Nachverknüpfung der PPN werden
@@ -244,8 +244,8 @@ fragen die Namensform "Nachname, Vorname" verbunden mit weiteren
 spezifizierten Suchattributen wie Berufsbezeichnung ("theol\*",
 "bischof\*", "pfarr\*"), GND-Systematik ("3.\*") und Lebensdaten
 ("19xx") ab, um ein möglichst eindeutiges Mappingergebnis zu erzielen.
-Diese OGND-Suchabfrage kann zudem projektspezifisch [*weiter
-angepasst*](https://github.com/UB-Mannheim/zotkat/wiki/Suche-nach-Autoren-Normdaten-im-Online-GND-(OGND)-Katalog)
+Diese OGND-Suchabfrage kann zudem projektspezifisch weiter
+angepasst ^[<https://github.com/UB-Mannheim/zotkat/wiki/Suche-nach-Autoren-Normdaten-im-Online-GND-(OGND)-Katalog>]
 werden. Diese Links dienen einerseits der Kontrolle, können aber auch
 weiter zur Recherche bei verschiedenen Personen mit dem gleichen Namen
 benutzt werden (Abb. 4). Nach diesem Arbeitsschritt kann dann die
