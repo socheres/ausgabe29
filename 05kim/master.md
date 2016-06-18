@@ -32,7 +32,7 @@ Andere frei zugängliche theologische Spezialbibliographien wie
 
 -   der Catalogue de l'École Biblique et Archéologique Française in
     Jerusalem
-    (CEBAF^[<http://www.ebaf.edu/wp-content/uploads/biblio/en-aide-all.pdf>],
+    (CEBAF^[<http://www.ebaf.edu/wp-content/uploads/biblio/en-aide-all.pdf>]),
 
 -   die Missionsbibliothek und katholische Dokumentationsstelle
     (MIKADO^[<http://www.mikado-ac.info/home.html>]),
@@ -417,11 +417,11 @@ Bibliothekartag in Leipzig 2016 = 6. Bibliothekskongress / Themenkreis
 
 Voß, J. (2008a). *Simple Web Cataloging with Zotero*. GBV. Retrieved
 from
-<https://www.gbv.de/wikis/cls/Datei:SimpleWebCatalogingWithZotero\_7.1.pdf>
+<https://www.gbv.de/wikis/cls/Datei:SimpleWebCatalogingWithZotero_7.1.pdf>
 
 Voß, J. (2008b, February). Zotero als Katalogisierungsclient –
 Verbund-Wiki GBV \[Wikiseite\]. Retrieved April 3, 2016, from
-<https://www.gbv.de/wikis/cls/Zotero\_als\_Katalogisierungsclient>
+<https://www.gbv.de/wikis/cls/Zotero_als_Katalogisierungsclient>
 
 Zumstein, P., & Stöhr, M. (2015). Zur Nachnutzung von bibliographischen
 Katalog- und Normdaten für die persönliche Literaturverwaltung und
