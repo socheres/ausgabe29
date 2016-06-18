@@ -8,7 +8,7 @@ mitzunutzen. Das vorgestellte semiautomatische Verfahren bringt auch bei
 der Verknüpfung von Normdaten erhebliche Vorteile für die
 Medienbearbeitung.
 
-**Schlüsselwörter:** Literauturverwaltungsprogramm, Zotero,
+**Schlüsselwörter:** Literaturverwaltungsprogramm, Zotero,
 Katalogisierung, Unselbständige Werke, Aufsatzliteratur, Index
 Theologicus, Online-Bibliographie, WinIBW, Fachinformationsdienst
 Theologie
