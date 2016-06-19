@@ -387,19 +387,20 @@ durchgeführt werden. Vorstellbar ist eine Teilung in drei Teile:
 3.  Speichern in der Verbunddatenbank.
 
 Die Schritte 2) und 3) sind momentan verschränkt und erfordern meist
-tiefergehendes bibliothekarisches Know-How. Dahingegen ist es vorstellbar,
-dass zum Beispiel auch Forscher innerhalb eines Projektes theologische
-Zeitschriften auswerten und die Aufsatzdaten mit Zotero sammeln. Prinzipiell
-kann der Schritt 1) auch als Dateningest etwa von Herausgebern einer
-Zeitschrift genutzt werden, um die Aufnahme dieser Artikel im Index
-Theologicus anzustoßen. Dabei können diese Daten in einer Zotero-
-Gruppe^[<https://www.zotero.org/groups/ixtheo>] kollaborativ und auch ohne
-profunde Katalogisierungskenntnisse gesammelt werden. Die Bibliothek könnte
-sich dann auf die Normdatenerstellung, -verknüpfung und das Abspeichern in der
-Verbunddatenbank konzentrieren. Es bleibt eine spannende Frage, wie man den
-Katalogisierungsablauf für diese Aufsatzdaten softwaregestützt und
-kollaborativ weiter optimieren kann, um die Quantität der Titel aber auch die
-Erschließungstiefe hoch zu halten.
+tiefergehendes bibliothekarisches Know-How. Dahingegen ist es
+vorstellbar, dass zum Beispiel auch Forscher innerhalb eines Projektes
+theologische Zeitschriften auswerten und die Aufsatzdaten mit Zotero
+sammeln. Prinzipiell kann der Schritt 1) auch als Dateningest etwa von
+Herausgebern einer Zeitschrift genutzt werden, um die Aufnahme dieser
+Artikel im Index Theologicus anzustoßen. Dabei können diese Daten in
+einer Zotero-Gruppe^[<https://www.zotero.org/groups/ixtheo>] kollaborativ und auch ohne profunde
+Katalogisierungskenntnisse gesammelt werden. Die Bibliothek könnte sich
+dann auf die Normdatenerstellung, -verknüpfung und das Abspeichern in
+der Verbunddatenbank konzentrieren. Es bleibt eine spannende Frage, wie
+man den Katalogisierungsablauf für diese Aufsatzdaten softwaregestützt
+und kollaborativ weiter optimieren kann, um die Quantität der Titel aber
+auch die Erschließungstiefe hoch zu halten.
+>>>>>>> 1805d06be88e69231414fd14459116785be93a36
 
 ### Quellenverzeichnis
 
