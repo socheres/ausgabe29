@@ -84,7 +84,7 @@ LIBREAS. Library Ideas, 29 (2016). % journal, issue, volume.
 \fancyfoot[L] {\textit{Creative Commons BY 3.0}} %licence
 \fancyfoot[R] {\textit{ISSN: 1860-7950}}
 
-\title{\LARGE{Zurück ins Web. Die Entwicklung eines neuen Webauftritts für die Nord\-rhein-West\-fälische Bibliographie (NWBib)}} %title %title
+\title{\LARGE{Zurück ins Web. Die Entwicklung eines neuen Webauftritts für die Nordrhein-Westfälische Bibliographie (NWBib)}} %title %title
 \author{Adrian Pohl \& Fabian Steeg} %author
 
 \setcounter{page}{}
@@ -101,11 +101,11 @@ breaklinks= true]{hyperref}
 %abstracts
 \begin{abstract}
 \small
-Am Hochschulbibliothekszentrum des Landes Nord\-rhein-West\-falen (hbz) wird
+Am Hochschulbibliothekszentrum des Landes Nordrhein\-West\-falen (hbz) wird
 seit Anfang 2014 nach Vorgaben und unter Begutachtung der Uni\-ver\-si\-täts-
 und Landesbibliotheken in Düsseldorf, Münster und Bonn ein neuer
-Webauftritt für die Landesbibliographie Nord\-rhein-West\-falens, die
-Nord\-rhein-West\-fälische Bibliographie (NWBib) entwickelt. Die Entwicklung
+Webauftritt für die Landesbibliographie Nordrhein-West\-falens, die
+Nordrhein-Westfälische Bibliographie (NWBib) entwickelt. Die Entwicklung
 basiert auf der Web- Schnittstelle des Linked-Open-Data-Dienst lobid und
 wird vollständig mit Open- Source-Software entwickelt. Aus der
 Perspektive des Entwicklungsteams am hbz beschreibt der Artikel Kontext
@@ -128,7 +128,7 @@ Auftritt findet sich unter:
 \url{https://nwbib.de}
 \end{center}
 
-Die Aufgaben einer Landesbibliographie bestimmt Syre (2006, S. 34) wie
+Die Aufgaben einer Landesbibliographie bestimmt Syre (2006, 34) wie
 folgt:
 
 \begin{quote}
@@ -140,13 +140,13 @@ der geographische Berichtsraum einer Regionalbibliographie mit den
 Grenzen eines Bundeslandes, spricht man von einer Landesbibliographie.
 \end{quote}
 
-Dies gilt so auch für die Nord\-rhein-West\-fälische Bibliographie. In der
+Dies gilt so auch für die Nordrhein-West\-fälische Bibliographie. In der
 Selbstdarstellung des neuen Webauftritts\footnote{\url{https://nwbib.de}}
 heißt es:
 
 \begin{quote}
-Die Nord\-rhein-West\-fälische Bibliographie (NWBib) verzeichnet die
-Literatur über das Land Nord\-rhein-West\-falen, seine Regionen, Orte und
+Die Nordrhein-Westfälische Bibliographie (NWBib) verzeichnet die
+Literatur über das Land Nordrhein-West\-falen, seine Regionen, Orte und
 Persönlichkeiten, Literatur aus allen Lebens- und Wissensbereichen in
 Geschichte und Gegenwart.
 \end{quote}
@@ -177,7 +177,7 @@ Entwicklungsprozesses, gibt einen Überblick über die Nutzung des neuen
 Webauftritts und die zur Umsetzung verwendete Technologie und schließt
 mit Lessons Learned und einem Ausblick auf weitere Entwicklungen. Da
 beide Autoren Teil des Software-Entwicklungsteams am
-Hochschulbibliothekszentrum des Landes Nord\-rhein-West\-falen (hbz) sind,
+Hochschulbibliothekszentrum des Landes Nordrhein-West\-falen (hbz) sind,
 wird die Entwicklungsperspektive gegenüber der Perspektive der
 NWBib-Redaktion hier im Vordergrund stehen.
 
@@ -186,13 +186,13 @@ Verantwortlichkeiten}\label{rechtliche-voraussetzungen-und-verantwortlichkeiten}
 
 Die \enquote{entscheidende Grundlage für die Bearbeitung einer
 Landesbibliographie} liefert die Wahrnehmung des Pflichtexemplarrechts
-(Syré 2006, S. 36). Wie in anderen Bundesländern üblich, wird auch die
+(Syré, 2006, 36). Wie in anderen Bundesländern üblich, wird auch die
 NWBib von jenen Bibliotheken erstellt, die für die Sammlung und
 Archivierung von Pflichtstücken zuständig sind. Im Unterschied zu
 anderen Bundesländern sind die Erstellung, die Entwicklung und der
-Betrieb der Nord\-rhein-West\-fälischen Landesbibliographie sogar im
+Betrieb der Nordrhein-Westfälischen Landesbibliographie sogar im
 Pflichtexemplargesetz verankert. So heißt es im \emph{Gesetz zur
-Regelung des Pflichtexemplarrechts in Nord\-rhein-West\-falen}, §2:
+Regelung des Pflichtexemplarrechts in Nordrhein-West\-falen}, §2:
 
 \begin{quote}
 \begin{enumerate}
@@ -202,14 +202,14 @@ Regelung des Pflichtexemplarrechts in Nord\-rhein-West\-falen}, §2:
   und Landesbibliotheken Bonn, Düsseldorf und Münster gemeinsam wahr.
   {[}\ldots{}{]}
 \item
-  Die Bibliotheken erstellen gemeinsam die Nord\-rhein-West\-fälische
+  Die Bibliotheken erstellen gemeinsam die Nordrhein-Westfälische
   Bibliographie. Diese verzeichnet und erschließt die Medienwerke mit
-  inhaltlichem Bezug zu Nord\-rhein-West\-falen unabhängig davon, ob sie
-  innerhalb oder außerhalb Nord\-rhein-West\-falens verlegt werden.
+  inhaltlichem Bezug zu Nordrhein-West\-falen unabhängig davon, ob sie
+  innerhalb oder außerhalb Nordrhein-West\-falens verlegt werden.
 \item
-  Das Hochschulbibliothekszentrum des Landes Nord\-rhein-West\-falen
+  Das Hochschulbibliothekszentrum des Landes Nordrhein-West\-falen
   unterstützt die Pflichtexemplarsammlung der Uni\-ver\-si\-täts- und
-  Landesbibliotheken sowie die Herausgabe der Nord\-rhein-West\-fälischen
+  Landesbibliotheken sowie die Herausgabe der Nordrhein-Westfälischen
   Bibliographie durch die Entwicklung und den Betrieb von technischen
   Infrastrukturleistungen.
 \end{enumerate}
@@ -223,7 +223,7 @@ Monographien beschränkt. Das Hochschulbibliothekszentrum fungiert als
 technischer Dienstleister für Betrieb und Entwicklung der
 Erfassungsumgebung und des Webauftritts.\footnote{Die
   \enquote{technische Organisation und Präsentation der
-  Nord\-rhein-West\-fälischen Bibliographie} ist auch in der Satzung des
+  Nordrhein-Westfälischen Bibliographie} ist auch in der Satzung des
   Hochschulbibliothekszentrums explizit genannt, s.
   https://www.hbz-nrw.de/ueberuns/satzung/ (§2, Abs. 3 a, Punkt 7).}
 
@@ -241,14 +241,14 @@ Die NWBib ist eine der jüngeren Landesbibliographien Westdeutschlands.
 Ihre direkten Vorläufer sind die Westfälische Bibliographie, die ab 1954
 erstellt wurde und den Zeitraum ab 1945 abdeckt und die Lippische
 Bibliographie, die ab 1957 erstellt wurde.\footnote{Für eine
-  umfassendere Darstellung der NWBib-Vorläufer siehe Haller und Mühl
+  umfassendere Darstellung der NWBib-Vorläufer siehe Haller \& Mühl
   (2006), 305ff. Die Landesbibliotheken haben die Vorläufer der NWBib
   digitalisiert. Unter
   \url{http://digital.ub.uni-duesseldorf.de/nav/classification/5975540}
   findet sich eine Liste von digitalisierten Bibliographien mit Bezug
   auf das Rheinland und unter
   \url{http://www.ulb.uni-muenster.de/landesbibliothek/recherche/westfaelische-bibliographien/}
-  mit Bezug auf Westfalen.} Mit der Nord\-rhein-West\-fälischen
+  mit Bezug auf West\-falen.} Mit der Nordrhein-Westfälischen
 Bibliographie wurden diese Vorläufer fortgeführt und um die
 bibliographische Verzeichnung von Literatur über das Rheinland ergänzt.
 Der erste Band der NWBib (Berichtsjahr 1983) ist 1984 erschienen.
@@ -279,7 +279,7 @@ Magnetbänder richtig lesen zu können.
 
 Bei der Datenerfassung und -korrektur waren also drei Abteilungen
 beteiligt, ehe die Daten für den Druck vorbereitet werden konnten.
-Haller und Mühl (2006, S. 312) nennen drei erhebliche Nachteile dieses
+Haller und Mühl (2006, 312) nennen drei erhebliche Nachteile dieses
 Verfahrens: Erstens der doppelte Schreibaufwand bei der Erfassung über
 Datenerfassungsbögen und der Übertragung in ein besser maschinenlesbares
 Format, zweitens das aufwändige Korrekturverfahren bei der jährlichen
@@ -300,7 +300,7 @@ die Präsentation der NWBib im WWW.
 Die gedruckte Version wurde nun mit der Software \emph{LaTeX}
 vorbereitet. Dafür wurde aus der für den hbz-Verbundkatalog genutzten
 Datenbanksoftware \emph{BIS} ein mit TeX-Steuerzeichen versehener Export
-des jeweiligen NWBib-Jahrgangs generiert (Schmidt 1998). Als
+des jeweiligen NWBib-Jahrgangs generiert (Schmidt, 1998). Als
 Nebenprodukt des neuen Verfahrens konnte auf Basis der LaTeX-Datei mit
 wenig Aufwand eine HTML-Version der NWBib erstellt werden. Mit Hilfe
 freier Software und nach Aufbringen einer Personenwoche konnte
@@ -330,9 +330,9 @@ ermöglichte.
 Ende der 1990er Jahre wurde das hbz-Verbundsystem auf die Software
 \emph{Aleph} von Ex Libris umgestellt. Die NWBib-Redaktion nutzte diese
 Chance, um die NWBib vollständig in den Verbundkatalog zu integrieren
-(Haller und Mühl 2006, S. 314f), was unter anderem den Vorteil hatte,
-dass die Nutzer jetzt auch Besitznachweise für die verzeichneten Titel
-vorfanden. Laut Haller und Mühl (2006, S. 314) fiel mit \enquote{dem
+(Haller \& Mühl, 2006, 314f), was unter anderem den Vorteil hatte, dass
+die Nutzer jetzt auch Besitznachweise für die verzeichneten Titel
+vorfanden. Laut Haller und Mühl (2006, 314) fiel mit \enquote{dem
 Beschluss für eine vollständige Übernahme der Bibliographie in das neue
 Verbundsystem {[}\ldots{}{]} auch die Entscheidung, die Druckausgabe
 aufzugeben und die Bibliographie nur noch als Datenbank anzubieten.} Die
@@ -679,7 +679,7 @@ Umsetzungen wurden dann der Redaktion zur Begutachtung vorgelegt
 \paragraph{Entwicklungsmethode}\label{entwicklungsmethode}
 
 Die Entwicklung des NWBib-Auftritts bedient sich bei verschiedenen
-Ansätzen der agilen Softwareentwicklung (Beck 2001).\footnote{Für eine
+Ansätzen der agilen Softwareentwicklung (Beck, 2001).\footnote{Für eine
   detaillierte Beschreibung des Entwicklungsprozesses im lobid-Team
   (allerdings in Englisch) siehe http://hbz.github.io/\#dev-process.
   \url{https://hbz.github.io/\#dev-process}.} Die Software wird -- wie
@@ -687,9 +687,9 @@ bereits beschrieben -- inkrementell in stetigem Austausch mit der
 NWBib-Redaktion entwickelt. Als Kommunikationswerkzeuge benutzt das
 Entwicklungsteam vor allem GitHub sowie zusätzlich zur Visualisierung,
 Priorisierung und Organisation der Aufgaben die GitHub-basierte
-Kanban-Soft\-ware \emph{Waffle}.\footnote{Siehe das gemeinsame
+Kanban\-Soft\-ware \emph{Waffle}.\footnote{Siehe das gemeinsame
   Waffle-Board für alle Projekte des lobid-Teams:
-  https://waffle.io/hbz/lobid} Vom Scrum-Ansatz (Pichler 2009) wird das
+  https://waffle.io/hbz/lobid} Vom Scrum-Ansatz (Pichler, 2009) wird das
 Stand-up übernommen, ein kurzes tägliches Treffen, bei dem sich die
 Teammitglieder über ihre erledigten und anstehenden Aufgaben austauschen
 und aktuelle Probleme benennen. Der Entwicklungsprozess folgt dem
@@ -1006,7 +1006,7 @@ unternommen, Vorschläge und Rückmeldungen zum Prototypen von
 Endnutzerinnen und Endnutzern einzuholen. Einzige Ausnahme war die
 Vorstellung des NWBib-Prototypen bei Wikipedianerinnen und
 Wikipedianern, die wertvolles Feedback gaben und sich interessante
-Funktionalitäten wünschten (Pohl 2015). Auch Usibility-Tests haben
+Funktionalitäten wünschten (Pohl, 2015). Auch Usibility-Tests haben
 bisher keine stattgefunden, sind aber für 2017 geplant.
 
 \section*{Ausblick}\label{ausblick}
@@ -1035,11 +1035,11 @@ Literaturverwaltungssysteme steht allerdings noch aus. Es ist geplant,
 zum Ende des Jahres mit der Entwicklung einer Funktion zum \emph{Export
 von Ergebnis- und Merklisten für Literaturverwaltungssysteme} zu
 beginnen.\footnote{Zum Angebot von Katalogdaten für
-  Literaturverwaltungssysteme siehe auch Zumstein und Stöhr (2015).}
+  Literaturverwaltungssysteme siehe auch Zumstein \& Stöhr (2015).}
 Zweitens wünschten sich die Wikipedianerinnen und Wikipedianer, auch
 Literatur von vor 1983 zu finden. Da die Vorläufer der NWBib
 digitalisiert mit OCR vorliegen\footnote{Siehe zum Beispiel die
-  Digitalisate von Bömer und Degering (1951--2004) bei der ULB Münster:
+  Digitalisate von Bömer \& Degering (1951--2004) bei der ULB Münster:
   \url{http://nbn-resolving.de/urn:nbn:de:hbz:6-85659520092}.}, ist
 geplant, einen \emph{Volltextindex mit NWBib-Vorläuferbibliographien}
 aufzubauen, den Nutzerinnen und Nutzer der NWBib bei der Recherche
@@ -1052,62 +1052,61 @@ bekannt, kann die Anpassung bestehender Funktionalitäten und die
 Entwicklung neuer Funktionalitäten sinnvoll geplant und priorisiert
 werden.
 
-\section*{Referenzen}\label{referenzen}
+\hyperdef{}{references}{\label{references}}
+\section**{Referenzen}\label{referenzen}
+\addcontentsline{toc}{section*}{Referenzen}
 
 \hyperdef{}{ref-becketal2001}{\label{ref-becketal2001}}
-Beck, Kent et al. 2001. ``Manifesto for Agile Software Development.''
-Online; abgerufen am 15. April 2016. \url{http://agilemanifesto.org/}.
+Beck, K. et a. (2001). Manifesto for Agile Software Development. URL:
+\url{http://agilemanifesto.org/}.
 
 \hyperdef{}{ref-BoemerDegering1951}{\label{ref-BoemerDegering1951}}
-Bömer, Alois, und Herman Degering. 1951--2004. \emph{Westfälische
-Bibliographie Zur Geschichte, Landeskunde Und Volkskunde}. Edited by
-Historische Kommission Westfalens.
+Bömer, A., \& Degering, H. (1951--2004). \emph{Westfälische
+Bibliographie zur Geschichte, Landeskunde und Volkskunde}., Hrsg. H. K.
+West\-falens.
 
 \hyperdef{}{ref-HallerMuehl2006}{\label{ref-HallerMuehl2006}}
-Haller, Bertram, und Hans Mühl. 2006. ``Die Nord\-rhein-West\-fälische
-Bibliographie.'' In \emph{Die Regionalbibliographie Im Digitalen
-Zeitalter. Deutschland Und Seine Nachbarländer}, Sonderband 90:305--18.
-Zeitschrift Für Bibliothekswesen Und Bibliographie. Sonderbände.
-Frankfurt am Main: Vittorio Klostermann.
+Haller, B., \& Mühl, H. (2006). „Die Nordrhein-Westfälische
+Bibliographie``, in \emph{Die Regionalbibliographie im digitalen
+Zeitalter. Deutschland und seine Nachbarländer} Zeitschrift für
+Bibliothekswesen und Bibliographie. Sonderbände. (Frankfurt am Main:
+Vittorio Klostermann), 305--318.
 
 \hyperdef{}{ref-Pichler2009}{\label{ref-Pichler2009}}
-Pichler, Roman. 2009. \emph{Scrum - Agiles Projektmanagement Erfolgreich
-Einsetzen}. Heidelberg: dpunkt-verlag.
+Pichler, R. (2009). \emph{Scrum - Agiles Projektmanagement erfolgreich
+einsetzen}. Heidelberg: dpunkt.verlag.
 
 \hyperdef{}{ref-pohl2015}{\label{ref-pohl2015}}
-Pohl, Adrian. 2015. ``Mit Der NWBib Zu Gast Bei Wikipedia.'' Online;
-abgerufen am 15. April 2016. \url{https://wiki1.hbz-nrw.de/x/lIBTB}.
+Pohl, A. (2015). Mit der NWBib zu Gast bei Wikipedia. URL:
+\url{https://wiki1.hbz-nrw.de/x/lIBTB}.
 
 \hyperdef{}{ref-Schmidt1998}{\label{ref-Schmidt1998}}
-Schmidt, Ronald Michael. 1998. ``Die Nord\-rhein-West\-fälische
-Bibliographie Online.'' In \emph{Bibliographische Datenbanken Im
-Internet: DFG-Kolloquium Vom 4. Bis 5. Dezember 1997 an Der Herzogin
-Anna Amalia Bibliothek}. Online; archivierte Version der Wayback Machine
-vom 18.10.2000.
+Schmidt, R. M. (1998). Die Nordrhein-Westfälische Bibliographie Online.
+in \emph{Bibliographische Datenbanken im Internet: DFG-Kolloquium vom 4.
+bis 5. Dezember 1997 an der Herzogin Anna Amalia Bibliothek} (Online;
+archivierte Version der Wayback Machine vom 18.10.2000). URL:
 \url{http://web.archive.org/web/20000310115644/http://www.weimar-klassik.de/kolloquien/e5i_224d.html}.
 
 \hyperdef{}{ref-Schnasse2015}{\label{ref-Schnasse2015}}
-Schnasse, Jan. 2015. ``Ein Moderner Webauftritt Für Die NWBib.'' Online;
-abgerufen am 15. April 2016.
+Schnasse, J. (2015). Ein moderner Webauftritt für die NWBib. URL:
 \url{https://speakerdeck.com/lobid/ein-moderner-webauftritt-fur-die-nwbib-1}.
 
 \hyperdef{}{ref-Syre2006}{\label{ref-Syre2006}}
-Syré, Ludger. 2006. ``Die Deutschen Landes- Und
-Regionalbibliographien.'' In \emph{Die Regionalbibliographie Im
-Digitalen Zeitalter. Deutschland Und Seine Nachbarländer}, Sonderband
-90:33--52. Zeitschrift Für Bibliothekswesen Und Bibliographie.
-Sonderbände. Frankfurt am Main: Vittorio Klostermann.
+Syré, L. (2006). „Die deutschen Landes- und Regionalbibliographien``, in
+\emph{Die Regionalbibliographie im digitalen Zeitalter. Deutschland und
+seine Nachbarländer} Zeitschrift für Bibliothekswesen und Bibliographie.
+Sonderbände. (Frankfurt am Main: Vittorio Klostermann), 33--52.
 
 \hyperdef{}{ref-wikipedia2016}{\label{ref-wikipedia2016}}
-Wikipedia. 2015. ``Schiller-Räuber-Problem --- Wikipedia, Die Freie
-Enzyklopädie.'' Online; Stand 14. April 2016.
-\url{https://de.wikipedia.org/w/index.php?title=Schiller-R%C3%A4uber-Problem&oldid=149608084}.
+Wikipedia (2015). Schiller-Räuber-Problem --- Wikipedia, Die freie
+Enzyklopädie. URL:
+\url{https://de.wikipedia.org/w/index.php?title=Schiller-R\%C3\%A4uber-Problem\&oldid=149608084}.
 
 \hyperdef{}{ref-zumsteinstoehr2015}{\label{ref-zumsteinstoehr2015}}
-Zumstein, Philipp und Matti Stöhr. 2015. ``Zur Nachnutzung von
-Bibliographischen Katalog- Und Normdaten Für Die Persönliche
-Literaturverwaltung Und Wissensorganisation'' 35 (4). Berlin: de Gruyter
-Saur: 210--21. \url{http://ub-madoc.bib.uni-mannheim.de/39937/}.
+Zumstein, P., \& Stöhr, M. (2015). Zur Nachnutzung von bibliographischen
+Katalog- und Normdaten für die persönliche Literaturverwaltung und
+Wissensorganisation. 35, 210--221. URL:
+\url{http://ub-madoc.bib.uni-mannheim.de/39937/}.
 
 %autor
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
