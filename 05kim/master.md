@@ -393,7 +393,7 @@ theologische Zeitschriften auswerten und die Aufsatzdaten mit Zotero
 sammeln. Prinzipiell kann der Schritt 1) auch als Dateningest etwa von
 Herausgebern einer Zeitschrift genutzt werden, um die Aufnahme dieser
 Artikel im Index Theologicus anzustoßen. Dabei können diese Daten in
-einer Zotero-Gruppe kollaborativ und auch ohne profunde
+einer Zotero-Gruppe^[<https://www.zotero.org/groups/ixtheo>] kollaborativ und auch ohne profunde
 Katalogisierungskenntnisse gesammelt werden. Die Bibliothek könnte sich
 dann auf die Normdatenerstellung, -verknüpfung und das Abspeichern in
 der Verbunddatenbank konzentrieren. Es bleibt eine spannende Frage, wie
