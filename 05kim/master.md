@@ -400,7 +400,6 @@ der Verbunddatenbank konzentrieren. Es bleibt eine spannende Frage, wie
 man den Katalogisierungsablauf für diese Aufsatzdaten softwaregestützt
 und kollaborativ weiter optimieren kann, um die Quantität der Titel aber
 auch die Erschließungstiefe hoch zu halten.
->>>>>>> 1805d06be88e69231414fd14459116785be93a36
 
 ### Quellenverzeichnis
 
