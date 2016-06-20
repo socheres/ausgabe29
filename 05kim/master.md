@@ -429,5 +429,5 @@ Wissensorganisation. *ABI-Technik*, *35*(4), 210–221.
 <http://doi.org/10.1515/abitech-2015-0037>
 
 Zur Geschichte des Index theologicus. (2007, January). Retrieved April
-3, 2016, from <http://www.ixtheo.de/histger.htm>
+3, 2016, from <http://web.archive.org/web/20160324045150/http://www.ixtheo.de/histger.htm>
 
