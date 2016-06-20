@@ -32,7 +32,7 @@ Andere frei zugängliche theologische Spezialbibliographien wie
 
 -   der Catalogue de l'École Biblique et Archéologique Française in
     Jerusalem
-    (CEBAF^[<http://www.ebaf.edu/wp-content/uploads/biblio/en-aide-all.pdf>],
+    (CEBAF^[<http://www.ebaf.edu/wp-content/uploads/biblio/en-aide-all.pdf>]),
 
 -   die Missionsbibliothek und katholische Dokumentationsstelle
     (MIKADO^[<http://www.mikado-ac.info/home.html>]),
@@ -194,7 +194,7 @@ nutzt sie in PME^[<https://github.com/proquest/PME>] nach.
 
 Zur Illustration des Katalogisierungsworkflow in der Praxis, welchen wir
 hier im Folgenden beschreiben, haben wir noch ein kurzes Video (ohne
-Ton) erstellt^[<https://bibserv24.bib.uni-mannheim.de/owncloud/index.php/s/oLAXTm9yBaqHaVc>].
+Ton) erstellt^[<https://rawgit.com/libreas/ausgabe29/master/05kim/video/zotkat-video.html>].
 
 Nach der Installation von Zotero als Add-on im Firefox-Browser werden
 über den Zotero-Picker in der Symbolleiste die bibliographischen
@@ -204,7 +204,7 @@ Fachdatenbanken, OA-Journals und Bibliothekskatalogen et cetera in
 unterschiedlichen Downloadoptionen gewählt werden (Einzel- und
 Mehrfachübernahmen, Persistente Identifikatoren mittels "*Zauberstab"*,
 Importfunktion von anderen Formate). In den meisten großen
-Aufsatzdatenbanken wie JSTOR oder EBSCO ist Mehrfachübernahme, das hißt
+Aufsatzdatenbanken wie JSTOR oder EBSCO ist Mehrfachübernahme, das heißt
 alle Aufsätze eines Zeitschriftenheftes mit einem Klick, möglich.
 
 ![Katalogisierungsworkflow](img/Workflow.jpg)
@@ -224,8 +224,8 @@ JavaScript-Editor^[<http://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst
 eingefügt und anschließend im rechten "Result"-Fenster (Abb.3) die
 automatisch erzeugte Autoren-SWB-PPN intellektuell kontrolliert. Für die
 leichte Kontrolle und eventuelle Nachverknüpfung der PPN werden
-zusätzlich zwei Links^[Link 1: <http://swb.bsz-bw.de/DB=2.104/SET=1/TTL=1/CMD?SGE=&ACT=SRCHM&MATCFILTER=Y&MATCSET=Y&NOSCAN=Y&PARSE_MNEMONICS=N&PARSE_OPWORDS=N&PARSE_OLDSETS=N&IMPLAND=Y&NOABS=Y&ACT0=SRCHA&SHRTST=50&IKT0=1004&TRM0=Berger, Klaus&ACT1=*&IKT1=2057&TRM1=3.*&ACT2=*&IKT2=8991&TRM2=19**&ACT3=%2B&IKT3=4060&TRM3=tpv*&ACT4=%2B&IKT4=8991&TRM4=theol* neutestament*&ACT5=*&IKT5=1004&TRM5=Berger, Klaus>, Link 2:
-<http://swb.bsz-bw.de/DB=2.104/SET=1/TTL=1/CMD?SGE=&ACT=SRCHM&MATCFILTER=Y&MATCSET=Y&NOSCAN=Y&PARSE_MNEMONICS=N&PARSE_OPWORDS=N&PARSE_OLDSETS=N&IMPLAND=Y&NOABS=Y&ACT0=SRCHA&SHRTST=50&IKT0=1004&TRM0=Berger&ACT1=*&IKT1=2057&TRM1=3.*&ACT2=*&IKT2=8991&TRM2=19**&ACT3=%2B&IKT3=4060&TRM3=tpv*&ACT4=%2B&IKT4=8991&TRM4=theol* neutestament*&ACT5=*&IKT5=1004&TRM5=Berger>]
+zusätzlich zwei Links^[Link 1: <http://bit.ly/1UCrmJE>, Link 2:
+<http://bit.ly/1ZYyzE3>]
 mit unterschiedlich vordefinierten Suchabfragen automatisch erzeugt,
 deren Ergebnis im rechten "Result"-Fenster direkt angeklickt und
 angezeigt werden kann. (Abb. 3)
@@ -238,7 +238,7 @@ von Autoren wurden im Vorfeld zusammen mit der SWB-PPN in einer
 Mapping-Tabelle hinterlegt. Jedes Mal wenn bei einem Aufsatz der
 Zeitschriftentitel oder Autorenname in dieser Liste vorkommt, wird
 dieser Text beim Export mit dem Pica3-Translator durch die entsprechende
-Normdatenverknüpfung (PPN) ersetzt. Zusätzlich werden bei den Autoren
+Normdatenverknüpfung (PPN) ersetzt. Diese automatische PPN-Verknüpfung der Autorennamen werden auch bei einem vorhandenen eindeutigen Treffersatz in OGND - Lookup für Autoren - erzeugt. Zusätzlich werden bei den Autoren
 auch noch zwei Links im Pseudo-Pica-Felder 0999 erzeugt. Diese Links
 fragen die Namensform "Nachname, Vorname" verbunden mit weiteren
 spezifizierten Suchattributen wie Berufsbezeichnung ("theol\*",
@@ -417,11 +417,11 @@ Bibliothekartag in Leipzig 2016 = 6. Bibliothekskongress / Themenkreis
 
 Voß, J. (2008a). *Simple Web Cataloging with Zotero*. GBV. Retrieved
 from
-<https://www.gbv.de/wikis/cls/Datei:SimpleWebCatalogingWithZotero\_7.1.pdf>
+<https://www.gbv.de/wikis/cls/Datei:SimpleWebCatalogingWithZotero_7.1.pdf>
 
 Voß, J. (2008b, February). Zotero als Katalogisierungsclient –
 Verbund-Wiki GBV \[Wikiseite\]. Retrieved April 3, 2016, from
-<https://www.gbv.de/wikis/cls/Zotero\_als\_Katalogisierungsclient>
+<https://www.gbv.de/wikis/cls/Zotero_als_Katalogisierungsclient>
 
 Zumstein, P., & Stöhr, M. (2015). Zur Nachnutzung von bibliographischen
 Katalog- und Normdaten für die persönliche Literaturverwaltung und
@@ -429,5 +429,5 @@ Wissensorganisation. *ABI-Technik*, *35*(4), 210–221.
 <http://doi.org/10.1515/abitech-2015-0037>
 
 Zur Geschichte des Index theologicus. (2007, January). Retrieved April
-3, 2016, from <http://www.ixtheo.de/histger.htm>
+3, 2016, from <http://web.archive.org/web/20160324045150/http://www.ixtheo.de/histger.htm>
 
