@@ -26,9 +26,9 @@ Andere frei zugängliche theologische Spezialbibliographien wie
 -   die Bibelwissenschaftliche Literaturdokumentation Innsbruck
     (BILDI^[<https://www.uibk.ac.at/bildi/index.html.de>]),
 
--   die Analytische Bibliographie zum Deuteronomium (AnaBiDeut),
+-   die Analytische Bibliographie zum Deuteronomium (AnaBiDeut^[<http://anabideut.univie.ac.at/content/site/de/projektinformation/index.html>]),
 
--   die Bibliographie biblique informatisée de Lausanne (BiBIL),
+-   die Bibliographie biblique informatisée de Lausanne (BiBIL^[<https://www.unil.ch/irsb/fr/home/menuguid/bibil.html>]),
 
 -   der Catalogue de l'École Biblique et Archéologique Française in
     Jerusalem
@@ -135,7 +135,7 @@ bereitgestellt wie in Abb. 1 dargestellt ist.
 ![Die vier verschiedenen Typen von Zotero translators (web, import, search, export) mit Beispielen](img/Zotero-Translators.jpg)
 
 Zotero kann ähnlich einem Simultanübersetzer (oder
-[Babelfisch^[<https://de.wikipedia.org/wiki/Babelfisch>]) agieren und
+Babelfisch^[<https://de.wikipedia.org/wiki/Babelfisch>]) agieren und
 zwischen verschiedenen Datenformaten übersetzen. Beispielsweise ist es
 mit Zotero über entsprechende Import- sowie Export-Schritte möglich,
 MARC-Daten zusammen mit MODS-Daten in einer gemeinsamen CSV-Datei
@@ -160,7 +160,7 @@ Webseiten zu extrahieren.
 
 Das Translator Framework ist modular, das heißt jeder Translator ist
 eine eigene Javascript-Datei mit Metadaten und Testfällen. Wir haben 
-zokat^[<https://github.com/UB-Mannheim/zotkat>], eine Erweiterung für
+zotkat^[<https://github.com/UB-Mannheim/zotkat>], eine Erweiterung für
 den Einsatz von Zotero bei der Katalogisierung, als Open Source
 entwickelt. Eine zentrale Komponente von zotkat ist ein Export
 Translator für das Pica3-Format des SWB, das für IxTheo eingesetzt wird.
@@ -429,5 +429,5 @@ Wissensorganisation. *ABI-Technik*, *35*(4), 210–221.
 <http://doi.org/10.1515/abitech-2015-0037>
 
 Zur Geschichte des Index theologicus. (2007, January). Retrieved April
-3, 2016, from <http://www.ixtheo.de/histger.htm>
+3, 2016, from <http://web.archive.org/web/20160324045150/http://www.ixtheo.de/histger.htm>
 
