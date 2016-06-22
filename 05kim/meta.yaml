@@ -9,7 +9,7 @@ contributor:
 - "Philipp Zumstein"
 title: "Semiautomatische Katalogisierung und Normdatenverknüpfung mit Zotero im Index Theologicus"
 date: 2016-06-16 13:00
-abstract: "<b>Zusammenfassung</b>: Im Folgenden soll aufgezeigt werden, wie derzeit
+abstract: "Im Folgenden soll aufgezeigt werden, wie derzeit
 das Literaturverwaltungsprogramm Zotero innerhalb des Index Theologicus
 genutzt wird, um unselbstständige Literatur in einem bibliothekarischen
 Katalogisierungssystem zu erfassen. Die modulare und flexible
@@ -23,8 +23,8 @@ Medienbearbeitung.
 Katalogisierung, Unselbständige Werke, Aufsatzliteratur, Index
 Theologicus, Online-Bibliographie, WinIBW, Fachinformationsdienst
 Theologie
-</br>
-<b>Abstract:</b> This article presents an approach to use the reference
+<hr>
+This article presents an approach to use the reference
 management software Zotero within the theological article database Index
 Theologicus to catalogue article metadata for a library management
 system. Zotero's Open Source nature and flexible architecture allowed us

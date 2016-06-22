@@ -126,7 +126,7 @@ den *Zotero-Speichern-Button (Zotero-Picker)*, mit welchem man mit einem
 Klick die bibliographischen Metadaten der aktuellen Webseite extrahieren
 und speichern kann. Daneben gibt es auch noch weitere Möglichkeiten wie
 etwa das Importieren von bibliographischen Metadaten oder das Suchen
-nach bestimmten Identifikatoren mit dem "*Zauberstab*". Diese drei
+nach bestimmten Identifikatoren mit dem "Zauberstab". Diese drei
 Funktionalitäten zusammen mit den Export-Möglichkeiten werden über
 sogenannte Zotero Translators^[ "Zotero
 Übersetzer": <https://www.zotero.org/support/dev/translators>]
@@ -202,7 +202,7 @@ Metadaten aus verschiedenen Datenquellen wie Verlagswebseiten,
 Fachdatenbanken, OA-Journals und Bibliothekskatalogen et cetera in
 "Meine Bibliothek" heruntergeladen. Dabei kann je nach Webseite zwischen
 unterschiedlichen Downloadoptionen gewählt werden (Einzel- und
-Mehrfachübernahmen, Persistente Identifikatoren mittels "*Zauberstab"*,
+Mehrfachübernahmen, Persistente Identifikatoren mittels "Zauberstab",
 Importfunktion von anderen Formate). In den meisten großen
 Aufsatzdatenbanken wie JSTOR oder EBSCO ist Mehrfachübernahme, das heißt
 alle Aufsätze eines Zeitschriftenheftes mit einem Klick, möglich.
