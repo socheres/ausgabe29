@@ -1,0 +1,4 @@
+---
+**Kevin Dubout** ist Doktorand im Fach Geschichte an der Humboldt Universität zu
+Berlin und schreibt seine Dissertation zum Leben und Werk Eugen Wilhelms
+/ Numa Praetorius’. Kontaktadresse: kevin.dubout@gmx.de
