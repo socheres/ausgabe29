@@ -314,7 +314,7 @@ stand bei ihm die Darstellung der "sozialen Facetten der Homosexualität"
 deutlicher im Vordergrund: Bei den von ihm mitgeteilten Beispielen, die
 die Stichhaltigkeit des Standpunkts des WhK belegen sollten, handelte es
 sich nicht um Patienten, sondern um "individuelle Menschen inmitten
-einer spezifischen gesellschaftlichen Situation"[^29]. [^30]Das
+einer spezifischen gesellschaftlichen Situation"[^29]. Das
 Heranziehen einer reichhaltigen 'persönlichen Erfahrung' war allerdings
 nicht ohne Gefahr, verstieß Praetorius doch damit gegen das Gebot
 wissenschaftlicher 'Objektivität'.

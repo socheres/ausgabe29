@@ -1,6 +1,6 @@
 ---
 
-**Krisztof Ján Kojakeva** eigentlich Christoph Kujawa), geboren 1962,
+**Krisztof Ján Kojakeva** (eigentlich Christoph Kujawa), geboren 1962,
 begann als Versicherungskaufmann und war viele Jahre in Verlagen,
 Buchhandlungen und der papierverarbeitenden Industrie im In- und Ausland
 tätig, später zählten ebenso Mandate in der qualitativen
