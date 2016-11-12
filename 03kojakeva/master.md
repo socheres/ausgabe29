@@ -8,7 +8,7 @@ den Gedanken der Bibliographie direkt an den Begriff des Rekursiven, des
 Selbstreferenziellen zu binden. Dies kann dem Denken geschehen, indem es
 annimmt, nur ein Text (im Sinne einer Darlegung von schriftlich
 niedergelegten und logisch geführten Gedankengängen in der Form sich
-bedingender und fortlaufender Zedichen) könne sich auf Quellen beziehen
+bedingender und fortlaufender Zeichen) könne sich auf Quellen beziehen
 und diese Form des Textes (der damit in Sinne einer wie auch immer
 gearteten mathematischem Menge als jene der "Nicht-Quellen" erscheint)
 im Wege stehen würde, gedanklich unmittelbar eine Rekursion
